@@ -1,21 +1,21 @@
 {
   "black_normal": {
-    {"name":"Advisee", "time":"8:00"},
-    {"name":"Transition", "time":"8:16"},
-    {"name":"B1", "time":"8:20"},
-    {"name":"Transition", "time":"9:32"},
-    {"name":"B2", "time":"9:36"},
-    {"name":"Transition", "time":"10:48"},
-    {"name":"Lunch A/Advisee A", "time":"10:52"},
-    {"name":"Transition/Advisee A", "time":"11:18"},
-    {"name":"Advisee", "time":"11:21"},
-    {"name":"Advisee B/Transition", "time":"11:24"},
-    {"name":"Advisee B/Lunch B", "time":"11:27"}
-    {"name":"Transition", "time":"11:53"}
-    {"name":"B3", "time":"11:57"},
-    {"name":"Transition", "time":"13:09"},
-    {"name":"B4", "time":"13:13"},
-    {"name":"Bus Dissmissal", "time":"14:24"},
-    {"name":"Free", "time":"14:30"}
+    "period": {"name":"Advisee", "time":"8:00"},
+    "period": {"name":"Transition", "time":"8:16"},
+    "period": {"name":"B1", "time":"8:20"},
+    "period": {"name":"Transition", "time":"9:32"},
+    "period": {"name":"B2", "time":"9:36"},
+    "period": {"name":"Transition", "time":"10:48"},
+    "period": {"name":"Lunch A/Advisee A", "time":"10:52"},
+    "period": {"name":"Transition/Advisee A", "time":"11:18"},
+    "period": {"name":"Advisee", "time":"11:21"},
+    "period": {"name":"Advisee B/Transition", "time":"11:24"},
+    "period": {"name":"Advisee B/Lunch B", "time":"11:27"},
+    "period": {"name":"Transition", "time":"11:53"},
+    "period": {"name":"B3", "time":"11:57"},
+    "period": {"name":"Transition", "time":"13:09"},
+    "period": {"name":"B4", "time":"13:13"},
+    "period": {"name":"Bus Dissmissal", "time":"14:24"},
+    "period": {"name":"Free", "time":"14:30"}
   }
 }
