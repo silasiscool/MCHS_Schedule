@@ -1,5 +1,5 @@
 {
-  "black_normal": {
+  "black_normal" : {
     "name" : "Black Day - Normal",
     "schedule": [
       {"name" : "Advisee", "time" : "8:00"},
@@ -21,7 +21,7 @@
       {"name" : "Free", "time" : "14:30"}
     ]
   },
-  "gold_normal": {
+  "gold_normal" : {
     "name" : "Gold Day - Normal",
     "schedule": [
       {"name" : "Advisee", "time" : "8:00"},
