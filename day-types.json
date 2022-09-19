@@ -97,7 +97,7 @@
       {"name" : "Free", "time" : "11:31"}
     ]
   },
-  "weekend" {
+  "weekend" : {
     "name" : "Weekend",
     "color" : "#A6A6A6",
     "text_color" : "#000000",
