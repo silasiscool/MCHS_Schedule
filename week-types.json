@@ -1,29 +1,40 @@
 {
-  "black_week" : [
-    "weekend",
-    "black_normal",
-    "gold_normal",
-    "black_normal",
-    "gold_normal",
-    "black_normal",
-    "weekend"
-  ],
-  "gold_week" : [
-    "weekend",
-    "gold_normal",
-    "black_normal",
-    "gold_normal",
-    "black_normal",
-    "gold_normal",
-    "weekend"
-  ],
-  "vacation_week" : [
-    "weekend",
-    "weekend",
-    "weekend",
-    "weekend",
-    "weekend",
-    "weekend",
-    "weekend"
+  "types" : [
+    {
+      "name": "black_week",
+      "schedule" : [
+        "weekend",
+        "black_normal",
+        "gold_normal",
+        "black_normal",
+        "gold_normal",
+        "black_normal",
+        "weekend"
+      ]
+    },
+    {
+      "name": "gold_week",
+      "schedule" : [
+        "weekend",
+        "gold_normal",
+        "black_normal",
+        "gold_normal",
+        "black_normal",
+        "gold_normal",
+        "weekend"
+      ]
+    },
+    {
+      "name": "vacation_week",
+      "schedule" : [
+        "weekend",
+        "weekend",
+        "weekend",
+        "weekend",
+        "weekend",
+        "weekend",
+        "weekend"
+      ]
+    },
   ]
 }
