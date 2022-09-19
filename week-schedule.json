@@ -1,3 +1,6 @@
 {
-  
+  "schedule" : [
+    {"monday-date" : "9/12/2022", "schedule": "black_week"},
+    {"monday-date" : "9/19/2022", "schedule": "gold_week"},
+  ]
 }

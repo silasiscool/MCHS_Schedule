@@ -1,3 +1,29 @@
 {
-  
+  "black_week" : [
+    "weekend",
+    "black_normal",
+    "gold_normal",
+    "black_normal",
+    "gold_normal",
+    "black_normal",
+    "weekend"
+  ],
+  "gold_week" : [
+    "weekend",
+    "gold_normal",
+    "black_normal",
+    "gold_normal",
+    "black_normal",
+    "gold_normal",
+    "weekend"
+  ],
+  "vacation_week" : [
+    "weekend",
+    "weekend",
+    "weekend",
+    "weekend",
+    "weekend",
+    "weekend",
+    "weekend"
+  ]
 }
