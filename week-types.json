@@ -27,13 +27,13 @@
     {
       "name": "vacation_week",
       "schedule" : [
-        "weekend",
-        "weekend",
-        "weekend",
-        "weekend",
-        "weekend",
-        "weekend",
-        "weekend"
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation"
       ]
     }
   ]
