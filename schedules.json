@@ -213,7 +213,7 @@
         {"name" : "Winter Carnival", "time" : "8:00"},
         {"name" : "Free", "time" : "14:30"}
       ]
-    },
+    }
   ],
   "week_schedule" : [
     {"monday_date" : "9/12/2022", "schedule": "black_week"},
