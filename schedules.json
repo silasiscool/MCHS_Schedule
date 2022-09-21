@@ -1,6 +1,7 @@
 {
   "day_schedule" : [
     {"date" : "9/14/2022", "schedule" : "black_ER"},
+    {"date" : "11/2/2022", "schedule" : "vacation"},
     {"date" : "11/10/2022", "schedule" : "black_ER"}
   ],
   "day_types" : [
