@@ -1,0 +1,206 @@
+{
+  "day_schedule" : [
+    {"date" : "9/14/2022", "schedule" : "black_ER"},
+    {"date" : "11/10/2022", "schedule" : "black_ER"}
+  ],
+  "day_types" : [
+    {
+      "name" : "black_normal",
+      "display_name" : "Black Day - Normal",
+      "color" : "#000000",
+      "text_color" : "#ffffff",
+      "tag" : "",
+      "schedule" : [
+        {"name" : "Advisee", "time" : "8:00"},
+        {"name" : "Transition", "time" : "8:16"},
+        {"name" : "B1", "time" : "8:20"},
+        {"name" : "Transition", "time" : "9:32"},
+        {"name" : "B2", "time" : "9:36"},
+        {"name" : "Transition", "time" : "10:48"},
+        {"name" : "Lunch A/Advisee A", "time" : "10:52"},
+        {"name" : "Transition/Advisee A", "time" : "11:18"},
+        {"name" : "Advisee", "time" : "11:21"},
+        {"name" : "Advisee B/Transition", "time" : "11:24"},
+        {"name" : "Advisee B/Lunch B", "time" : "11:27"},
+        {"name" : "Transition", "time" : "11:53"},
+        {"name" : "B3", "time" : "11:57"},
+        {"name" : "Transition", "time" : "13:09"},
+        {"name" : "B4", "time" : "13:13"},
+        {"name" : "Bus Dissmissal", "time" : "14:24"},
+        {"name" : "Free", "time" : "14:30"}
+      ]
+    },
+    {
+      "name" : "gold_normal",
+      "display_name" : "Gold Day - Normal",
+      "color" : "#F5C242",
+      "text_color" : "#000000",
+      "tag" : "",
+      "schedule" : [
+        {"name" : "Advisee", "time" : "8:00"},
+        {"name" : "Transition", "time" : "8:16"},
+        {"name" : "G5", "time" : "8:20"},
+        {"name" : "Transition", "time" : "9:32"},
+        {"name" : "G6", "time" : "9:36"},
+        {"name" : "Transition", "time" : "10:48"},
+        {"name" : "Lunch A/Advisee A", "time" : "10:52"},
+        {"name" : "Transition/Advisee A", "time" : "11:18"},
+        {"name" : "Advisee", "time" : "11:21"},
+        {"name" : "Advisee B/Transition", "time" : "11:24"},
+        {"name" : "Advisee B/Lunch B", "time" : "11:27"},
+        {"name" : "Transition", "time" : "11:53"},
+        {"name" : "G7", "time" : "11:57"},
+        {"name" : "Transition", "time" : "13:09"},
+        {"name" : "G8", "time" : "13:13"},
+        {"name" : "Bus Dissmissal", "time" : "14:24"},
+        {"name" : "Free", "time" : "14:30"}
+      ]
+    },
+    {
+      "name" : "black_ER",
+      "display_name" : "Black Day - Early Release",
+      "color" : "#000000",
+      "text_color" : "#ffffff",
+      "tag" : "ER",
+      "schedule" : [
+        {"name" : "Advisee", "time" : "8:00"},
+        {"name" : "Transition", "time" : "8:05"},
+        {"name" : "B1", "time" : "8:09"},
+        {"name" : "Transition", "time" : "8:41"},
+        {"name" : "B2", "time" : "8:45"},
+        {"name" : "Transition", "time" : "9:17"},
+        {"name" : "B3", "time" : "9:21"},
+        {"name" : "Transition", "time" : "9:53"},
+        {"name" : "B4", "time" : "9:57"},
+        {"name" : "Transition", "time" : "10:29"},
+        {"name" : "Lunch A/Advisee A", "time" : "10:33"},
+        {"name" : "Transition/Advisee A", "time" : "10:58"},
+        {"name" : "Advisee", "time" : "11:01"},
+        {"name" : "Advisee B/Transition", "time" : "11:03"},
+        {"name" : "Advisee B/Lunch B", "time" : "11:06"},
+        {"name" : "Free", "time" : "11:31"}
+      ]
+    },
+    {
+      "name" : "gold_ER",
+      "display_name" : "Gold Day - Early Release",
+      "color" : "#F5C242",
+      "text_color" : "#000000",
+      "tag" : "ER",
+      "schedule" : [
+        {"name" : "Advisee", "time" : "8:00"},
+        {"name" : "Transition", "time" : "8:05"},
+        {"name" : "G5", "time" : "8:09"},
+        {"name" : "Transition", "time" : "8:41"},
+        {"name" : "G6", "time" : "8:45"},
+        {"name" : "Transition", "time" : "9:17"},
+        {"name" : "G7", "time" : "9:21"},
+        {"name" : "Transition", "time" : "9:53"},
+        {"name" : "G8", "time" : "9:57"},
+        {"name" : "Transition", "time" : "10:29"},
+        {"name" : "Lunch A/Advisee A", "time" : "10:33"},
+        {"name" : "Transition/Advisee A", "time" : "10:58"},
+        {"name" : "Advisee", "time" : "11:01"},
+        {"name" : "Advisee B/Transition", "time" : "11:03"},
+        {"name" : "Advisee B/Lunch B", "time" : "11:06"},
+        {"name" : "Free", "time" : "11:31"}
+      ]
+    },
+    {
+      "name" : "weekend",
+      "display_name" : "Weekend",
+      "color" : "#A6A6A6",
+      "text_color" : "#000000",
+      "tag" : "",
+      "schedule" : []
+    },
+    {
+      "name" : "vacation",
+      "display_name" : "Vacation",
+      "color" : "#A6A6A6",
+      "text_color" : "#000000",
+      "tag" : "V",
+      "schedule" : []
+    }
+  ],
+  "week_schedule" : [
+    {"monday_date" : "9/12/2022", "schedule": "black_week"},
+    {"monday_date" : "9/19/2022", "schedule": "gold_week"},
+    {"monday_date" : "9/26/2022", "schedule": "black_week"},
+    {"monday_date" : "10/3/2022", "schedule": "gold_week"},
+    {"monday_date" : "10/10/2022", "schedule": "gold_week"},
+    {"monday_date" : "10/17/2022", "schedule": "black_week"},
+    {"monday_date" : "10/24/2022", "schedule": "gold_week"},
+    {"monday_date" : "10/31/2022", "schedule": "black_week"},
+    {"monday_date" : "11/7/2022", "schedule": "gold_week"},
+    {"monday_date" : "11/14/2022", "schedule": "black_week"},
+    {"monday_date" : "11/21/2022", "schedule": "gold_week"},
+    {"monday_date" : "11/28/2022", "schedule": "gold_week"},
+    {"monday_date" : "12/5/2022", "schedule": "gold_week"},
+    {"monday_date" : "12/12/2022", "schedule": "black_week"},
+    {"monday_date" : "12/19/2022", "schedule": "gold_week"},
+    {"monday_date" : "12/26/2022", "schedule": "vacation_week"},
+    {"monday_date" : "1/2/2023", "schedule": "black_week"},
+    {"monday_date" : "1/9/2023", "schedule": "gold_week"},
+    {"monday_date" : "1/16/2023", "schedule": "gold_week"},
+    {"monday_date" : "1/23/2023", "schedule": "black_week"},
+    {"monday_date" : "1/30/2023", "schedule": "gold_week"},
+    {"monday_date" : "2/6/2023", "schedule": "black_week"},
+    {"monday_date" : "2/13/2023", "schedule": "gold_week"},
+    {"monday_date" : "2/20/2023", "schedule": "vacation_week"},
+    {"monday_date" : "2/27/2023", "schedule": "black_week"},
+    {"monday_date" : "3/6/2023", "schedule": "gold_week"},
+    {"monday_date" : "3/13/2023", "schedule": "black_week"},
+    {"monday_date" : "3/20/2023", "schedule": "black_week"},
+    {"monday_date" : "3/27/2023", "schedule": "gold_week"},
+    {"monday_date" : "4/3/2023", "schedule": "black_week"},
+    {"monday_date" : "4/10/2023", "schedule": "gold_week"},
+    {"monday_date" : "4/17/2023", "schedule": "vacation_week"},
+    {"monday_date" : "4/24/2023", "schedule": "gold_week"},
+    {"monday_date" : "5/1/2023", "schedule": "black_week"},
+    {"monday_date" : "5/8/2023", "schedule": "gold_week"},
+    {"monday_date" : "5/15/2023", "schedule": "black_week"},
+    {"monday_date" : "5/22/2023", "schedule": "gold_week"},
+    {"monday_date" : "5/29/2023", "schedule": "gold_week"},
+    {"monday_date" : "6/5/2023", "schedule": "black_week"},
+    {"monday_date" : "6/12/2023", "schedule": "gold_week"}
+  ],
+  "week_types" : [
+    {
+      "name": "black_week",
+      "schedule" : [
+        "weekend",
+        "black_normal",
+        "gold_normal",
+        "black_normal",
+        "gold_normal",
+        "black_normal",
+        "weekend"
+      ]
+    },
+    {
+      "name": "gold_week",
+      "schedule" : [
+        "weekend",
+        "gold_normal",
+        "black_normal",
+        "gold_normal",
+        "black_normal",
+        "gold_normal",
+        "weekend"
+      ]
+    },
+    {
+      "name": "vacation_week",
+      "schedule" : [
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation",
+        "vacation"
+      ]
+    }
+  ]
+}
