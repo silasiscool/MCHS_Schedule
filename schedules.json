@@ -1,8 +1,31 @@
 {
   "day_schedule" : [
     {"date" : "9/14/2022", "schedule" : "black_ER"},
-    {"date" : "11/2/2022", "schedule" : "vacation"},
-    {"date" : "11/10/2022", "schedule" : "black_ER"}
+    {"date" : "10/6/2022", "schedule" : "ado"},
+    {"date" : "10/7/2022", "schedule" : "no_school_other"},
+    {"date" : "10/10/2022", "schedule" : "holiday"},
+    {"date" : "11/10/2022", "schedule" : "teen_issues_ER"},
+    {"date" : "11/11/2022", "schedule" : "holiday"},
+    {"date" : "11/23/2022", "schedule" : "no_school_other"},
+    {"date" : "11/24/2022", "schedule" : "holiday"},
+    {"date" : "11/25/2022", "schedule" : "vacation"},
+    {"date" : "12/1/2022", "schedule" : "gold_normal"},
+    {"date" : "12/2/2022", "schedule" : "black_normal"},
+    {"date" : "12/15/2022", "schedule" : "teen_issues"},
+    {"date" : "12/22/2022", "schedule" : "black_ER"},
+    {"date" : "12/23/2022", "schedule" : "vacation"},
+    {"date" : "1/1/2023", "schedule" : "holiday"},
+    {"date" : "1/13/2023", "schedule" : "gold_ER"},
+    {"date" : "1/16/2023", "schedule" : "holiday"},
+    {"date" : "2/13/2023", "schedule" : "gold_ER"},
+    {"date" : "2/20/2023", "schedule" : "holiday"},
+    {"date" : "3/10/2023", "schedule" : "winter_carnival"},
+    {"date" : "3/17/2023", "schedule" : "no_school_other"},
+    {"date" : "4/14/2023", "schedule" : "no_school_other"},
+    {"date" : "4/17/2023", "schedule" : "holiday"},
+    {"date" : "5/10/2023", "schedule" : "gold_ER"},
+    {"date" : "5/29/2023", "schedule" : "holiday"},
+    {"date" : "6/7/2023", "schedule" : "ado"}
   ],
   "day_types" : [
     {
@@ -122,7 +145,75 @@
       "text_color" : "#000000",
       "tag" : "V",
       "schedule" : []
-    }
+    },
+    {
+      "name" : "holiday",
+      "display_name" : "Holiday",
+      "color" : "#A6A6A6",
+      "text_color" : "#000000",
+      "tag" : "H",
+      "schedule" : []
+    },
+    {
+      "name" : "no_school_other",
+      "display_name" : "No School",
+      "color" : "#A6A6A6",
+      "text_color" : "#000000",
+      "tag" : "",
+      "schedule" : []
+    },
+    {
+      "name" : "vacation",
+      "display_name" : "Vacation",
+      "color" : "#A6A6A6",
+      "text_color" : "#000000",
+      "tag" : "V",
+      "schedule" : []
+    },
+    {
+      "name" : "ado",
+      "display_name" : "Advisee Day Out - Normal",
+      "color" : "#78A65A",
+      "text_color" : "#000000",
+      "tag" : "",
+      "schedule" : [
+        {"name" : "Advisee", "time" : "8:00"},
+        {"name" : "Free", "time" : "14:30"}
+      ]
+    },
+    {
+      "name" : "teen_issues",
+      "display_name" : "Teen Issues - Normal",
+      "color" : "#8C1AF5",
+      "text_color" : "#000000",
+      "tag" : "",
+      "schedule" : [
+        {"name" : "Teen Issues", "time" : "8:00"},
+        {"name" : "Free", "time" : "14:30"}
+      ]
+    },
+    {
+      "name" : "teen_issues_ER",
+      "display_name" : "Teen Issues - Early Release",
+      "color" : "#8C1AF5",
+      "text_color" : "#000000",
+      "tag" : "ER",
+      "schedule" : [
+        {"name" : "Teen Issues", "time" : "8:00"},
+        {"name" : "Free", "time" : "11:31"}
+      ]
+    },
+    {
+      "name" : "winter_carnival",
+      "display_name" : "Winter Carnival - Normal",
+      "color" : "#BB271A",
+      "text_color" : "#ffffff",
+      "tag" : "C",
+      "schedule" : [
+        {"name" : "Winter Carnival", "time" : "8:00"},
+        {"name" : "Free", "time" : "14:30"}
+      ]
+    },
   ],
   "week_schedule" : [
     {"monday_date" : "9/12/2022", "schedule": "black_week"},
