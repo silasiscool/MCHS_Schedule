@@ -163,14 +163,6 @@
       "schedule" : []
     },
     {
-      "name" : "vacation",
-      "display_name" : "Vacation",
-      "color" : "#A6A6A6",
-      "text_color" : "#000000",
-      "tag" : "V",
-      "schedule" : []
-    },
-    {
       "name" : "ado",
       "display_name" : "Advisee Day Out - Normal",
       "color" : "#78A65A",
@@ -294,5 +286,15 @@
         "vacation"
       ]
     }
+  ],
+  "nameable_classes" : [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "G5",
+    "G6",
+    "G7",
+    "G8"
   ]
 }
