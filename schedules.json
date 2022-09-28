@@ -1,6 +1,7 @@
 {
   "day_schedule" : [
     {"date" : "9/14/2022", "schedule" : "black_ER"},
+    {"date" : "9/30/2022", "schedule": "black_pep_rally_2022"},
     {"date" : "10/6/2022", "schedule" : "ado"},
     {"date" : "10/7/2022", "schedule" : "no_school_other"},
     {"date" : "10/10/2022", "schedule" : "holiday"},
@@ -249,7 +250,6 @@
     {"monday_date" : "9/12/2022", "schedule": "black_week"},
     {"monday_date" : "9/19/2022", "schedule": "gold_week"},
     {"monday_date" : "9/26/2022", "schedule": "black_week"},
-    {"monday_date" : "9/30/2022", "schedule": "black_pep_rally_2022"},
     {"monday_date" : "10/3/2022", "schedule": "gold_week"},
     {"monday_date" : "10/10/2022", "schedule": "gold_week"},
     {"monday_date" : "10/17/2022", "schedule": "black_week"},
