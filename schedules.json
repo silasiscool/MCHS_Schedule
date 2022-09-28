@@ -35,6 +35,7 @@
       "text_color" : "#ffffff",
       "tag" : "",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:16"},
         {"name" : "B1", "time" : "8:20"},
@@ -61,6 +62,7 @@
       "text_color" : "#000000",
       "tag" : "",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:16"},
         {"name" : "G5", "time" : "8:20"},
@@ -87,6 +89,7 @@
       "text_color" : "#ffffff",
       "tag" : "ER",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:05"},
         {"name" : "B1", "time" : "8:09"},
@@ -112,6 +115,7 @@
       "text_color" : "#000000",
       "tag" : "ER",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:05"},
         {"name" : "G5", "time" : "8:09"},
@@ -169,6 +173,7 @@
       "text_color" : "#000000",
       "tag" : "",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Free", "time" : "14:30"}
       ]
@@ -180,6 +185,7 @@
       "text_color" : "#000000",
       "tag" : "",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Teen Issues", "time" : "8:00"},
         {"name" : "Free", "time" : "14:30"}
       ]
@@ -191,6 +197,7 @@
       "text_color" : "#000000",
       "tag" : "ER",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Teen Issues", "time" : "8:00"},
         {"name" : "Free", "time" : "11:31"}
       ]
@@ -202,7 +209,38 @@
       "text_color" : "#ffffff",
       "tag" : "C",
       "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
         {"name" : "Winter Carnival", "time" : "8:00"},
+        {"name" : "Free", "time" : "14:30"}
+      ]
+    },
+    {
+      "name" : "black_pep_rally_2022",
+      "display_name" : "Black Day - Pep Rally",
+      "color" : "#000000",
+      "text_color" : "#ffffff",
+      "tag" : "",
+      "schedule" : [
+        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Advisee", "time" : "8:00"},
+        {"name" : "Transition", "time" : "8:11"},
+        {"name" : "B1", "time" : "8:15"},
+        {"name" : "Transition", "time" : "9:06"},
+        {"name" : "B2", "time" : "9:10"},
+        {"name" : "Transition", "time" : "10:01"},
+        {"name" : "B3", "time" : "10:05"},
+        {"name" : "Transition", "time" : "10:56"},
+        {"name" : "A Lunch/Advisee A", "time" : "11:00"},
+        {"name" : "Transition/Advisee A", "time" : "11:26"},
+        {"name" : "Advisee", "time" : "11:29"},
+        {"name" : "Advisee B/Transiton", "time" : "11:32"},
+        {"name" : "Advisee B/Lunch B", "time" : "11:35"},
+        {"name" : "Transiton", "time" : "12:01"},
+        {"name" : "B4", "time" : "12:05"},
+        {"name" : "Transiton", "time" : "13:01"},
+        {"name" : "Pep Rally", "time" : "13:03"},
+        {"name" : "Return to advisor" : "14:10"},
+        {"name" : "Bus Dissmissal", "time" : "14:24"},
         {"name" : "Free", "time" : "14:30"}
       ]
     }
@@ -211,6 +249,7 @@
     {"monday_date" : "9/12/2022", "schedule": "black_week"},
     {"monday_date" : "9/19/2022", "schedule": "gold_week"},
     {"monday_date" : "9/26/2022", "schedule": "black_week"},
+    {"monday_date" : "9/30/2022", "schedule": "black_pep_rally_2022"},
     {"monday_date" : "10/3/2022", "schedule": "gold_week"},
     {"monday_date" : "10/10/2022", "schedule": "gold_week"},
     {"monday_date" : "10/17/2022", "schedule": "black_week"},
