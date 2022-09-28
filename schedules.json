@@ -239,7 +239,7 @@
         {"name" : "B4", "time" : "12:05"},
         {"name" : "Transiton", "time" : "13:01"},
         {"name" : "Pep Rally", "time" : "13:03"},
-        {"name" : "Return to advisor" : "14:10"},
+        {"name" : "Return to advisor", "time" : "14:10"},
         {"name" : "Bus Dissmissal", "time" : "14:24"},
         {"name" : "Free", "time" : "14:30"}
       ]
