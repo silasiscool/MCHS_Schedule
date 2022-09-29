@@ -36,7 +36,7 @@
       "text_color" : "#ffffff",
       "tag" : "",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:16"},
         {"name" : "B1", "time" : "8:20"},
@@ -63,7 +63,7 @@
       "text_color" : "#000000",
       "tag" : "",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:16"},
         {"name" : "G5", "time" : "8:20"},
@@ -90,7 +90,7 @@
       "text_color" : "#ffffff",
       "tag" : "ER",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:05"},
         {"name" : "B1", "time" : "8:09"},
@@ -116,7 +116,7 @@
       "text_color" : "#000000",
       "tag" : "ER",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:05"},
         {"name" : "G5", "time" : "8:09"},
@@ -174,7 +174,7 @@
       "text_color" : "#000000",
       "tag" : "",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Free", "time" : "14:30"}
       ]
@@ -186,7 +186,7 @@
       "text_color" : "#000000",
       "tag" : "",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Teen Issues", "time" : "8:00"},
         {"name" : "Free", "time" : "14:30"}
       ]
@@ -198,7 +198,7 @@
       "text_color" : "#000000",
       "tag" : "ER",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Teen Issues", "time" : "8:00"},
         {"name" : "Free", "time" : "11:31"}
       ]
@@ -210,7 +210,7 @@
       "text_color" : "#ffffff",
       "tag" : "C",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Winter Carnival", "time" : "8:00"},
         {"name" : "Free", "time" : "14:30"}
       ]
@@ -222,7 +222,7 @@
       "text_color" : "#ffffff",
       "tag" : "",
       "schedule" : [
-        {"name" : "Transition", "time" : "7:56"},
+        {"name" : "Transition", "time" : "7:55"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:11"},
         {"name" : "B1", "time" : "8:15"},
