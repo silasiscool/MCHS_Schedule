@@ -248,17 +248,17 @@
     },
     {
       "name" : "10/14/2022",
-      "display_name" : "Black Day - Normal",
-      "color" : "#000000",
-      "text_color" : "#ffffff",
+      "display_name" : "Gold Day - Normal",
+      "color" : "#F5C242",
+      "text_color" : "#000000",
       "tag" : "",
       "schedule" : [
         {"name" : "Transition", "time" : "7:55"},
         {"name" : "Advisee", "time" : "8:00"},
         {"name" : "Transition", "time" : "8:16"},
-        {"name" : "B1", "time" : "8:20"},
+        {"name" : "G5", "time" : "8:20"},
         {"name" : "Transition", "time" : "9:32"},
-        {"name" : "B2", "time" : "9:36"},
+        {"name" : "G6", "time" : "9:36"},
         {"name" : "Transition", "time" : "10:48"},
         {"name" : "Lunch A/Advisee A", "time" : "10:52"},
         {"name" : "Transition/Advisee A", "time" : "11:18"},
@@ -266,9 +266,9 @@
         {"name" : "Advisee B/Transition", "time" : "11:24"},
         {"name" : "Advisee B/Lunch B", "time" : "11:27"},
         {"name" : "Transition", "time" : "11:53"},
-        {"name" : "B3", "time" : "11:57"},
+        {"name" : "G7", "time" : "11:57"},
         {"name" : "Transition", "time" : "13:09"},
-        {"name" : "B4", "time" : "13:13"},
+        {"name" : "G8", "time" : "13:13"},
         {"name" : "Free", "time" : "13:45"}
       ]
     }
