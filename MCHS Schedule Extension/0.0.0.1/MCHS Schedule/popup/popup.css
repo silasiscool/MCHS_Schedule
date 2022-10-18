@@ -1,0 +1,111 @@
+body {
+  width: 420px; /*  700px with events area */
+  height: 202px; /* orriginally 500px with current area */
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.main-box {
+  border: 1px solid black;
+}
+
+#schedule {
+  width: 280px;
+  height: 500px;
+  float: left;
+  overflow-y: auto;
+}
+
+#schedule-header {
+  border-bottom: 1px solid black;
+  font-size: 25px;
+  padding:10px;
+}
+
+.schedule-box {
+  border: .25px solid black;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.schedule-box-time {
+  float: left;
+  height: 100%;
+  width: 30%;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.schedule-box-description {
+  float: left;
+  height: 100%;
+  width: 70%;
+  overflow: auto;
+  font-size: 20px;
+}
+
+#calendar {
+  width: 420px;
+  height: 84px;
+  float: right;
+  padding: 0px;
+}
+
+.calendar-box {
+  border-right: .5px solid black;
+  width: 20%;
+  height: 100%;
+  float: left;
+  margin: 0px;
+  font-size: 40px;
+  text-align: center;
+  padding: 18px;
+  background-color: #A6A6A6;
+  color: #000000;
+}
+
+#friday-box {
+  border-right: none;
+}
+
+#info {
+  width: 420px;
+  height: 118px;
+  float: right;
+}
+
+.info-box {
+  font-size: 30px;
+  padding: 11px;
+
+}
+
+#current {
+  width: 420px;
+  height: 298px;
+  float: right;
+}
+
+.current-box {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#class-box {
+  font-size: 30px;
+}
+
+#time-box {
+  font-size: 100px;
+}
+
+#end-time-box {
+  font-size: 30px;
+}
