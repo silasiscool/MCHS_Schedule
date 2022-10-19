@@ -1,0 +1,8 @@
+{
+  "banner" : {
+    "id" : 1,
+    "text" : "",
+    "min_version" : "all",
+    "non_dismissable" : false
+  }
+}
