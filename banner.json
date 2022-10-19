@@ -2,7 +2,7 @@
   "banner" : {
     "id" : 1,
     "text" : "",
-    "min_version" : "all",
+    "min_version" : "none",
     "non_dismissable" : false
   }
 }
