@@ -1,7 +1,7 @@
 {
   "banner" : {
     "id" : 1,
-    "text" : "Updated to new version!<br>Countdown offset to align with bells.<br>Disable this offset in the <a href=\"../options/options.html\">options</a>.",
+    "text" : "Updated to new version!<br>Countdown offset to align with bells.<br>Disable this offset in the <a target=\"_blank\" href=\"../options/options.html\">options</a>.",
     "min_version" : "0.0.3.1",
     "non_dismissable" : false
   }
