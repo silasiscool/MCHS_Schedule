@@ -1,0 +1,47 @@
+#banner {
+  box-sizing: border-box;
+  background: #F5C242;
+  color: #000000;
+  padding: 10px;
+  font-size: 20px;
+  transition: top 1s;
+  max-height: 100px;
+  overflow: auto;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  z-index: 0;
+}
+
+#banner.reduceMotion {
+  transition: none;
+}
+
+#banner.active-banner {
+  top: 0px;
+}
+
+#banner-text {
+  float: left;
+  width: 94%;
+}
+
+#banner-close-button {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+#banner-close-button.non-dismissable {
+  display: none;
+}
+
+#banner-close-button:hover {
+  scale: 1.25;
+}
+
+#banner-close-button:focus {
+  scale: 1.5;
+  outline: none;
+}
