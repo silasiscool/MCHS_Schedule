@@ -6,6 +6,7 @@
     {"date" : "10/7/2022", "schedule" : "no_school_other"},
     {"date" : "10/10/2022", "schedule" : "holiday", "alt_name" : "Indigenous Peoples Day"},
     {"date" : "10/14/2022", "schedule" : "10/14/2022"},
+    {"date" : "10/28/2022", "schedule" : "10/28/2022"},
     {"date" : "11/10/2022", "schedule" : "teen_issues_ER"},
     {"date" : "11/11/2022", "schedule" : "holiday", "alt_name" : "Vetrans Day"},
     {"date" : "11/23/2022", "schedule" : "no_school_other"},
@@ -270,6 +271,36 @@
         {"name" : "Transition", "time" : "13:09"},
         {"name" : "G8", "time" : "13:13"},
         {"name" : "Free", "time" : "13:45"}
+      ]
+    },
+    {
+      "name" : "10/28/2022",
+      "display_name" : "Gold Day - Afternoon Assembly",
+      "color" : "#F5C242",
+      "text_color" : "#000000",
+      "tag" : "",
+      "schedule" : [
+        {"name" : "Transition", "time" : "7:55"},
+        {"name" : "Advisee", "time" : "8:00"},
+        {"name" : "Transition", "time" : "8:11"},
+        {"name" : "G5", "time" : "8:15"},
+        {"name" : "Transition", "time" : "9:06"},
+        {"name" : "G6", "time" : "9:10"},
+        {"name" : "Transition", "time" : "10:01"},
+        {"name" : "G7", "time" : "10:05"},
+        {"name" : "Transition", "time" : "10:56"},
+        {"name" : "Lunch A / Advisee A", "time" : "11:00"},
+        {"name" : "Transition / Advisee A", "time" : "11:26"},
+        {"name" : "Advisee", "time" : "11:29"},
+        {"name" : "Advisee B / Transition", "time" : "11:32"},
+        {"name" : "Advisee B / Lunch B", "time" : "11:35"},
+        {"name" : "Transition", "time" : "12:01"},
+        {"name" : "G8", "time" : "12:05"},
+        {"name" : "Transition", "time" : "13:01"},
+        {"name" : "Assembly", "time" : "13:10"},
+        {"name" : "Transition", "time" : "14:15"},
+        {"name" : "Bus Dissmissal", "time" : "14:24"},
+        {"name" : "Free", "time" : "14:30"}
       ]
     }
   ],
