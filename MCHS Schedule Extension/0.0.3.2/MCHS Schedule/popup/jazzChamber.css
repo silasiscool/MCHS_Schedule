@@ -1,0 +1,17 @@
+.jazz-day::after {
+  content: 'Jazz';
+  font-size: 10px;
+  font-weight: 900;
+  position: relative;
+  bottom: -17px;
+  left: -52px;
+}
+
+.chamber-day::after {
+  content: 'Chamber';
+  font-size: 10px;
+  font-weight: 900;
+  position: relative;
+  bottom: -17px;
+  left: -52px;
+}

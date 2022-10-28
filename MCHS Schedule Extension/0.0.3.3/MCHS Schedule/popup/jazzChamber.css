@@ -1,0 +1,13 @@
+.jazz-day::after {
+  content: 'Jazz';
+  font-size: 10px;
+  font-weight: 900;
+  display: block;
+}
+
+.chamber-day::after {
+  content: 'Chamber';
+  font-size: 10px;
+  font-weight: 900;
+  display: block;
+}
