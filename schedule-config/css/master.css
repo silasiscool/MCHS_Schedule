@@ -1,0 +1,165 @@
+body {
+  font-family: Lato, sans-serif;
+  background-color: #1F1F1F;
+  color: #ffffff;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #3c3c3b;
+  border-top: 5px solid #CA9D67;
+  position: relative;
+  height: 90px;
+}
+
+.header-title {
+  position: absolute;
+  bottom: 0px;
+  left: 75px;
+
+}
+
+#side-nav-button {
+  background: none;
+  border: none;
+  margin: 10px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  bottom: 0px;
+}
+
+#side-nav-button:hover, #side-nav-button:focus {
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 999px;
+}
+
+#side-nav-button:focus {
+  outline: 2px solid #eeeeee;
+}
+
+.hamburger-menu {
+  background: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hamburger-menu div {
+  background: #CA9D67;
+  border-radius: 100px;
+  width: 25px;
+  height: 2.5px;
+  margin: 5px;
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.09,.22,0,.98);
+}
+
+#side-nav-button.open .hamburger-menu div:first-child {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+#side-nav-button.open .hamburger-menu div:nth-child(2) {
+  opacity: 0;
+}
+
+#side-nav-button.open .hamburger-menu div:last-child {
+  transform: translateY(-7.5px) rotate(-45deg);
+  /* visibility: hidden; */
+}
+
+.side-nav {
+  box-sizing: border-box;
+  background: #3c3c3b;
+  border-top: 3px solid #CA9D67;
+  width: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: width 0.5s cubic-bezier(.09,.22,0,.98);
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+.side-nav.open {
+  width: 200px;
+}
+
+.side-nav-item {
+  height: 20px;
+  width: fit-content;
+  overflow-x: hidden;
+  white-space: nowrap;
+  color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+#download-file-button {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 10px;
+  background: none;
+  border: none;
+  aspect-ratio: 1/1;
+}
+
+#download-file-button:hover, #download-file-button:focus {
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 999px;
+}
+
+#download-file-button:focus {
+  outline: 2px solid #eeeeee;
+}
+
+.download-button {
+  color: #CA9D67;
+  margin: 10px;
+}
+
+.content {
+  overflow: auto;
+  position: absolute;
+  top: 95px;
+  bottom: 0px;
+  padding: 5px 20px 20px 20px;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=number] {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  width: 50px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+input[type=text] {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  width: 100px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+input[type=checkbox] {
+  accent-color: #000000;
+}
+
+input {
+  margin: 5px;
+}
+
+strong {
+  text-transform: uppercase;
+}
