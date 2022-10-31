@@ -541,5 +541,5 @@
     "min_version" : "none",
     "non_dismissable" : false
   },
-  "bell_offset": 10
+  "bell_offset": 20
 }
