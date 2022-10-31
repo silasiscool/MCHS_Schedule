@@ -21,11 +21,9 @@ body {
 }
 
 #side-nav-button {
-  float: left;
   background: none;
   border: none;
   margin: 10px;
-  line-height: 100%;
   aspect-ratio: 1/1;
   position: absolute;
   bottom: 0px;
@@ -99,10 +97,69 @@ body {
   text-decoration: none;
 }
 
+#download-file-button {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 10px;
+  background: none;
+  border: none;
+  aspect-ratio: 1/1;
+}
+
+#download-file-button:hover, #download-file-button:focus {
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 999px;
+}
+
+#download-file-button:focus {
+  outline: 2px solid #eeeeee;
+}
+
+.download-button {
+  color: #CA9D67;
+  margin: 10px;
+}
+
 .content {
   overflow: auto;
   position: absolute;
   top: 95px;
   bottom: 0px;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 20px 20px 20px;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=number] {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  width: 50px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+input[type=text] {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  width: 100px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+input[type=checkbox] {
+  accent-color: #000000;
+}
+
+input {
+  margin: 5px;
+}
+
+strong {
+  text-transform: uppercase;
 }
