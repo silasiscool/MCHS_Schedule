@@ -3,6 +3,7 @@ body {
   background-color: #1F1F1F;
   color: #ffffff;
   margin: 0px;
+  overflow: hidden;
 }
 
 .header {
@@ -30,15 +31,13 @@ body {
   bottom: 0px;
 }
 
-#side-nav-button:hover {
-background-color: rgba(255, 255, 255, 10%);
-border-radius: 999px;
+#side-nav-button:hover, #side-nav-button:focus {
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 999px;
 }
 
 #side-nav-button:focus {
-background-color: rgba(255, 255, 255, 10%);
-border-radius: 999px;
-outline: 2px solid #eeeeee;
+  outline: 2px solid #eeeeee;
 }
 
 .hamburger-menu {
@@ -53,6 +52,22 @@ outline: 2px solid #eeeeee;
   width: 25px;
   height: 2.5px;
   margin: 5px;
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.09,.22,0,.98);
+}
+
+#side-nav-button.open .hamburger-menu div:first-child {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+#side-nav-button.open .hamburger-menu div:nth-child(2) {
+  opacity: 0;
+}
+
+#side-nav-button.open .hamburger-menu div:last-child {
+  transform: translateY(-7.5px) rotate(-45deg);
+  /* visibility: hidden; */
 }
 
 .side-nav {
@@ -65,9 +80,10 @@ outline: 2px solid #eeeeee;
   transition: width 0.5s cubic-bezier(.09,.22,0,.98);
   height: 100%;
   position: absolute;
+  z-index: 100;
 }
 
-.open {
+.side-nav.open {
   width: 200px;
 }
 
@@ -84,5 +100,9 @@ outline: 2px solid #eeeeee;
 }
 
 .content {
-
+  overflow: auto;
+  position: absolute;
+  top: 95px;
+  bottom: 0px;
+  padding: 5px 20px 5px 20px;
 }

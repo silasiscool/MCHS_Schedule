@@ -3,4 +3,5 @@ const sideNav = document.getElementsByClassName('side-nav')[0];
 
 sideNavButton.addEventListener('click', () => {
   sideNav.classList.toggle('open');
+  sideNavButton.classList.toggle('open');
 });
