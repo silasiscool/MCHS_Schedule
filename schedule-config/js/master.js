@@ -29,9 +29,27 @@ function downloadFile(data) {
   window.URL.revokeObjectURL(url)
 }
 
+function ordinal_suffix_of(i) {
+    var j = i % 10,
+        k = i % 100;
+    if (j == 1 && k != 11) {
+        return i + "st";
+    }
+    if (j == 2 && k != 12) {
+        return i + "nd";
+    }
+    if (j == 3 && k != 13) {
+        return i + "rd";
+    }
+    return i + "th";
+}
+
+function monthDayYear(date) {
+  return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+};
 
 Array.from(document.getElementsByTagName('a')).forEach((item) => {
-  if (['Day Schedule','Week Schedule','Day Types','Week Types', 'Nameable Classes','Chamber Days','Jazz Days'].includes(item.innerHTML)) {
+  if (['Day Schedule','Week Schedule','Day Types','Week Types', 'Nameable Classes'].includes(item.innerHTML)) {
     item.style.display = 'none'
   }
 });
