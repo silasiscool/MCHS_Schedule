@@ -55,7 +55,7 @@ function monthDayYear(date) {
 };
 
 Array.from(document.getElementsByTagName('a')).forEach((item) => {
-  if (['Day Schedule','Week Schedule','Week Types', 'Nameable Classes'].includes(item.innerHTML)) {
+  if (['Day Schedule','Week Schedule','Week Types'].includes(item.innerHTML)) {
     item.style.display = 'none'
   }
 });
