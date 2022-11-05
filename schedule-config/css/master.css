@@ -17,7 +17,6 @@ body {
   position: absolute;
   bottom: 0px;
   left: 75px;
-
 }
 
 #side-nav-button {
@@ -34,8 +33,12 @@ body {
   border-radius: 999px;
 }
 
-#side-nav-button:focus {
+#side-nav-button:focus-visible {
   outline: 2px solid #eeeeee;
+}
+
+#side-nav-button:focus {
+  background-color: rgba(255, 255, 255, 15%);
 }
 
 .hamburger-menu {
@@ -95,6 +98,13 @@ body {
   width: 100%;
   display: block;
   text-decoration: none;
+  transition: background-position 0.5s cubic-bezier(0,.5,0,1);
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 25%) 50%, rgba(255, 255, 255, 0%) 100%);
+}
+
+.side-nav-item:hover {
+  background-position: -100% 0;
 }
 
 #download-file-button {
@@ -112,8 +122,12 @@ body {
   border-radius: 999px;
 }
 
-#download-file-button:focus {
+#download-file-button:focus-active {
   outline: 2px solid #eeeeee;
+}
+
+#download-file-button:focus {
+  background-color: rgba(255, 255, 255, 15%);
 }
 
 .download-button {
@@ -129,6 +143,27 @@ body {
   padding: 5px 20px 20px 20px;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1F1F1F;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaa;
 }
 
 button {
@@ -165,13 +200,49 @@ input[type=date] {
   accent-color: #ffffff;
   padding: 5px;
   border-radius: 7px;
-  color-scheme: dark;
+
+}
+
+input[type=color] {
+  margin: 0;
+  width: 100%;
+  border: none;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.color-picker-display {
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  width: 100px;
+  color: #ffffff;
+  margin: 5px;
+  padding: none;
+  display: inline-block;
+}
+
+input[type=time] {
+  cursor: pointer;
 }
 
 input {
   margin: 5px;
+  color-scheme: dark;
 }
 
 strong {
   text-transform: uppercase;
+}
+
+a {
+  color: #7575ff;
+}
+
+li {
+  margin: 10px;
+}
+
+ol.lower-roman {
+  list-style-type: lower-roman;
 }

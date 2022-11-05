@@ -8,17 +8,17 @@ config_file.then((savedConfig) => { // open saved config file
   // store elements
   const addDateButton = document.getElementById('add-date-button')
   const addDate = document.getElementById('add-date')
-  const dateList = document.getElementById('date-list')
+  const itemList = document.getElementById('item-list')
 
   // display current Settings
   displayDays()
 
   function displayDays() {
-    while (dateList.firstChild) {
-        dateList.removeChild(dateList.firstChild);
+    while (itemList.firstChild) {
+        itemList.removeChild(itemList.firstChild);
     }
     config.jazz_days.forEach((item, i) => {
-      addItem(new Date(item), 'date-item-'+i)
+      addItem(new Date(item), 'item-item-'+i)
     });
   }
 
@@ -27,32 +27,31 @@ config_file.then((savedConfig) => { // open saved config file
     dateString += ['January','Febuary','March','April','May','June','July','August','September','October','November','December'][date.getMonth()] + ' '
     dateString += ordinal_suffix_of(date.getDate()) + ', ' + date.getFullYear()
 
-    let dateItem = document.createElement('div')
-    dateItem.classList.add('date-item')
-    dateItem.setAttribute('id', id)
+    let itemItem = document.createElement('div')
+    itemItem.classList.add('item-item')
+    itemItem.setAttribute('id', id)
 
-    let dateDate = document.createElement('div')
-    dateDate.classList.add('date-date')
-    dateDate.appendChild(document.createTextNode(dateString))
+    let itemName = document.createElement('div')
+    itemName.classList.add('item-name')
+    itemName.appendChild(document.createTextNode(dateString))
 
-    let dateRemoveButton = document.createElement('button')
-    dateRemoveButton.setAttribute('type','button')
-    dateRemoveButton.classList.add('date-remove-button')
-    dateRemoveButton.addEventListener('click', () => {
-      // dateList.removeChild(document.getElementById(id))
+    let itemRemoveButton = document.createElement('button')
+    itemRemoveButton.setAttribute('type','button')
+    itemRemoveButton.classList.add('item-remove-button')
+    itemRemoveButton.addEventListener('click', () => {
       config.jazz_days.splice(id.split('-').slice(-1)[0],1)
       sessionStorage.setItem('configFile', JSON.stringify(config))
       displayDays()
     })
 
-    let dateRemove = document.createElement('i')
-    dateRemove.classList.add('fa-solid', 'fa-xmark', 'date-remove')
+    let itemRemove = document.createElement('i')
+    itemRemove.classList.add('fa-solid', 'fa-trash', 'item-remove')
 
-    dateItem.appendChild(dateDate)
-    dateRemoveButton.appendChild(dateRemove)
-    dateItem.appendChild(dateRemoveButton)
+    itemItem.appendChild(itemName)
+    itemRemoveButton.appendChild(itemRemove)
+    itemItem.appendChild(itemRemoveButton)
 
-    dateList.appendChild(dateItem)
+    itemList.appendChild(itemItem)
   }
 
   // add date function

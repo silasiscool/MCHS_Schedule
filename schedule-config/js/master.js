@@ -3,6 +3,7 @@ const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Sc
 const sideNavButton = document.getElementById('side-nav-button');
 const sideNav = document.getElementsByClassName('side-nav')[0];
 const downloadButton = document.getElementById('download-file-button')
+const content = document.getElementsByClassName('content')[0]
 
 sideNavButton.addEventListener('click', () => {
   sideNav.classList.toggle('open');
@@ -13,6 +14,11 @@ downloadButton.addEventListener('click', () => {
   if (window.confirm("Confirm Download Updated File?")) {
     downloadFile(sessionStorage.getItem('configFile'))
   }
+})
+
+content.addEventListener('click', () => {
+  sideNav.classList.remove('open');
+  sideNavButton.classList.remove('open');
 })
 
 function downloadFile(data) {
@@ -49,7 +55,7 @@ function monthDayYear(date) {
 };
 
 Array.from(document.getElementsByTagName('a')).forEach((item) => {
-  if (['Day Schedule','Week Schedule','Day Types','Week Types', 'Nameable Classes'].includes(item.innerHTML)) {
+  if (['Day Schedule','Week Schedule','Week Types', 'Nameable Classes'].includes(item.innerHTML)) {
     item.style.display = 'none'
   }
 });

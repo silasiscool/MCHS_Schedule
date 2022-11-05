@@ -12,39 +12,3 @@
 #add-date-button:hover {
   transform: scale(1.1);
 }
-
-#date-list {
-  width: fit-content;
-}
-
-.date-item {
-  border: 1px solid #ffffff;
-  height: 40px;
-  position: relative;
-}
-
-.date-date {
-  width: fit-content;
-  float: left;
-  line-height: 40px;
-  padding: 0 10px 0 10px;
-}
-
-.date-remove-button {
-  border: none;
-  background: none;
-  float: right;
-  line-height: 40px;
-}
-
-.date-remove-button:hover {
-  transform: scale(1.2);
-}
-
-.date-remove-button:focus {
-  transform: scale(1.5);
-}
-
-.date-remove {
-  color: #ffffff;
-}
