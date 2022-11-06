@@ -226,6 +226,15 @@ input[type=time] {
   cursor: pointer;
 }
 
+select {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  width: 200px;
+  color: #ffffff;
+  padding: 5px;
+}
+
 input {
   margin: 5px;
   color-scheme: dark;
