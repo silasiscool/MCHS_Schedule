@@ -13,6 +13,9 @@ sideNavButton.addEventListener('click', () => {
 downloadButton.addEventListener('click', () => {
   if (window.confirm("Confirm Download Updated File?")) {
     downloadFile(sessionStorage.getItem('configFile'))
+    if (window.confirm("Go to file upload?")) {
+      window.open('https://github.com/silasiscool/MCHS_Schedule/upload/main');
+    }
   }
 })
 
@@ -22,7 +25,8 @@ content.addEventListener('click', () => {
 })
 
 function downloadFile(data) {
-  const file = new File([data], 'config.json', {type: 'application/json'})
+  let formatedData = JSON.stringify(JSON.parse(data), null, 2)
+  const file = new File([formatedData], 'config.json', {type: 'application/json'})
   const url = URL.createObjectURL(file)
   const link = document.createElement('a')
 

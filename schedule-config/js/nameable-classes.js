@@ -5,17 +5,22 @@ config_file.then((savedConfig) => { // open saved config file
   }
   let config = JSON.parse(sessionStorage.getItem('configFile'));
 
+
+
   let list = document.getElementById('list')
 
   let allClassNames = []
   config.day_types.forEach((schedule, i) => {
+    console.log(schedule);
     schedule.schedule.forEach((item, i) => {
       if (!allClassNames.includes(item.name)) {
         allClassNames.push(item.name)
+        console.log(item.name, item);
       }
     });
   });
   allClassNames.sort()
+
   allClassNames.forEach((item, i) => {
     let listItem = document.createElement('div')
 
