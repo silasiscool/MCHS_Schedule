@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: Lato, sans-serif;
+  width: 420px;
+  height: 500px;
+  transition: width 1s;
+}
+
+.full-width-body {
+  width: 700px;
+}
+
+.main-box {
+  border: 1px solid black;
+  background: white;
+}
+
+#calendar {
+  width: 420px;
+  height: 84px;
+  float: left;
+  padding: 0px;
+}
+
+.calendar-box {
+  border-right: .5px solid black;
+  width: 20%;
+  height: 100%;
+  float: left;
+  margin: 0px;
+  font-size: 40px;
+  text-align: center;
+  padding: 18px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.calendar-box:last-child {
+  border-right: none;
+}
+
+#info {
+  width: 420px;
+  height: 118px;
+  float: left;
+}
+
+.info-box {
+  font-size: 30px;
+  padding: 11px;
+}
+
+#current {
+  width: 420px;
+  height: 298px;
+  float: left;
+}
+
+.current-box {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#class-box {
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 75%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#time-box {
+  font-size: 100px;
+}
+
+#end-time-box {
+  font-size: 30px;
+}
+
+#main-section {
+  z-index: 10;
+  position: relative;
+  float: left;
+  width: 420px;
+}
+
+.reduceMotion {
+  transition: none;
+}
