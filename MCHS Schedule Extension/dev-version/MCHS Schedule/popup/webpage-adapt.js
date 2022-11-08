@@ -19,7 +19,11 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
   scheduleButton.style.display = 'none'
 
   // Scale to fit
-  console.log(window.innerWidth, window.innerHeight);
+  addEventListener('resize', setScale)
+  setScale()
+}
+
+function setScale() {
   let widthScale = window.innerWidth/fullWidth
   let heightScale = window.innerHeight/fullHeight
   body.style.transformOrigin = '0 0'
