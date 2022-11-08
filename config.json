@@ -1160,9 +1160,9 @@
     "5/22/2023"
   ],
   "banner": {
-    "id": "2",
-    "text": "If anyone has the schedule for teen issues day this thursday, please let me know!",
-    "min_version": "none",
+    "id": "3",
+    "text": "Test Banner: Ignore if seen",
+    "min_version": "0.1",
     "non_dismissable": false
   },
   "bell_offset": 10
