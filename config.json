@@ -1160,10 +1160,10 @@
     "5/22/2023"
   ],
   "banner": {
-    "id": "3",
-    "text": "Test Banner: Ignore if seen",
-    "min_version": "0.1",
-    "non_dismissable": false
+    "id": "4",
+    "text": "Please fill out <a href=\"https://forms.gle/ipCEbUHC1NBx9BEX8\" target=\"_blank\">this form.</a><br>It will provide us with valuable information to help improve this extension",
+    "min_version": "0.0.3.7",
+    "non_dismissable": true
   },
   "bell_offset": 10
 }
