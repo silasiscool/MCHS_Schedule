@@ -1163,7 +1163,7 @@
     "id": "4",
     "text": "Please fill out <a href=\"https://forms.gle/ipCEbUHC1NBx9BEX8\" target=\"_blank\">this form.</a><br>It will provide us with valuable information to improve this extension",
     "min_version": "all",
-    "non_dismissable": true
+    "non_dismissable": false
   },
   "bell_offset": 10
 }
