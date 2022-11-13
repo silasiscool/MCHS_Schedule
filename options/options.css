@@ -37,7 +37,7 @@ button {
   transform: none;
 }
 
-input {
+input[type=text], input[type=number] {
   background: transparent;
   border: 0.25px solid #ffffff;
   border-radius: 5px;
@@ -91,12 +91,13 @@ h3 {
   font-weight: lighter;
 }
 
-.radio {
+input[type=radio] {
   accent-color: #000000;
   border: none;
+  margin: 5px;
 }
 
-.checkbox {
+input[type=checkbox] {
   accent-color: #000000;
   margin: 10px;
 }

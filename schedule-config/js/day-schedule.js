@@ -10,6 +10,7 @@ config_file.then((savedConfig) => { // open saved config file
   let typeSelect = document.getElementById('type-select')
   let addDateButton = document.getElementById('add-date-button')
   let itemList = document.getElementById('item-list')
+  let altName = document.getElementById('alt-name')
 
   // Set type select dropdown options
   config.day_types.forEach((item, i) => {
@@ -25,6 +26,9 @@ config_file.then((savedConfig) => { // open saved config file
     newDate = monthDayYear(new Date(newDate.setDate(newDate.getDate() + 1)))
     if (addDateDate.value !== '' && typeSelect.value !== '' && config.day_schedule.findIndex((object) => object.date === newDate)===-1) {
       let newItem = {date: newDate, schedule: typeSelect.value}
+      if (altName.value !== config.day_types.find((object) => object.name === typeSelect.value).display_name) {
+        newItem.alt_name = altName.value
+      }
       config.day_schedule.push(newItem)
       config.day_schedule.sort((a,b) => {
         return new Date(a.date).getTime() - new Date(b.date).getTime()
@@ -34,11 +38,16 @@ config_file.then((savedConfig) => { // open saved config file
 
       addDateDate.value = ''
       typeSelect.value = ''
+      altName.value = ''
     } else if (addDateDate.value !== '' && typeSelect.value !== '') {
       window.alert('Date already assigned custom type')
     } else {
       window.alert('All fields not filled')
     }
+  })
+
+  typeSelect.addEventListener('change', () => {
+    altName.value = config.day_types.find((object) => object.name === typeSelect.value).display_name
   })
 
   displayDays()
@@ -57,13 +66,17 @@ config_file.then((savedConfig) => { // open saved config file
     let dateString = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][date.getDay()] + ', '
     dateString += ['January','Febuary','March','April','May','June','July','August','September','October','November','December'][date.getMonth()] + ' '
     dateString += ordinal_suffix_of(date.getDate()) + ', ' + date.getFullYear()
+    let altName = ''
+    if (item.alt_name !== undefined) {
+      altName = ' : ' + item.alt_name;
+    }
 
     let itemItem = document.createElement('div')
     itemItem.classList.add('item-item')
 
     let itemName = document.createElement('div')
     itemName.classList.add('item-name')
-    itemName.appendChild(document.createTextNode(dateString+' : '+item.schedule))
+    itemName.appendChild(document.createTextNode(dateString+' : '+item.schedule+altName))
 
     let itemRemoveButton = document.createElement('button')
     itemRemoveButton.setAttribute('type','button')

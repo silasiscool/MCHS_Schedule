@@ -22,6 +22,7 @@ config_file.then((savedConfig) => { // open saved config file
   let dayScheduleList = document.getElementById('day-schedule-list')
   let dayScheduleAddTime = document.getElementById('day-schedule-add-time')
   let dayScheduleAddName = document.getElementById('day-schedule-add-name')
+  let periodNamesList = document.getElementById('period-names-list')
   let dayScheduleAddButton = document.getElementById('day-schedule-add-button')
 
   // display current settings
@@ -35,6 +36,7 @@ config_file.then((savedConfig) => { // open saved config file
       addItem(item, i)
     });
     setDropdown()
+    setNames()
   }
 
   function addItem(item, i) {
@@ -229,6 +231,29 @@ config_file.then((savedConfig) => { // open saved config file
     });
   }
 
+  // period names dropdown
+  setNames()
+
+  function setNames() {
+    while (periodNamesList.firstChild) {
+        periodNamesList.removeChild(periodNamesList.firstChild);
+    }
+    let allClassNames = []
+    config.day_types.forEach((schedule, i) => {
+      schedule.schedule.forEach((item, i) => {
+        if (!allClassNames.includes(item.name)) {
+          allClassNames.push(item.name)
+        }
+      });
+    });
+    allClassNames.sort()
+    allClassNames.forEach((item, i) => {
+      let classNameOption = document.createElement('option')
+      classNameOption.appendChild(document.createTextNode(item))
+      periodNamesList.appendChild(classNameOption)
+    });
+
+  }
 
   dayName.addEventListener('change', () => {
     let currentDayType = config.day_types.find((object) => object.name === dayName.value)

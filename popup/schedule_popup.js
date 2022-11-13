@@ -5,7 +5,7 @@ try {
     mainSchedulePopup(res)
   })
 } catch (e) {
-  mainSchedulePopup({bellOffsetSetting: 'preset'})
+  mainSchedulePopup({bellOffsetSetting: localStorage.getItem('bellOffsetSetting')})
 }
 
 function mainSchedulePopup(res) {
@@ -78,11 +78,7 @@ function mainSchedulePopup(res) {
             classNamesSchedulePopup(res)
           })
         } catch (e) {
-          let classNames = []
-          presetBellOffset.nameable_classes.forEach((item, i) => {
-            classNames.push({class: item, name: item})
-          });
-          classNamesSchedulePopup({classNames})
+          classNamesSchedulePopup({classNames: JSON.parse(localStorage.getItem('classNames'))})
         }
 
         function classNamesSchedulePopup(res) {

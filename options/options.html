@@ -18,13 +18,13 @@
       </div>
       <div class="center">
         <h3>Set bell offset to align with bells</h3>
-        <input class="radio" type="radio" name="Offset" value="No Offset" id="no-offset">
+        <input type="radio" name="Offset" value="No Offset" id="no-offset">
         <label for="No Offset">No Offset</label><br>
-        <input class="radio" type="radio" name="Offset" value="Custom Offset" id="custom-offset">
+        <input type="radio" name="Offset" value="Custom Offset" id="custom-offset">
         <label for="Custom Offset">Custom Offset :</label>
         <input type="number" name="Custom Offset Seconds" value="" id="custom-offset-seconds">
         <label for="Custom Offset Seconds">seconds</label><br>
-        <input class="radio" type="radio" name="Offset" value="Preset Offset" id="preset-offset">
+        <input type="radio" name="Offset" value="Preset Offset" id="preset-offset">
         <label id="preset-offset-label" for="Preset Offset">Preset Offset (Recommended)</label>
       </div>
     </div>
@@ -33,17 +33,26 @@
         <h2>Miscellaneous Options:</h2>
       </div>
       <div class="center">
-        <input type="checkbox" name="show-jazz" id="show-jazz" class="checkbox">
+        <input type="checkbox" name="show-jazz" id="show-jazz">
         <label for="show-jazz">Show Jazz Band days</label><br>
-        <input type="checkbox" name="show-chamber" id="show-chamber" class="checkbox">
+        <input type="checkbox" name="show-chamber" id="show-chamber">
         <label for="show-chamber">Show Chamber Choir days</label><br>
-        <input type="checkbox" name="reduce-motion" id="reduce-motion" class="checkbox">
-        <label for="reduce-motion">Reduce Motion</label>
+        <input type="checkbox" name="reduce-motion" id="reduce-motion">
+        <label for="reduce-motion">Reduce Motion</label><br>
+        <h3>Theme:</h3>
+          <input type="radio" name="theme-setting" value="use-system" id="use-system-theme-setting">
+          <label for="use-system">Use System Setting</label><br>
+          <input type="radio" name="theme-setting" value="light" id="light-theme-setting">
+          <label for="light">Light</label><br>
+          <input type="radio" name="theme-setting" value="dark" id="dark-theme-setting">
+          <label for="dark">Dark</label><br>
+
       </div>
     </div>
     <button id="submit-button">Submit</button>
     <script src="classNamesOptions.js" charset="utf-8"></script>
     <script src="timingOptions.js" charset="utf-8"></script>
     <script src="miscOptions.js" charset="utf-8"></script>
+    <script src="webpage-adapt.js" charset="utf-8"></script>
   </body>
 </html>

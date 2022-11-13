@@ -4,7 +4,16 @@ const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Sc
 // store elements
 const classNamesBox = document.getElementById('class-names-box');
 
-chrome.storage.sync.get(['classNames'], (res) => {
+try {
+  chrome.storage.sync.get(['classNames'], (res) => {
+    mainClassNamesOptions(res)
+  });
+} catch (e) {
+  mainClassNamesOptions({classNames : JSON.parse(localStorage.classNames)})
+}
+
+
+function mainClassNamesOptions(res) {
   config_file.then((config) => {
     const nameableClasses = config.nameable_classes;
     let classNameInputs = []
@@ -15,10 +24,16 @@ chrome.storage.sync.get(['classNames'], (res) => {
       input.setAttribute('type', 'text');
       input.setAttribute('name', item)
       input.setAttribute('class', 'settings')
+      
       let name = res.classNames.find((object) => object.class === item)
       if (name === undefined) {
         name = item
-        chrome.storage.sync.set({classNames: res.classNames.push({class: item, name: item})})
+        try {
+          chrome.storage.sync.set({classNames: res.classNames.push({class: item, name: item})})
+        } catch (e) {
+          localStorage.setItem('classNames', JSON.stringify(res.classNames.push({class: item, name: item})))
+        }
+
       } else {
         name = name.name
       }
@@ -35,7 +50,7 @@ chrome.storage.sync.get(['classNames'], (res) => {
       classNamesBox.appendChild(inputGroup)
     });
   })
-});
+}
 
 function saveValues() {
   let inputs = Array.from(document.getElementsByClassName('settings'))
@@ -43,8 +58,12 @@ function saveValues() {
   inputs.forEach((item, i) => {
     newSettings.push({class: item.name, name: item.value});
   });
+  try {
+    chrome.storage.sync.set({classNames: newSettings})
+  } catch (e) {
+    localStorage.setItem('classNames', JSON.stringify(newSettings))
+  }
 
-  chrome.storage.sync.set({classNames: newSettings})
 }
 
 document.getElementById('submit-button').addEventListener('click', saveValues)

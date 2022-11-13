@@ -41,7 +41,7 @@
       <h2>Description</h2>
         <p>View and modify the day schedulee</p>
       <h2>How To Use</h2>
-        <p>To add a date to the day schedule, fill out the date and day type fields under the <a href="#add-date-section">Add Date</a> section, then click the add date button.</p>
+        <p>To add a date to the day schedule, fill out the date and day type fields, and if desired, change the display name field under the <a href="#add-date-section">Add Date</a> section, then click the add date button.</p>
         <p>To remove a date from the day schedule, click the <i class="fa-solid fa-trash item-remove"></i> button next to the date you wish to remove</p>
       <h2>Settings</h2>
         <h3 id="add-date-section">Add Date</h3>
@@ -49,6 +49,7 @@
           <select id="type-select">
               <option value="">-Choose day type-</option>
           </select>
+          <input type="text" name="alt-name" id="alt-name" placeholder="Display Name">
           <button type="button" id="add-date-button"><i class="fa-solid fa-plus"></i> Add Date</button>
         <h3>Day Schedule</h3>
           <div id="item-list"></div>

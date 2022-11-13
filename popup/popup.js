@@ -15,7 +15,7 @@ try {
     reduceMotionSettingPopup(res.reduceMotion)
   })
 } catch (e) {
-  reduceMotionSettingPopup({reduceMotion: false})
+  reduceMotionSettingPopup({reduceMotion: ('true' === localStorage.getItem('reduceMotion'))})
 }
 
 function reduceMotionSettingPopup(x) {
@@ -34,7 +34,7 @@ try {
     mainPopup(res)
   })
 } catch (e) {
-  mainPopup({bellOffsetSetting: 'preset'})
+  mainPopup({bellOffsetSetting: localStorage.getItem('bellOffsetSetting')})
 }
 
 function mainPopup(res) {
@@ -250,11 +250,7 @@ function mainPopup(res) {
               classNamesPopup(res)
             })
           } catch (e) {
-            let classNames = []
-            presetBellOffset.nameable_classes.forEach((item, i) => {
-              classNames.push({class: item, name: item})
-            });
-            classNamesPopup({classNames})
+            classNamesPopup({classNames: JSON.parse(localStorage.getItem('classNames'))})
           }
 
           function classNamesPopup(res) {

@@ -3,7 +3,7 @@ try {
     mainJazzChamber(res)
   })
 } catch (e) {
-  mainJazzChamber({showJazz: false, showChamber: false})
+  mainJazzChamber({showJazz: ('true' === localStorage.getItem('showJazz')), showChamber: ('true' === localStorage.getItem('showChamber'))})
 }
 
 function mainJazzChamber(res) {

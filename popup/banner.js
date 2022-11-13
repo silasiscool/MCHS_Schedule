@@ -9,7 +9,7 @@ let currentVersion
 try {
   currentVersion = chrome.runtime.getManifest().version
 } catch (e) {
-
+  currentVersion = '0.1'
 }
 
 // set banner based on banner.json
@@ -18,11 +18,20 @@ config_file.then((bannerConfig) => {
   bannerCloseButton.addEventListener('click', () => {
     banner.style.display = 'none';
     banner.classList.remove('active-banner');
-    chrome.storage.sync.get(['dismissedBanners'], (res) => {
-      let dismissedBanners = res.dismissedBanners
+    try {
+      chrome.storage.sync.get(['dismissedBanners'], (res) => {
+        let dismissedBanners = res.dismissedBanners
+        dismissedBanners.push(bannerConfig.banner.id)
+        chrome.storage.sync.set({dismissedBanners: dismissedBanners})
+      })
+    } catch (e) {
+      let dismissedBanners = JSON.parse(localStorage.getItem('dismissedBanners'))
       dismissedBanners.push(bannerConfig.banner.id)
-      chrome.storage.sync.set({dismissedBanners: dismissedBanners})
-    })
+      localStorage.setItem('dismissedBanners', JSON.stringify(dismissedBanners))
+    }
+    if (!(window.chrome && chrome.runtime && chrome.runtime.id)) {
+      setScale()
+    }
   });
 
   // set banner text
@@ -72,7 +81,7 @@ config_file.then((bannerConfig) => {
       bannerDismised(res)
     })
   } catch (e) {
-    bannerDismised({dismissedBanners: []})
+    bannerDismised({dismissedBanners: JSON.parse(localStorage.getItem('dismissedBanners'))})
   }
 
   function bannerDismised(res) {
@@ -83,10 +92,21 @@ config_file.then((bannerConfig) => {
 
     // showBanner = true
     // show/not showBanner
+    console.log(showBanner);
     if (showBanner) {
-      banner.classList.add('active-banner');
+      banner.style.display = 'block';
+      setTimeout(function () {
+        banner.classList.add('active-banner');
+      }, 10);
+
     } else {
       banner.style.display = 'none'
     }
+  }
+
+  if (!(window.chrome && chrome.runtime && chrome.runtime.id)) {
+    setTimeout(function () {
+      setScale()
+    }, 10);
   }
 })

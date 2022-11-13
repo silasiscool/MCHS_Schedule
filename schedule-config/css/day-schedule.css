@@ -16,3 +16,7 @@
 #add-date-button:active {
   transform: scale(1);
 }
+
+#alt-name {
+  width: 200px;
+}

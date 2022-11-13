@@ -1,10 +1,3 @@
-// Store elements
-let schedulePopup = document.getElementById('schedule-popup')
-let body = document.getElementsByTagName('body')[0]
-let scheduleButton = document.getElementById('menu-button')
-// let banner = document.getElementById('banner')
-
-// Detect enviorment
 if (window.chrome && chrome.runtime && chrome.runtime.id) {
   console.log('Running in Chrome Extension');
 } else {
@@ -46,38 +39,8 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
     localStorage.setItem('theme', 'use-system')
     needReload = true;
   }
-
-  console.log(needReload);
-
+  
   if (needReload) {
     location.reload()
-  }
-
-
-
-  // Change schedule display
-  schedulePopup.style.position = 'static'
-  body.classList.add('full-width-body')
-  scheduleButton.style.display = 'none'
-
-  // Scale to fit
-  addEventListener('resize', setScale)
-  setScale()
-}
-
-function setScale() {
-  let width = body.clientWidth
-  let height = body.clientHeight
-  if (Array.from(banner.classList).includes('active-banner')) {
-    height += banner.clientHeight
-  }
-  let widthScale = window.innerWidth/width
-  let heightScale = window.innerHeight/height
-  body.style.transformOrigin = '0 0'
-  body.style.overflow = 'hidden'
-  if (widthScale <= heightScale) {
-    body.style.scale = widthScale
-  } else {
-    body.style.scale = heightScale
   }
 }

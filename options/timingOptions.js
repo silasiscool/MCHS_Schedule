@@ -5,8 +5,16 @@ let customOffsetSeconds = document.getElementById('custom-offset-seconds');
 let presetOffsetLabel = document.getElementById('preset-offset-label')
 let submitButton = document.getElementById('submit-button');
 
+try {
+  chrome.storage.sync.get(['bellOffsetSetting'], (res) => {
+    mainTimingOptions(res)
+  })
+} catch (e) {
+  mainTimingOptions({bellOffsetSetting: localStorage.getItem('bellOffsetSetting')})
+}
 
-chrome.storage.sync.get(['bellOffsetSetting'], (res) => {
+
+function mainTimingOptions(res) {
   if (res.bellOffsetSetting === 0) {
     noOffset.checked = true
   } else if (res.bellOffsetSetting === 'preset') {
@@ -15,7 +23,7 @@ chrome.storage.sync.get(['bellOffsetSetting'], (res) => {
     customOffset.checked = true
     customOffsetSeconds.value = res.bellOffsetSetting
   }
-})
+}
 
 // const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Schedule/main/config.json?nocache='+(Math.random()+'').replace('.','')).then(res => res.json());
 config_file.then((bellOffset) => {
@@ -33,7 +41,12 @@ function saveValues() {
     offsetAmmount = 'preset'
   }
   console.log(offsetAmmount);
-  chrome.storage.sync.set({bellOffsetSetting: offsetAmmount})
+  try {
+    chrome.storage.sync.set({bellOffsetSetting: offsetAmmount})
+  } catch (e) {
+    localStorage.setItem('bellOffsetSetting', offsetAmmount)
+  }
+
 }
 
 noOffset.addEventListener('change', saveValues)

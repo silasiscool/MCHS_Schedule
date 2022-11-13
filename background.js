@@ -5,7 +5,7 @@ const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Sc
 chrome.runtime.onInstalled.addListener((e) => {
   console.log(e.reason);
   // set options
-  chrome.storage.sync.get(['classNames', 'bellOffsetSetting', 'reduceMotion', 'dismissedBanners', 'showJazz', 'showChamber'], (res) => {
+  chrome.storage.sync.get(['classNames', 'bellOffsetSetting', 'reduceMotion', 'dismissedBanners', 'showJazz', 'showChamber', 'theme'], (res) => {
     if (res.classNames === undefined) {
       config_file.then((config) => {
         const nameableClasses = config.nameable_classes;
@@ -31,6 +31,8 @@ chrome.runtime.onInstalled.addListener((e) => {
     if (res.showChamber === undefined) {
       chrome.storage.sync.set({showChamber: false})
     }
+    if (res.theme === undefined) {
+      chrome.storage.sync.set({theme: 'use-system'})
+    }
   })
-
 });
