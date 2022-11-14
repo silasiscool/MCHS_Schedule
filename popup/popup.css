@@ -72,6 +72,7 @@ body {
   white-space: nowrap;
   max-width: 75%;
   margin: auto;
+  margin-top: 10px;
   overflow: hidden;
 }
 
@@ -92,4 +93,37 @@ body {
 
 .reduceMotion {
   transition: none;
+}
+
+#settings-link {
+  height: 40px;
+  margin: 15px;
+  position: absolute;
+  left: 0;
+}
+
+#settings-link svg {
+  position: absolute;
+
+  --num-rotations: 0.5;
+  transition: transform 0.75s ease-out;
+}
+
+#settings-link svg:first-child {
+  top: 0;
+  left: 0;
+}
+
+#settings-link svg:last-child {
+  top: 16px;
+  left: 16px;
+  transform: rotate(22.5deg);
+}
+
+#settings-link:hover svg:first-child {
+  transform: rotate(calc(360deg * var(--num-rotations)));
+}
+
+#settings-link:hover svg:last-child {
+  transform: rotate(calc(22.5deg - (360deg*var(--num-rotations))));
 }

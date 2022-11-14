@@ -57,3 +57,7 @@ body.dark-mode {
 #schedule-popup.dark-mode::-webkit-scrollbar-thumb:hover {
   background: #aaaaaa;
 }
+
+.hamburger-bar.dark-mode {
+  background: #ffffff;
+}

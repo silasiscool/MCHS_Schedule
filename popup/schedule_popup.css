@@ -20,10 +20,6 @@
   white-space: nowrap;
 }
 
-.schedule-item:last-of-type {
-  border: none;
-}
-
 .schedule-time {
   height: 100%;
   float: left;
@@ -41,48 +37,38 @@
   width: 0;
 }
 
-
 #schedule-button {
-  width: 9.80px;
-  height: 9.80px;
-  float: right;
-  background: none;
-  top: 0px;
-  transform: scale(100%);
-}
-
-#menu-button {
-  float: left;
   height: 40px;
   margin: 5px;
   margin-top: 15px;
   background: none;
   border: none;
   position: absolute;
+  right: 0;
 }
 
-#menu-button:hover {
+#schedule-button:hover {
   cursor: pointer;
 }
 
-#menu-button:focus {
+#schedule-button:focus {
   outline: none;
 }
 
-#menu-button:disabled .chevron-left{
+#schedule-button:disabled .chevron-left{
   opacity: 25%;
 }
 
-#menu-button:hover:disabled #chevron-group{
+#schedule-button:hover:disabled #chevron-group{
   translate: 0px;
   cursor: default;
 }
 
-#menu-button:focus #chevron-group {
+#schedule-button:focus #chevron-group {
   translate: -2px;
 }
 
-#menu-button:hover #chevron-group {
+#schedule-button:hover #chevron-group {
   translate: -5px;
 }
 

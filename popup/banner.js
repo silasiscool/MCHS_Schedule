@@ -92,7 +92,6 @@ config_file.then((bannerConfig) => {
 
     // showBanner = true
     // show/not showBanner
-    console.log(showBanner);
     if (showBanner) {
       banner.style.display = 'block';
       setTimeout(function () {

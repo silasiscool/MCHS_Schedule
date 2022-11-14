@@ -1,7 +1,7 @@
 // Store elements
 let schedulePopup = document.getElementById('schedule-popup')
 let body = document.getElementsByTagName('body')[0]
-let scheduleButton = document.getElementById('menu-button')
+let scheduleButton = document.getElementById('schedule-button')
 // let banner = document.getElementById('banner')
 
 // Detect enviorment
@@ -47,8 +47,6 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
     needReload = true;
   }
 
-  console.log(needReload);
-
   if (needReload) {
     location.reload()
   }
@@ -58,6 +56,7 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
   // Change schedule display
   schedulePopup.style.position = 'static'
   body.classList.add('full-width-body')
+  body.style.transition = 'none'
   scheduleButton.style.display = 'none'
 
   // Scale to fit

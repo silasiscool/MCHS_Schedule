@@ -22,12 +22,12 @@ function mainSchedulePopup(res) {
     const mondayDate = new Date(new Date(currentDate).setDate(currentDate.getDate()-currentDate.getDay()+1));
 
     // store elements
-    const menuButton = document.getElementById('menu-button')
+    const scheduleButton = document.getElementById('schedule-button')
     const chevronGroup = document.getElementById('chevron-group')
     const body = document.getElementsByTagName('body')[0]
     const flipDiv = document.getElementById('flip-div')
 
-    menuButton.addEventListener('click', () => {
+    scheduleButton.addEventListener('click', () => {
       body.classList.toggle('full-width-body')
       flipDiv.classList.toggle('flip-button')
     })
@@ -48,7 +48,10 @@ function mainSchedulePopup(res) {
 
       // store current information
       let currentDayType = daySchedule.find((object) => object.date === monthDayYear(currentDate));
-      const currentWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
+      let currentWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
+      if (currentWeekType === undefined) {
+        currentWeekType = {schedule: 'vacation_week'}
+      }
       const currentWeekSchedule = weekTypes.find((object) => object.name === currentWeekType.schedule);
       if (currentDayType === undefined) {
         currentDayType = currentWeekSchedule.schedule[currentDate.getDay()];
@@ -104,7 +107,7 @@ function mainSchedulePopup(res) {
         scheduleBox.appendChild(scheduleItem)
       });
       if (scheduleLength === 0) {
-        menuButton.setAttribute('disabled', true)
+        scheduleButton.setAttribute('disabled', true)
       }
     })
   })

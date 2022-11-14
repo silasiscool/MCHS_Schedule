@@ -15,7 +15,7 @@ try {
     reduceMotionSettingPopup(res.reduceMotion)
   })
 } catch (e) {
-  reduceMotionSettingPopup({reduceMotion: ('true' === localStorage.getItem('reduceMotion'))})
+  reduceMotionSettingPopup('true' === localStorage.getItem('reduceMotion'))
 }
 
 function reduceMotionSettingPopup(x) {
@@ -79,7 +79,10 @@ function mainPopup(res) {
       let normalDayName = true;
 
       let currentDayType = daySchedule.find((object) => object.date === monthDayYear(currentDate));
-      const currentWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
+      let currentWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
+      if (currentWeekType === undefined) {
+        currentWeekType = {schedule: 'vacation_week'}
+      }
       const currentWeekSchedule = weekTypes.find((object) => object.name === currentWeekType.schedule);
       if (currentDayType === undefined) {
         currentDayType = currentWeekSchedule.schedule[currentDate.getDay()];
@@ -98,7 +101,10 @@ function mainPopup(res) {
         const boxDate = new Date(new Date(mondayDate).setDate(mondayDate.getDate()+i));
         let boxDayType = daySchedule.find((object) => object.date === monthDayYear(boxDate));
         if (boxDayType === undefined) {
-          const boxWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
+          let boxWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
+          if (boxWeekType === undefined) {
+            boxWeekType = {schedule: 'vacation_week'}
+          }
           const boxWeekSchedule = weekTypes.find((object) => object.name === boxWeekType.schedule);
           boxDayType = boxWeekSchedule.schedule[i+1];
         } else {
@@ -170,10 +176,13 @@ function mainPopup(res) {
           let nextWeekSchedule
           let nextDaySchedule
           let extraDays = 1
-          while (true) {
+          while (extraDays <= 365) {
             nextMondayDate = new Date(new Date(nextDate).setDate(nextDate.getDate()-nextDate.getDay()+1));
             nextDayType = daySchedule.find((object) => object.date === monthDayYear(nextDate));
             nextWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(nextMondayDate));
+            if (nextWeekType === undefined) {
+              nextWeekType = {schedule: 'vacation_week'}
+            }
             nextWeekSchedule = weekTypes.find((object) => object.name === nextWeekType.schedule);
 
             if (nextDayType === undefined) {
@@ -189,12 +198,14 @@ function mainPopup(res) {
               break;
             };
           };
+          if (extraDays>365) {
+            document.getElementById('end-time-box').innerHTML = 'Summer!!!'
+          }
           periodHours = nextDaySchedule.schedule[0].time.slice(0, -3);
           periodMinutes = nextDaySchedule.schedule[0].time.slice(-2)
           className = nextDaySchedule.schedule.slice(-1)[0].name;
           hoursUntil = parseFloat(periodHours) - currentHours + 24 * extraDays;
           minutesUntil = parseFloat(periodMinutes) - currentMinutes;
-
         } else if (periodIndex === 0) { // if before school
           periodHours = currentDaySchedule.schedule[periodIndex].time.slice(0, -3);
           periodMinutes = currentDaySchedule.schedule[periodIndex].time.slice(-2);
