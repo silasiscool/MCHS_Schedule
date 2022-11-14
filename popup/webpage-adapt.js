@@ -10,6 +10,7 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
 } else {
   console.log('Running in Web enviorment');
 
+  // Set default options
   let needReload = false
   if (localStorage.getItem('classNames') === null) {
     config_file.then((config) => {
@@ -47,6 +48,7 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
     needReload = true;
   }
 
+  // if options changed
   if (needReload) {
     location.reload()
   }
@@ -62,6 +64,13 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
   // Scale to fit
   addEventListener('resize', setScale)
   setScale()
+
+  // reload on change
+  addEventListener('storage', (event) => {
+    location.reload()
+  });
+
+
 }
 
 function setScale() {
