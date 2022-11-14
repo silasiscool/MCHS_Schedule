@@ -61,3 +61,7 @@ body.dark-mode {
 .hamburger-bar.dark-mode {
   background: #ffffff;
 }
+
+#settings-link svg.dark-mode {
+  fill: #ffffff;
+}
