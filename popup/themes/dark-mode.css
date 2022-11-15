@@ -65,3 +65,13 @@ body.dark-mode {
 #settings-link svg.dark-mode {
   fill: #ffffff;
 }
+
+body.web-adapt.dark-mode.wide {
+  border-right: 1px solid #ffffff;
+  box-sizing: content-box;
+}
+
+body.web-adapt.dark-mode.tall {
+  border-bottom: 1px solid #ffffff;
+  box-sizing: content-box;
+}

@@ -3,13 +3,10 @@ const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Sc
   document.getElementById('menu-button').hidden = true
 }).then(res => res.json());
 
-// testing date offset
-let dayOffset = 0
-let weekOffset = 0
-dayOffset += 7*weekOffset
+// date offset
+let weekCalendarOffset = 0
 
 // apply reduce motion settings
-
 try {
   chrome.storage.sync.get(['reduceMotion'], (res) => {
     reduceMotionSettingPopup(res.reduceMotion)
@@ -47,7 +44,7 @@ function mainPopup(res) {
     }
 
     // store dates
-    let currentDate = new Date(new Date(new Date().setSeconds(new Date().getSeconds()-timeOffset)).setDate(new Date().getDate()+dayOffset));
+    let currentDate = new Date(new Date(new Date().setSeconds(new Date().getSeconds()-timeOffset)).setDate(new Date().getDate()));
     const mondayDate = new Date(new Date(currentDate).setDate(currentDate.getDate()-currentDate.getDay()+1));
 
     // store elements
@@ -95,10 +92,10 @@ function mainPopup(res) {
       };
       const currentDaySchedule = dayTypes.find((object) => object.name === currentDayType);
 
-      // set calendarBoxes
+
       calendarBoxes.forEach((calendarBox, i) => { // do following for each box
         // get type of day for each box
-        const boxDate = new Date(new Date(mondayDate).setDate(mondayDate.getDate()+i));
+        const boxDate = new Date(new Date(mondayDate).setDate(mondayDate.getDate()+i+(weekCalendarOffset*7)));
         let boxDayType = daySchedule.find((object) => object.date === monthDayYear(boxDate));
         if (boxDayType === undefined) {
           let boxWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
@@ -136,7 +133,7 @@ function mainPopup(res) {
       // create function to update the current boxes
       function updateCurrent() {
         // store current time peices
-        currentDate = new Date(new Date(new Date().setSeconds(new Date().getSeconds()-timeOffset)).setDate(new Date().getDate()+dayOffset));
+        currentDate = new Date(new Date(new Date().setSeconds(new Date().getSeconds()-timeOffset)).setDate(new Date().getDate()));
         const currentHours = currentDate.getHours();
         const currentMinutes = currentDate.getMinutes();
         const currentSeconds = currentDate.getSeconds();
