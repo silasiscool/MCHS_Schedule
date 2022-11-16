@@ -16,7 +16,9 @@
   padding: 0 10px 0 10px;
 }
 
-.item-view-button, .item-remove-button {
+.item-view-button,
+.item-remove-button,
+.item-edit-button{
   border: none;
   background: none;
   float: right;
@@ -24,11 +26,15 @@
   margin-right: 10px;
 }
 
-.item-view-button:hover, .item-remove-button:hover {
+.item-view-button:hover,
+.item-remove-button:hover,
+.item-edit-button:hover {
   transform: scale(1.2);
 }
 
-.item-view-button:focus, .item-remove-button:focus {
+.item-view-button:focus,
+.item-remove-button:focus,
+.item-edit-button:focus {
   transform: scale(1.5);
 }
 

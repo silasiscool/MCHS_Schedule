@@ -285,6 +285,10 @@ config_file.then((savedConfig) => { // open saved config file
       })
 
       newSchedule.forEach((item, i) => {
+        // fix time
+        let timeList = item.time.split(':')
+        timeList[0] = timeList[0].padStart(2,'0')
+        item.time = timeList.join(':')
         let dayScheduleItem = document.createElement('div')
         dayScheduleItem.classList.add('day-schedule-item')
         let scheduleHour = item.time.split(':')[0]
@@ -313,6 +317,24 @@ config_file.then((savedConfig) => { // open saved config file
           newSchedule.splice(i,1)
           updateDaySchedule()
         })
+
+        let dayScheduleItemEditButton = document.createElement('button')
+        dayScheduleItemEditButton.setAttribute('type','button')
+        dayScheduleItemEditButton.classList.add('item-edit-button', 'day-schedule-item-edit')
+
+        let dayScheduleItemEdit = document.createElement('i')
+        dayScheduleItemEdit.classList.add('fa-solid', 'fa-pen-to-square', 'item-remove')
+        dayScheduleItemEditButton.appendChild(dayScheduleItemEdit)
+        dayScheduleItem.appendChild(dayScheduleItemEditButton)
+        dayScheduleList.appendChild(dayScheduleItem)
+
+        dayScheduleItemEditButton.addEventListener('click', () => {
+          dayScheduleAddTime.value = item.time
+          dayScheduleAddName.value = item.name
+          newSchedule.splice(i,1)
+          updateDaySchedule()
+        })
+
 
       });
     }

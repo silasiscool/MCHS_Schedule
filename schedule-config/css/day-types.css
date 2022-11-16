@@ -133,7 +133,8 @@
     padding-left: 10px;
 }
 
-.day-schedule-item-remove {
+/* .day-schedule-item-remove, */
+.day-schedule-item-edit {
   margin-left: 20px;
   display: inline-block;
 }
