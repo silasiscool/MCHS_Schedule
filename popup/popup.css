@@ -94,6 +94,18 @@ body {
   transition: none;
 }
 
+@keyframes constant-rotate-clockwise {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes constant-rotate-counter-clockwise {
+  0% {transform: rotate(360deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(0deg);}
+}
+
 #settings-link {
   height: 40px;
   margin: 15px;
@@ -104,25 +116,21 @@ body {
 #settings-link svg {
   position: absolute;
 
-  --num-rotations: 0.5;
-  transition: transform 0.75s ease-out;
 }
 
 #settings-link svg:first-child {
   top: 0;
   left: 0;
+  animation: constant-rotate-clockwise 0.75s linear 0s infinite normal none paused;
 }
 
 #settings-link svg:last-child {
   top: 16px;
   left: 16px;
-  transform: rotate(22.5deg);
+  rotate: 22.5deg;
+  animation: constant-rotate-counter-clockwise 0.75s linear 0s infinite normal none paused;
 }
 
-#settings-link:hover svg:first-child {
-  transform: rotate(calc(360deg * var(--num-rotations)));
-}
-
-#settings-link:hover svg:last-child {
-  transform: rotate(calc(22.5deg - (360deg*var(--num-rotations))));
+#settings-link:hover svg {
+  animation-play-state: running;
 }
