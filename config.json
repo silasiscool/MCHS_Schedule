@@ -1159,9 +1159,9 @@
     "5/22/2023"
   ],
   "banner": {
-    "id": "4",
-    "text": "Please fill out <a href=\"https://forms.gle/ipCEbUHC1NBx9BEX8\" target=\"_blank\">this form.</a><br>It will provide us with valuable information to improve this extension",
-    "min_version": "none",
+    "id": "5",
+    "text": "Hello!!!",
+    "min_version": "0.1.1.1",
     "non_dismissable": false
   },
   "bell_offset": 10
