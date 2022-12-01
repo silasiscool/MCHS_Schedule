@@ -1,4 +1,5 @@
 function notify(notifText) {
+  console.log('notifSend');
   if (!("Notification" in window)) {
     // Check if the browser supports notifications
     alert("This browser does not support desktop notification");
