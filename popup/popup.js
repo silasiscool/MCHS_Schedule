@@ -290,11 +290,11 @@ function mainPopup(res) {
           // console.log('tryTestSend');
           if (!(window.chrome && chrome.runtime && chrome.runtime.id)) {
             // console.log('testSend');
-            console.log(JSON.parse(localStorage.getItem('periodNotify')) !== false, secondsTimeUntil <= notifMinBefore*60, !currentNotif);
+            // console.log(JSON.parse(localStorage.getItem('periodNotify')) !== false, secondsTimeUntil <= notifMinBefore*60, !currentNotif);
             if (JSON.parse(localStorage.getItem('periodNotify')) !== false && secondsTimeUntil <= notifMinBefore*60 && !currentNotif) {
               currentNotif = true
               notify('Only 5 Minutes Left');
-              console.log('notifTrySend');
+              // console.log('notifTrySend');
             } else if (secondsTimeUntil > notifMinBefore*60 && currentNotif) {
               currentNotif = false
             }
