@@ -1,11 +1,11 @@
 // fetch config file
-const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Schedule/main/config.json?nocache='+(Math.random()+'').replace('.','')).then(res => res.json());
+// const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Schedule/main/config.json?nocache='+(Math.random()+'').replace('.','')).then(res => res.json());
 
 // set default options on install
 chrome.runtime.onInstalled.addListener((e) => {
   console.log(e.reason);
   // set options
-  chrome.storage.sync.get(['classNames', 'bellOffsetSetting', 'reduceMotion', 'dismissedBanners', 'showJazz', 'showChamber', 'theme'], (res) => {
+  chrome.storage.sync.get(['classNames', 'bellOffsetSetting', 'reduceMotion', 'dismissedBanners', 'showJazz', 'showChamber', 'theme', 'autoReload', 'periodNotify'], (res) => {
     if (res.classNames === undefined) {
       config_file.then((config) => {
         const nameableClasses = config.nameable_classes;
@@ -34,5 +34,17 @@ chrome.runtime.onInstalled.addListener((e) => {
     if (res.theme === undefined) {
       chrome.storage.sync.set({theme: 'use-system'})
     }
+    if (res.autoReload === undefined) {
+      chrome.storage.sync.set({autoReload: false})
+    }
+    if (res.periodNotify === undefined) {
+      chrome.storage.sync.set({periodNotify: false})
+    }
   })
 });
+
+
+// function test() {
+//   // chrome.alarms.create('test', Date.now() + 5e3)
+//   // window.open('https://www.google.com', '_blank');
+// }
