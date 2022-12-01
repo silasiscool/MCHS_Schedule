@@ -9,6 +9,7 @@ function notify(notifText) {
     // Check whether notification permissions have already been granted;
     // if so, create a notification
     const notification = new Notification(notifText);
+    console.log(notification);
     // …
   } else if (Notification.permission !== "denied") {
     console.log('notifSend 3');
