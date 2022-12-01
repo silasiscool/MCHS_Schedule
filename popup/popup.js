@@ -287,11 +287,13 @@ function mainPopup(res) {
         }
 
 
-
+          console.log('tryTestSend');
           if (!(window.chrome && chrome.runtime && chrome.runtime.id)) {
+            console.log('testSend');
             if (JSON.parse(localStorage.getItem('periodNotify')) !== false && secondsTimeUntil <= notifMinBefore*60 && !currentNotif) {
               currentNotif = true
               notify('Only 5 Minutes Left')
+              console.log('notifTrySend');
             } else if (secondsTimeUntil > notifMinBefore*60 && currentNotif) {
               currentNotif = false
             }
