@@ -291,7 +291,7 @@ function mainPopup(res) {
           if (!(window.chrome && chrome.runtime && chrome.runtime.id)) {
             if (JSON.parse(localStorage.getItem('periodNotify')) !== false && secondsTimeUntil <= notifMinBefore*60 && !currentNotif) {
               currentNotif = true
-              notify('hello')
+              notify('Only 5 Minutes Left')
             } else if (secondsTimeUntil > notifMinBefore*60 && currentNotif) {
               currentNotif = false
             }
