@@ -4,9 +4,11 @@ let showJazz = document.getElementById('show-jazz');
 let useSystemThemeSetting = document.getElementById('use-system-theme-setting');
 let lightThemeSetting = document.getElementById('light-theme-setting');
 let darkThemeSetting = document.getElementById('dark-theme-setting');
+let doReloads = document.getElementById('do-reloads');
+let sendNotif = document.getElementById('send-notif');
 
 try {
-  chrome.storage.sync.get(['reduceMotion','showChamber','showJazz', 'theme'], (res) => {
+  chrome.storage.sync.get(['reduceMotion','showChamber','showJazz', 'theme', 'autoReload', 'periodNotify'], (res) => {
     mainMiscOptions(res)
   })
 } catch (e) {
@@ -14,7 +16,10 @@ try {
     reduceMotion: ('true' === localStorage.getItem('reduceMotion')),
     showChamber: ('true' === localStorage.getItem('showChamber')),
     showJazz: ('true' === localStorage.getItem('showJazz')),
-    theme: localStorage.getItem('theme')})
+    theme: localStorage.getItem('theme'),
+    autoReload: JSON.parse(localStorage.getItem('autoReload')),
+    periodNotify: JSON.parse(localStorage.getItem('periodNotify'))
+  })
 }
 
 function mainMiscOptions(res) {
@@ -38,6 +43,14 @@ function mainMiscOptions(res) {
   } else {
     useSystemThemeSetting.checked = true;
   }
+
+  doReloads.checked = res.autoReload;
+
+  if (res.periodNotify===false) {
+    sendNotif.checked = false;
+  } else {
+    sendNotif.checked = true;
+  }
 }
 
 function saveValues() {
@@ -46,23 +59,34 @@ function saveValues() {
     themeSetting = 'light';
   } else if (darkThemeSetting.checked) {
     themeSetting = 'dark';
-  }
+  };
+  let periodNotifySetting
+  if (sendNotif.checked) {
+    periodNotifySetting = 5;
+  } else {
+    periodNotifySetting = false;
+  };
 
   try {
     chrome.storage.sync.set({
       reduceMotion: reduceMotionCheckbox.checked,
       showChamber: showChamber.checked,
       showJazz: showJazz.checked,
-      theme: themeSetting
-    })
-  } catch (e) {
-    localStorage.setItem('reduceMotion', reduceMotionCheckbox.checked)
-    localStorage.setItem('showChamber', showChamber.checked)
-    localStorage.setItem('showJazz', showJazz.checked)
-    localStorage.setItem('theme', themeSetting)
-  }
+      theme: themeSetting,
+      autoReload: doReloads.checked,
+      periodNotify: periodNotifySetting
+    });
 
-}
+  } catch (e) {
+    localStorage.setItem('reduceMotion', reduceMotionCheckbox.checked);
+    localStorage.setItem('showChamber', showChamber.checked);
+    localStorage.setItem('showJazz', showJazz.checked);
+    localStorage.setItem('theme', themeSetting);
+    localStorage.setItem('autoReload', JSON.stringify(doReloads.checked));
+    localStorage.setItem('periodNotify', JSON.stringify(periodNotifySetting));
+  };
+
+};
 
 
 [
@@ -72,7 +96,9 @@ function saveValues() {
   submitButton,
   useSystemThemeSetting,
   lightThemeSetting,
-  darkThemeSetting
+  darkThemeSetting,
+  doReloads,
+  sendNotif
 ].forEach((item) => {
   item.addEventListener('change', saveValues)
 });

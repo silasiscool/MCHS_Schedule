@@ -130,6 +130,11 @@ function mainPopup(res) {
         dayTypeBox.textContent = currentDaySchedule.display_name;
       }
 
+      // reload and web notification settings
+      let notifMinBefore = 5
+      let currentReload = false
+      let currentNotif = false
+
       // create function to update the current boxes
       function updateCurrent() {
         // store current time peices
@@ -265,12 +270,32 @@ function mainPopup(res) {
             classBox.textContent = res.classNames.find((object) => object.class === className).name
           }
 
-
-
-
         } else {
           classBox.textContent = className;
         }
+
+        // Relod and Web Notif triggers
+        let secondsTimeUntil = secondsUntil+60*(minutesUntil+60*hoursUntil)
+        let currentTimeInSeconds = currentDate.getSeconds()+60*(currentDate.getMinutes()+60*currentDate.getHours())
+        if (secondsTimeUntil === 1 && !currentReload || currentTimeInSeconds === 0) {
+          currentReload = true
+          setTimeout(function () {
+            location.reload()
+          }, 1e3);
+        } else if (secondsTimeUntil >= 1 && currentReload) {
+          currentReload = false
+        }
+
+
+
+          if (!(window.chrome && chrome.runtime && chrome.runtime.id)) {
+            if (JSON.parse(localStorage.getItem('periodNotify')) !== false && secondsTimeUntil <= notifMinBefore*60 && !currentNotif) {
+              currentNotif = true
+              notify('hello')
+            } else if (secondsTimeUntil > notifMinBefore*60 && currentNotif) {
+              currentNotif = false
+            }
+          }
 
         timeBox.textContent = String(hoursUntil).padStart(2,'0')+':'+String(minutesUntil).padStart(2,'0')+':'+String(secondsUntil).padStart(2,'0')
         if (periodHours > 12) {

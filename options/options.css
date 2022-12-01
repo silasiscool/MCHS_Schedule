@@ -54,13 +54,6 @@ label {
   color: #dddddd;
 }
 
-.inputGroup {
-  margin: auto;
-  width: max-content;
-  display: block;
-}
-
-
 .header {
   background-color: #3c3c3b;
   margin: none;
@@ -102,11 +95,9 @@ input[type=checkbox] {
   margin: 10px;
 }
 
-.center {
-  margin: auto;
-  width: max-content;
-  display: block;
-  margin-bottom: 30px;
+.section {
+  padding: 30px;
+  padding-top: 10px;
 }
 
 #custom-offset-seconds {
