@@ -134,6 +134,7 @@ function mainPopup(res) {
       let notifMinBefore = 5
       let currentReload = false
       let currentNotif = false
+      
 
       // create function to update the current boxes
       function updateCurrent() {
@@ -291,9 +292,9 @@ function mainPopup(res) {
           if (!(window.chrome && chrome.runtime && chrome.runtime.id)) {
             // console.log('testSend');
             // console.log(JSON.parse(localStorage.getItem('periodNotify')) !== false, secondsTimeUntil <= notifMinBefore*60, !currentNotif);
-            if (JSON.parse(localStorage.getItem('periodNotify')) !== false && secondsTimeUntil <= notifMinBefore*60 && !currentNotif) {
+            if (JSON.parse(localStorage.getItem('periodNotify')) !== false && secondsTimeUntil === notifMinBefore*60 && !currentNotif) {
               currentNotif = true
-              notify('Only 5 Minutes Left');
+              notify('Only 5 Minutes Left')
               // console.log('notifTrySend');
             } else if (secondsTimeUntil > notifMinBefore*60 && currentNotif) {
               currentNotif = false
