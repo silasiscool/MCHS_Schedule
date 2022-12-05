@@ -81,6 +81,7 @@ function saveValues() {
       alert("Notification permissions have been denied, please reset permissions to continue")
     } else {
       Notification.requestPermission().then((perm) => {
+        console.log(perm);
         if (perm !== "granted") {
           sendNotif.checked = false;
           alert("Notification permissions have been denied, please reset permissions to continue")
