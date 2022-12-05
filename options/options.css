@@ -75,8 +75,9 @@ label {
 
 h2 {
   margin: none;
-  text-align: center;
+  margin-left: 20px;
   font-weight: lighter;
+  font-size: 20px;
 }
 
 h3 {

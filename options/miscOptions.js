@@ -54,6 +54,37 @@ function mainMiscOptions(res) {
 }
 
 function saveValues() {
+  // function notify(notifText) {
+  //   if (!("Notification" in window)) {
+  //     alert("This browser does not support desktop notification");
+  //
+  //   } else if (Notification.permission === "granted") {
+  //     const notification = new Notification(notifText);
+  //
+  //   } else if (Notification.permission !== "denied") {
+  //     Notification.requestPermission().then((permission) => {
+  //       if (permission === "granted") {
+  //         const notification = new Notification(notifText);
+  //       }
+  //     });
+  //   }
+  // }
+
+  if (sendNotif.checked) {
+    if (!("Notification" in window)) {
+      sendNotif.checked = false;
+      alert("This browser does not support desktop notification");
+    } else if (Notification.permission === "granted") {
+      // All set, do nothing
+    } else if (Notification.permission === "denied") {
+      sendNotif.checked = false;
+      alert("Notification permissions have been denied, please reset permissions to continue")
+    } else {
+      Notification.requestPermission();
+    }
+  }
+
+
   let themeSetting = 'use-system';
   if (lightThemeSetting.checked) {
     themeSetting = 'light';
