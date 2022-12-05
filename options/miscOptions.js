@@ -80,7 +80,12 @@ function saveValues() {
       sendNotif.checked = false;
       alert("Notification permissions have been denied, please reset permissions to continue")
     } else {
-      Notification.requestPermission();
+      Notification.requestPermission().then((perm) => {
+        if (perm !== "granted") {
+          sendNotif.checked = false;
+          alert("Notification permissions have been denied, please reset permissions to continue")
+        }
+      })
     }
   }
 
