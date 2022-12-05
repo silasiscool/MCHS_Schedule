@@ -86,7 +86,7 @@ function saveValues() {
           sendNotif.checked = false;
           alert("Notification permissions have been denied, please reset permissions to continue")
         }
-      })
+      }).then(() => saveValues())
     }
   }
 
