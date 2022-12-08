@@ -65,6 +65,10 @@
       "schedule": "black_normal"
     },
     {
+      "date": "12/9/2022",
+      "schedule": "gold_pep_rally_2022"
+    },
+    {
       "date": "12/15/2022",
       "schedule": "teen_issues"
     },
@@ -555,35 +559,35 @@
       "schedule": [
         {
           "name": "Transition",
-          "time": "7:55"
+          "time": "07:55"
         },
         {
           "name": "Advisee",
-          "time": "8:00"
+          "time": "08:00"
         },
         {
           "name": "Transition",
-          "time": "8:11"
+          "time": "08:11"
         },
         {
-          "name": "B1",
-          "time": "8:15"
+          "time": "08:15",
+          "name": "G5"
         },
         {
           "name": "Transition",
-          "time": "9:06"
+          "time": "09:06"
         },
         {
-          "name": "B2",
-          "time": "9:10"
+          "time": "09:10",
+          "name": "G6"
         },
         {
           "name": "Transition",
           "time": "10:01"
         },
         {
-          "name": "B3",
-          "time": "10:05"
+          "time": "10:05",
+          "name": "G7"
         },
         {
           "name": "Transition",
@@ -614,8 +618,8 @@
           "name": "Transition"
         },
         {
-          "name": "B4",
-          "time": "12:05"
+          "time": "12:05",
+          "name": "G8"
         },
         {
           "time": "13:01",
@@ -798,6 +802,99 @@
         {
           "name": "Transition",
           "time": "14:15"
+        },
+        {
+          "name": "Bus Dismissal",
+          "time": "14:24"
+        },
+        {
+          "name": "Free",
+          "time": "14:30"
+        }
+      ]
+    },
+    {
+      "name": "gold_pep_rally_2022",
+      "display_name": "Gold Day - Pep Rally",
+      "color": "#f5c248",
+      "text_color": "#000000",
+      "tag": "",
+      "schedule": [
+        {
+          "name": "Transition",
+          "time": "07:55"
+        },
+        {
+          "name": "Advisee",
+          "time": "08:00"
+        },
+        {
+          "name": "Transition",
+          "time": "08:11"
+        },
+        {
+          "time": "08:15",
+          "name": "G5"
+        },
+        {
+          "name": "Transition",
+          "time": "09:06"
+        },
+        {
+          "time": "09:10",
+          "name": "G6"
+        },
+        {
+          "name": "Transition",
+          "time": "10:01"
+        },
+        {
+          "time": "10:05",
+          "name": "G7"
+        },
+        {
+          "name": "Transition",
+          "time": "10:56"
+        },
+        {
+          "name": "A Lunch / Advisee A",
+          "time": "11:00"
+        },
+        {
+          "name": "Transition / Advisee A",
+          "time": "11:26"
+        },
+        {
+          "name": "Advisee",
+          "time": "11:29"
+        },
+        {
+          "time": "11:32",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "name": "Advisee B / Lunch B",
+          "time": "11:35"
+        },
+        {
+          "time": "12:01",
+          "name": "Transition"
+        },
+        {
+          "time": "12:05",
+          "name": "G8"
+        },
+        {
+          "time": "13:01",
+          "name": "Transition"
+        },
+        {
+          "name": "Pep Rally",
+          "time": "13:03"
+        },
+        {
+          "name": "Return to advisor",
+          "time": "14:10"
         },
         {
           "name": "Bus Dismissal",
