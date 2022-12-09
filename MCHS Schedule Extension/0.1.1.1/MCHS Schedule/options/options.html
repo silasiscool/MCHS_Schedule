@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Options</title>
+    <link rel="stylesheet" href="options.css">
+    <link rel="shortcut icon" href="../icons/icon16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <h2>Class Names:</h2>
+      </div>
+      <div class="section">
+        <div id="class-names-box"></div><br>
+      </div>
+    </div>
+    <div>
+      <div class="header">
+        <h2>Timing Options:</h2>
+      </div>
+      <div class="section">
+        <h3>Set bell offset to align with bells</h3>
+        <input type="radio" name="Offset" value="No Offset" id="no-offset">
+        <label for="No Offset">No Offset</label><br>
+        <input type="radio" name="Offset" value="Custom Offset" id="custom-offset">
+        <label for="Custom Offset">Custom Offset :</label>
+        <input type="number" name="Custom Offset Seconds" value="" id="custom-offset-seconds">
+        <label for="Custom Offset Seconds">seconds</label><br>
+        <input type="radio" name="Offset" value="Preset Offset" id="preset-offset">
+        <label id="preset-offset-label" for="Preset Offset">Preset Offset (Recommended)</label>
+      </div>
+    </div>
+    <div>
+      <div class="header">
+        <h2>Miscellaneous Options:</h2>
+      </div>
+      <div class="section">
+        <input type="checkbox" name="show-jazz" id="show-jazz">
+        <label for="show-jazz">Show Jazz Band days</label><br>
+        <input type="checkbox" name="show-chamber" id="show-chamber">
+        <label for="show-chamber">Show Chamber Choir days</label><br>
+        <input type="checkbox" name="reduce-motion" id="reduce-motion">
+        <label for="reduce-motion">Reduce Motion</label><br>
+        <input type="checkbox" id="do-reloads">
+        <label for="do-reloads">Reload to update at end of periods & at midnight</label><br>
+        <input type="checkbox" id="send-notif">
+        <label for="send-notif">Send Notification 5 minutes before start & end of period. <strong>WILL BREAK MOST MOBILE BROWSERS.</strong> (Hopefully to be fixed in the near future) </label>
+        <h3>Theme:</h3>
+          <input type="radio" name="theme-setting" value="use-system" id="use-system-theme-setting">
+          <label for="use-system">Use System Setting</label><br>
+          <input type="radio" name="theme-setting" value="light" id="light-theme-setting">
+          <label for="light">Light</label><br>
+          <input type="radio" name="theme-setting" value="dark" id="dark-theme-setting">
+          <label for="dark">Dark</label><br>
+      </div>
+    </div>
+    <button id="submit-button">Submit</button>
+    <script src="classNamesOptions.js" charset="utf-8"></script>
+    <script src="timingOptions.js" charset="utf-8"></script>
+    <script src="miscOptions.js" charset="utf-8"></script>
+    <script src="../webpage-adapt.js" charset="utf-8"></script>
+  </body>
+</html>
