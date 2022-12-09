@@ -314,4 +314,4 @@ function mainPopup(res) {
 
 }
 
-fetch('https://script.google.com/macros/s/AKfycbwe_eYXT-p0E97htlra1Xv2LQOdDxN2gWCTc32qrGOoMjZv-VTmlStZsszXKJ1_ZG-ULA/exec')
+// fetch('https://script.google.com/macros/s/AKfycbwe_eYXT-p0E97htlra1Xv2LQOdDxN2gWCTc32qrGOoMjZv-VTmlStZsszXKJ1_ZG-ULA/exec')
