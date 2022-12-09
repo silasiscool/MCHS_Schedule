@@ -7,6 +7,13 @@ let darkThemeSetting = document.getElementById('dark-theme-setting');
 let doReloads = document.getElementById('do-reloads');
 let sendNotif = document.getElementById('send-notif');
 
+if (window.chrome && chrome.runtime && chrome.runtime.id) {
+  sendNotif.setAttribute('disabled','')
+  document.querySelector('label[for="send-notif"]').setAttribute('disabled','')
+  document.querySelector('label[for="send-notif"]').innerHTML = 'Send Notification 5 minutes before start & end of period. <strong>COMING SOON</strong>'
+
+}
+
 try {
   chrome.storage.sync.get(['reduceMotion','showChamber','showJazz', 'theme', 'autoReload', 'periodNotify'], (res) => {
     mainMiscOptions(res)

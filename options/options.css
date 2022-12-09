@@ -96,6 +96,10 @@ input[type=checkbox] {
   margin: 10px;
 }
 
+[disabled] {
+  opacity: 0.4;
+}
+
 .section {
   padding: 30px;
   padding-top: 10px;

@@ -48,3 +48,5 @@ chrome.runtime.onInstalled.addListener((e) => {
 //   // chrome.alarms.create('test', Date.now() + 5e3)
 //   // window.open('https://www.google.com', '_blank');
 // }
+
+// ServiceWorkerRegistration.showNotification('hello')
