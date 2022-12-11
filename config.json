@@ -1509,7 +1509,7 @@
   "banner": {
     "id": "5",
     "text": "Hello!!!",
-    "min_version": "0.1.1.1",
+    "min_version": "none",
     "non_dismissable": false
   },
   "bell_offset": 10
