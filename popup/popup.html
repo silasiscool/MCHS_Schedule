@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="jazzChamber.css">
     <link rel="stylesheet" href="themes/dark-mode.css">
     <link rel="stylesheet" href="popup-webpage-adapt/popup-webpage-adapt.css">
+    <link rel="stylesheet" href="weekScroll.css">
     <title>MCHS Schedule</title>
     <link rel="shortcut icon" href="../icons/icon16.png">
   </head>
   <body>
     <div id="main-section">
       <div class="main-box" id="calendar">
+        <button type="button" id="prev-week-scroll-button" class="week-scroll-button">
+          <svg id="prev-week-scroll" class="week-scroll" width="5" height="84">
+            <path d="M 5 8 v 60 L 0 38"></path>
+          </svg>
+        </button>
+        <button type="button" id="next-week-scroll-button" class="week-scroll-button">
+          <svg id="next-week-scroll" class="week-scroll" width="5" height="84">
+            <path d="M 0 8 v 60 L 5 38"></path>
+          </svg>
+        </button>
         <div class="calendar-box"></div>
         <div class="calendar-box"></div>
         <div class="calendar-box"></div>
@@ -50,15 +61,12 @@
         <div class="close-button"></div>
       </button>
     </div>
-
     <script src="popup.js" charset="utf-8"></script>
     <script src="schedule_popup.js" charset="utf-8"></script>
     <script src="banner.js" charset="utf-8"></script>
-    <script src="jazzChamber.js" charset="utf-8"></script>
     <script src="../webpage-adapt.js" charset="utf-8"></script>
     <script src="popup-webpage-adapt/popup-webpage-adapt.js" charset="utf-8"></script>
     <script src="themes/themes.js" charset="utf-8" defer></script>
     <script src="notifSend.js" charset="utf-8"></script>
-    <!-- <iframe src="https://script.google.com/macros/s/AKfycbwe_eYXT-p0E97htlra1Xv2LQOdDxN2gWCTc32qrGOoMjZv-VTmlStZsszXKJ1_ZG-ULA/exec" style="display: none;"></iframe> -->
   </body>
 </html>

@@ -5,6 +5,18 @@ const config_file = fetch('https://raw.githubusercontent.com/silasiscool/MCHS_Sc
 
 // date offset
 let weekCalendarOffset = 0
+let prevWeekScroll = document.querySelector('#prev-week-scroll')
+let nextWeekScroll = document.querySelector('#next-week-scroll')
+
+prevWeekScroll.addEventListener('click',() => {
+  weekCalendarOffset -= 1
+  update()
+})
+nextWeekScroll.addEventListener('click',() => {
+  weekCalendarOffset += 1
+  update()
+})
+
 
 // apply reduce motion settings
 try {
@@ -26,13 +38,28 @@ function reduceMotionSettingPopup(x) {
 
 let timeOffset = 0
 
-try {
-  chrome.storage.sync.get(['bellOffsetSetting'], (res) => {
-    mainPopup(res)
-  })
-} catch (e) {
-  mainPopup({bellOffsetSetting: localStorage.getItem('bellOffsetSetting')})
+function update() {
+
+  // if (weekCalendarOffset >= 3) {
+  //   nextWeekScroll.style.visibility = 'hidden'
+  //   prevWeekScroll.style.visibility = 'visible'
+  // } else if (weekCalendarOffset <= -3) {
+  //   nextWeekScroll.style.visibility = 'visible'
+  //   prevWeekScroll.style.visibility = 'hidden'
+  // } else {
+  //   nextWeekScroll.style.visibility = 'visible'
+  //   prevWeekScroll.style.visibility = 'visible'
+  // }
+
+  try {
+    chrome.storage.sync.get(['bellOffsetSetting'], (res) => {
+      mainPopup(res)
+    })
+  } catch (e) {
+    mainPopup({bellOffsetSetting: localStorage.getItem('bellOffsetSetting')})
+  }
 }
+update()
 
 function mainPopup(res) {
   config_file.then((presetBellOffset) => {
@@ -92,38 +119,85 @@ function mainPopup(res) {
       };
       const currentDaySchedule = dayTypes.find((object) => object.name === currentDayType);
 
-
-      calendarBoxes.forEach((calendarBox, i) => { // do following for each box
-        // get type of day for each box
-        const boxDate = new Date(new Date(mondayDate).setDate(mondayDate.getDate()+i+(weekCalendarOffset*7)));
-        let boxDayType = daySchedule.find((object) => object.date === monthDayYear(boxDate));
-        if (boxDayType === undefined) {
-          let boxWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(mondayDate));
-          if (boxWeekType === undefined) {
-            boxWeekType = {schedule: 'vacation_week'}
+        calendarBoxes.forEach((calendarBox, i) => { // do following for each box
+          // get type of day for each box
+          const boxMondayDate = new Date(new Date(mondayDate).setDate(mondayDate.getDate()+(weekCalendarOffset*7)))
+          const boxDate = new Date(new Date(boxMondayDate).setDate(boxMondayDate.getDate()+i));
+          try {
+            chrome.storage.sync.get(['showJazz', 'showChamber'], (res) => {
+              mainJazzChamber(res)
+            })
+          } catch (e) {
+            mainJazzChamber({showJazz: ('true' === localStorage.getItem('showJazz')), showChamber: ('true' === localStorage.getItem('showChamber'))})
           }
-          const boxWeekSchedule = weekTypes.find((object) => object.name === boxWeekType.schedule);
-          boxDayType = boxWeekSchedule.schedule[i+1];
-        } else {
-          boxDayType = boxDayType.schedule;
-        };
-        const boxDaySchedule = dayTypes.find((object) => object.name === boxDayType);
-        // set box style based on previously retrieved type date
-        calendarBox.style.backgroundColor = boxDaySchedule.color;
-        calendarBox.style.color = boxDaySchedule.text_color;
-        if (boxDaySchedule.tag === '') {
-          calendarBox.textContent = boxDate.getDate();
-        } else {
-          calendarBox.textContent = boxDaySchedule.tag;
-        };
-        calendarBox.setAttribute('title',boxDaySchedule.display_name)
-      });
 
-      // mark current day calendar box
-      if (new Date(currentDate).getDay() > 0 && new Date(currentDate).getDay() < 6) {
-        calendarBoxes[currentDate.getDay()-1].style.border = '5px double ' + calendarBoxes[currentDate.getDay()-1].style.color;
-        calendarBoxes[currentDate.getDay()-1].style.padding = '13px';
-      };
+          function mainJazzChamber(res) {
+            config_file.then((jazzChamberSchedule) => {
+              const calendarBoxes = Array.from(document.getElementsByClassName('calendar-box'));
+
+              let currentDate = new Date(new Date(new Date().setSeconds(new Date().getSeconds()-timeOffset)).setDate(new Date().getDate()+(weekCalendarOffset*7)));
+              const boxMondayDate = new Date(new Date(currentDate).setDate(currentDate.getDate()-currentDate.getDay()+1));
+
+              function monthDayYear(date) {
+                return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+              };
+
+
+              let i = 0
+              while (i<5) {
+                let date = monthDayYear(new Date(new Date(boxMondayDate).setDate(boxMondayDate.getDate()+i)))
+
+                if (res.showChamber && jazzChamberSchedule.chamber_days.includes(date)) {
+                  calendarBoxes[i].classList.add('chamber-day')
+                } else {
+                  calendarBoxes[i].classList.remove('chamber-day')
+                }
+
+                if (res.showJazz && jazzChamberSchedule.jazz_days.includes(date)) {
+                  calendarBoxes[i].classList.add('jazz-day')
+                } else {
+                  calendarBoxes[i].classList.remove('jazz-day')
+                }
+
+                i++
+              }
+            })
+          }
+          let boxDayType = daySchedule.find((object) => object.date === monthDayYear(boxDate));
+          if (boxDayType === undefined) {
+            let boxWeekType = weekSchedule.find((object) => object.monday_date === monthDayYear(boxMondayDate));
+            if (boxWeekType === undefined) {
+              boxWeekType = {schedule: 'vacation_week'}
+            }
+            const boxWeekSchedule = weekTypes.find((object) => object.name === boxWeekType.schedule);
+            boxDayType = boxWeekSchedule.schedule[i+1];
+          } else {
+            boxDayType = boxDayType.schedule;
+          };
+          const boxDaySchedule = dayTypes.find((object) => object.name === boxDayType);
+          // set box style based on previously retrieved type date
+          calendarBox.style.backgroundColor = boxDaySchedule.color;
+          calendarBox.style.color = boxDaySchedule.text_color;
+          if (i === 0) {
+            prevWeekScroll.style.fill = boxDaySchedule.text_color
+          } else if (i === 4) {
+            nextWeekScroll.style.fill = boxDaySchedule.text_color
+          }
+          if (boxDaySchedule.tag === '') {
+            calendarBox.textContent = boxDate.getDate();
+          } else {
+            calendarBox.textContent = boxDaySchedule.tag;
+          };
+          calendarBox.setAttribute('title',boxDaySchedule.display_name)
+          calendarBox.style.borderColor = 'black'
+          calendarBox.classList.remove('currentDay')
+        });
+
+        // mark current day calendar box
+        if (weekCalendarOffset === 0 && new Date(currentDate).getDay() > 0 && new Date(currentDate).getDay() < 6) {
+          calendarBoxes[currentDate.getDay()-1].style.borderColor = calendarBoxes[currentDate.getDay()-1].style.color;
+          calendarBoxes[currentDate.getDay()-1].classList.add('currentDay')
+        };
 
       // set dayTypeBox
       if (normalDayName) {
@@ -297,7 +371,25 @@ function mainPopup(res) {
             }
           }
 
-        timeBox.textContent = String(hoursUntil).padStart(2,'0')+':'+String(minutesUntil).padStart(2,'0')+':'+String(secondsUntil).padStart(2,'0')
+        // Set remaining time box
+        if (hoursUntil < 24) {
+          timeBox.textContent = String(hoursUntil).padStart(2,'0')+':'+String(minutesUntil).padStart(2,'0')+':'+String(secondsUntil).padStart(2,'0')
+        } else {
+          let daysUntil = Math.floor(hoursUntil/24)
+          hoursUntil = hoursUntil%24
+          if (daysUntil<7) {
+            timeBox.textContent = String(daysUntil)+'d'+String(hoursUntil).padStart(2,'0')+':'+String(minutesUntil).padStart(2,'0')
+          } else {
+            let weeksUntil = Math.floor(daysUntil/7)
+            daysUntil = daysUntil%7
+            timeBox.textContent = String(weeksUntil)+'w'+String(daysUntil).padStart(1,'0')+'d'+String(hoursUntil).padStart(2,'0')
+          }
+
+        }
+
+
+        // Set end time box
+
         if (periodHours > 12) {
           endTimeBox.textContent = 'Ends '+(parseFloat(periodHours)-12)+':'+periodMinutes+' PM';
         } else if (periodHours === 12) {

@@ -42,6 +42,12 @@ body {
   border-right: none;
 }
 
+.calendar-box.currentDay {
+  border-width: 5px;
+  border-style: double;
+  padding: 13px;
+}
+
 #info {
   width: 420px;
   height: 118px;
