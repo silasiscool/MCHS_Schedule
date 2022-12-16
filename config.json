@@ -74,6 +74,10 @@
       "schedule": "teen_issues_fall_2022"
     },
     {
+      "date": "12/16/2022",
+      "schedule": "black_ER"
+    },
+    {
       "date": "12/22/2022",
       "schedule": "black_ER"
     },
@@ -1154,6 +1158,19 @@
         {
           "name": "Free",
           "time": "14:30"
+        }
+      ]
+    },
+    {
+      "name": "help_colorless",
+      "display_name": "Who Knows??",
+      "color": "#ff7b00",
+      "text_color": "#000000",
+      "tag": "??",
+      "schedule": [
+        {
+          "time": "00:00",
+          "name": "Send me the schedule"
         }
       ]
     }
