@@ -91,6 +91,10 @@
       "alt_name": "New Year's Day"
     },
     {
+      "date": "1/2/2023",
+      "schedule": "holiday"
+    },
+    {
       "date": "1/13/2023",
       "schedule": "gold_ER"
     },
