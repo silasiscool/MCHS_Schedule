@@ -1526,9 +1526,9 @@
     "5/22/2023"
   ],
   "banner": {
-    "id": "5",
-    "text": "Hello!!!",
-    "min_version": "none",
+    "id": "6",
+    "text": "Happy 3 month anniversary of this extension!! Thank you for using it! <br> Hope everyone has a good vacation too!!",
+    "min_version": "all",
     "non_dismissable": false
   },
   "bell_offset": "7"
