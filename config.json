@@ -95,6 +95,10 @@
       "schedule": "holiday"
     },
     {
+      "date": "1/5/2023",
+      "schedule": "2_hr_delay_gold"
+    },
+    {
       "date": "1/13/2023",
       "schedule": "gold_ER"
     },
@@ -237,68 +241,68 @@
       "tag": "",
       "schedule": [
         {
-          "name": "Transition",
-          "time": "7:55"
+          "time": "09:55",
+          "name": "Transition"
         },
         {
-          "name": "Advisee",
-          "time": "8:00"
+          "time": "10:00",
+          "name": "Advisee"
         },
         {
-          "name": "Transition",
-          "time": "8:16"
+          "time": "10:05",
+          "name": "Transition"
         },
         {
-          "name": "G5",
-          "time": "8:20"
+          "time": "10:09",
+          "name": "B1"
         },
         {
-          "name": "Transition",
-          "time": "9:32"
+          "time": "10:54",
+          "name": "Transition"
         },
         {
-          "name": "G6",
-          "time": "9:36"
+          "time": "10:58",
+          "name": "B2"
         },
         {
-          "name": "Transition",
-          "time": "10:48"
+          "time": "11:43",
+          "name": "Transition"
         },
         {
-          "name": "Lunch A / Advisee A",
-          "time": "10:52"
+          "time": "11:47",
+          "name": "Lunch A / Advisee A"
         },
         {
-          "name": "Transition / Advisee A",
-          "time": "11:18"
+          "time": "12:13",
+          "name": "Transition / Advisee A"
         },
         {
-          "name": "Advisee",
-          "time": "11:21"
+          "time": "12:15",
+          "name": "Advisee"
         },
         {
-          "name": "Advisee B / Transition",
-          "time": "11:24"
+          "time": "12:17",
+          "name": "Advisee B / Transition"
         },
         {
-          "name": "Advisee B / Lunch B",
-          "time": "11:27"
+          "time": "12:20",
+          "name": "Advisee B / Lunch B"
         },
         {
-          "name": "Transition",
-          "time": "11:53"
+          "time": "12:46",
+          "name": "Transition"
         },
         {
-          "name": "G7",
-          "time": "11:57"
+          "time": "12:50",
+          "name": "B3"
         },
         {
-          "name": "Transition",
-          "time": "13:09"
+          "time": "13:35",
+          "name": "Transition"
         },
         {
-          "name": "G8",
-          "time": "13:13"
+          "time": "13:39",
+          "name": "B4"
         },
         {
           "name": "Bus Dismissal",
@@ -1175,6 +1179,168 @@
         {
           "time": "00:00",
           "name": "Send me the schedule"
+        }
+      ]
+    },
+    {
+      "name": "2_hr_delay_gold",
+      "display_name": "Gold Day - 2 Hour Delay",
+      "color": "#f5c242",
+      "text_color": "#000000",
+      "tag": "2h",
+      "schedule": [
+        {
+          "time": "09:55",
+          "name": "Transition"
+        },
+        {
+          "time": "10:00",
+          "name": "Advisee"
+        },
+        {
+          "time": "10:05",
+          "name": "Transition"
+        },
+        {
+          "time": "10:09",
+          "name": "B1"
+        },
+        {
+          "time": "10:54",
+          "name": "Transition"
+        },
+        {
+          "time": "10:58",
+          "name": "B2"
+        },
+        {
+          "time": "11:43",
+          "name": "Transition"
+        },
+        {
+          "time": "11:47",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "12:13",
+          "name": "Transition / Advisee A"
+        },
+        {
+          "time": "12:15",
+          "name": "Advisee"
+        },
+        {
+          "time": "12:17",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "12:20",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "12:46",
+          "name": "Transition"
+        },
+        {
+          "time": "12:50",
+          "name": "B3"
+        },
+        {
+          "time": "13:35",
+          "name": "Transition"
+        },
+        {
+          "time": "13:39",
+          "name": "B4"
+        },
+        {
+          "name": "Bus Dismissal",
+          "time": "14:24"
+        },
+        {
+          "name": "Free",
+          "time": "14:30"
+        }
+      ]
+    },
+    {
+      "name": "2_hr_delay_black",
+      "display_name": "Black Day - 2 Hour Delay",
+      "color": "#000000",
+      "text_color": "#ffffff",
+      "tag": "2h",
+      "schedule": [
+        {
+          "time": "09:55",
+          "name": "Transition"
+        },
+        {
+          "time": "10:00",
+          "name": "Advisee"
+        },
+        {
+          "time": "10:05",
+          "name": "Transition"
+        },
+        {
+          "time": "10:09",
+          "name": "B1"
+        },
+        {
+          "time": "10:54",
+          "name": "Transition"
+        },
+        {
+          "time": "10:58",
+          "name": "B2"
+        },
+        {
+          "time": "11:43",
+          "name": "Transition"
+        },
+        {
+          "time": "11:47",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "12:13",
+          "name": "Transition / Advisee A"
+        },
+        {
+          "time": "12:15",
+          "name": "Advisee"
+        },
+        {
+          "time": "12:17",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "12:20",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "12:46",
+          "name": "Transition"
+        },
+        {
+          "time": "12:50",
+          "name": "B3"
+        },
+        {
+          "time": "13:35",
+          "name": "Transition"
+        },
+        {
+          "time": "13:39",
+          "name": "B4"
+        },
+        {
+          "name": "Bus Dismissal",
+          "time": "14:24"
+        },
+        {
+          "name": "Free",
+          "time": "14:30"
         }
       ]
     }
