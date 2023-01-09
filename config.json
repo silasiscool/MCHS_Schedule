@@ -161,27 +161,27 @@
       "schedule": [
         {
           "name": "Transition",
-          "time": "7:55"
+          "time": "07:55"
         },
         {
           "name": "Advisee",
-          "time": "8:00"
+          "time": "08:00"
         },
         {
           "name": "Transition",
-          "time": "8:16"
+          "time": "08:16"
         },
         {
           "name": "B1",
-          "time": "8:20"
+          "time": "08:20"
         },
         {
           "name": "Transition",
-          "time": "9:32"
+          "time": "09:32"
         },
         {
           "name": "B2",
-          "time": "9:36"
+          "time": "09:36"
         },
         {
           "name": "Transition",
@@ -236,73 +236,73 @@
     {
       "name": "gold_normal",
       "display_name": "Gold Day",
-      "color": "#F5C242",
+      "color": "#f5c242",
       "text_color": "#000000",
       "tag": "",
       "schedule": [
         {
-          "time": "09:55",
+          "time": "07:55",
           "name": "Transition"
         },
         {
-          "time": "10:00",
+          "time": "08:00",
           "name": "Advisee"
         },
         {
-          "time": "10:05",
+          "time": "08:16",
           "name": "Transition"
         },
         {
-          "time": "10:09",
-          "name": "B1"
+          "time": "08:20",
+          "name": "G5"
         },
         {
-          "time": "10:54",
+          "time": "09:32",
           "name": "Transition"
         },
         {
-          "time": "10:58",
-          "name": "B2"
+          "time": "09:36",
+          "name": "G6"
         },
         {
-          "time": "11:43",
+          "time": "10:48",
           "name": "Transition"
         },
         {
-          "time": "11:47",
+          "time": "10:52",
           "name": "Lunch A / Advisee A"
         },
         {
-          "time": "12:13",
+          "time": "11:18",
           "name": "Transition / Advisee A"
         },
         {
-          "time": "12:15",
+          "time": "11:21",
           "name": "Advisee"
         },
         {
-          "time": "12:17",
+          "time": "11:24",
           "name": "Advisee B / Transition"
         },
         {
-          "time": "12:20",
+          "time": "11:27",
           "name": "Advisee B / Lunch B"
         },
         {
-          "time": "12:46",
+          "time": "11:53",
           "name": "Transition"
         },
         {
-          "time": "12:50",
-          "name": "B3"
+          "time": "11:57",
+          "name": "G7"
         },
         {
-          "time": "13:35",
+          "time": "13:09",
           "name": "Transition"
         },
         {
-          "time": "13:39",
-          "name": "B4"
+          "time": "13:13",
+          "name": "G8"
         },
         {
           "name": "Bus Dismissal",
