@@ -24,6 +24,10 @@ config_file.then((savedConfig) => { // open saved config file
   let dayScheduleAddName = document.getElementById('day-schedule-add-name')
   let periodNamesList = document.getElementById('period-names-list')
   let dayScheduleAddButton = document.getElementById('day-schedule-add-button')
+  let importTypeButton = document.getElementById('import-type-button');
+  let importTypeSelect = document.getElementById('import-type-select');
+  let importColorsButton = document.getElementById('import-colors-button');
+  let importColorsSelect = document.getElementById('import-colors-select');
 
   // display current settings
   displayItems()
@@ -224,10 +228,27 @@ config_file.then((savedConfig) => { // open saved config file
     while (dayTypesList.firstChild) {
         dayTypesList.removeChild(dayTypesList.firstChild);
     }
+    while (importTypeSelect.firstChild) {
+        importTypeSelect.removeChild(importTypeSelect.firstChild);
+    }
+
+    while (importColorsSelect.firstChild) {
+        importColorsSelect.removeChild(importColorsSelect.firstChild);
+    }
+
+
     config.day_types.forEach((item, i) => {
       let dayTypeOption = document.createElement('option')
       dayTypeOption.appendChild(document.createTextNode(item.name))
-      dayTypesList.appendChild(dayTypeOption)
+      dayTypesList.appendChild(dayTypeOption);
+
+      let importTypeOption = document.createElement('option')
+      importTypeOption.appendChild(document.createTextNode(item.name))
+      importTypeSelect.appendChild(importTypeOption);
+
+      let importColorsOption = document.createElement('option')
+      importColorsOption.appendChild(document.createTextNode(item.name))
+      importColorsSelect.appendChild(importColorsOption);
     });
   }
 
@@ -255,8 +276,8 @@ config_file.then((savedConfig) => { // open saved config file
 
   }
 
-  dayName.addEventListener('change', () => {
-    let currentDayType = config.day_types.find((object) => object.name === dayName.value)
+  importTypeButton.addEventListener('click', () => {
+    let currentDayType = config.day_types.find((object) => object.name === importTypeSelect.value)
     if (currentDayType !== undefined) {
       dayDisplayName.value = currentDayType.display_name
       dayBackgroundColor.value = currentDayType.color
@@ -265,6 +286,18 @@ config_file.then((savedConfig) => { // open saved config file
       dayTextColorDisplay.style.backgroundColor = dayTextColor.value
       dayTag.value = currentDayType.tag
       newSchedule = currentDayType.schedule
+      updateDaySchedule()
+    }
+  });
+
+  importColorsButton.addEventListener('click', () => {
+    let currentDayType = config.day_types.find((object) => object.name === importColorsSelect.value)
+    if (currentDayType !== undefined) {
+      dayBackgroundColor.value = currentDayType.color
+      dayTextColor.value = currentDayType.text_color
+      dayBackgroundColorDisplay.style.backgroundColor = dayBackgroundColor.value
+      dayTextColorDisplay.style.backgroundColor = dayTextColor.value
+      dayTag.value = currentDayType.tag
       updateDaySchedule()
     }
   });
