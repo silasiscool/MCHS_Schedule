@@ -131,6 +131,10 @@
       "schedule": "2_hr_delay_black"
     },
     {
+      "date": "2/6/2023",
+      "schedule": "2/6/2023"
+    },
+    {
       "date": "2/17/2023",
       "schedule": "gold_ER"
     },
@@ -1364,6 +1368,83 @@
         {
           "name": "Free",
           "time": "14:30"
+        }
+      ]
+    },
+    {
+      "name": "2/6/2023",
+      "display_name": "Black Day - Survey",
+      "color": "#000000",
+      "text_color": "#ffffff",
+      "tag": "",
+      "schedule": [
+        {
+          "time": "07:55",
+          "name": "Transition"
+        },
+        {
+          "time": "08:00",
+          "name": "Advisee"
+        },
+        {
+          "time": "08:37",
+          "name": "Transition"
+        },
+        {
+          "time": "08:41",
+          "name": "B1"
+        },
+        {
+          "time": "09:49",
+          "name": "Transition"
+        },
+        {
+          "time": "09:53",
+          "name": "B2"
+        },
+        {
+          "time": "11:01",
+          "name": "Transition"
+        },
+        {
+          "time": "11:04",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "11:29",
+          "name": "Transition / Advisee A"
+        },
+        {
+          "time": "11:32",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "11:35",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "12:00",
+          "name": "Transition"
+        },
+        {
+          "time": "12:04",
+          "name": "B3"
+        },
+        {
+          "time": "13:12",
+          "name": "Transition"
+        },
+        {
+          "time": "13:16",
+          "name": "B4"
+        },
+        {
+          "time": "14:24",
+          "name": "Bus Dismissal"
+        },
+        {
+          "time": "14:30",
+          "name": "Free"
         }
       ]
     }
