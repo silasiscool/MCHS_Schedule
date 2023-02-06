@@ -82,6 +82,23 @@
   transform: scale(1);
 }
 
+.buttontype1 {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.buttontype1:hover {
+  transform: scale(1.1);
+}
+
+.buttontype1:active {
+  transform: scale(1);
+}
+
 #day-tag {
   width: 20px;
 }
