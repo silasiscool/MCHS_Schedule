@@ -91,6 +91,7 @@
         <h3 id="add-edit-header">Add or edit day type</h3>
           <div id="add-edit-type">
             <button type="button" id="add-type-button"><i class="fa-solid fa-plus"></i> Add Type</button>
+            <button type="button" id="import-type-button" class="buttontype1">Import from: </button><select id="import-type-select"></select>
             <p>* Required</p>
             <label for="day-name">Name:</label>
             <input type="text" list="day-types-list" onkeypress="return event.which != 32" id="day-name">*
@@ -98,6 +99,8 @@
             <br>
             <label for="day-display-name">Display Name:</label>
             <input type="text" id="day-display-name">*
+            <br>
+            <button type="button" id="import-colors-button" class="buttontype1">Import Colors & Tag from: </button><select id="import-colors-select" value=""></select>
             <br>
             <label for="day-background-color">Background Color:</label>
             <div class="color-picker-display" id="day-background-color-display">
