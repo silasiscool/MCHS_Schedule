@@ -236,6 +236,21 @@ config_file.then((savedConfig) => { // open saved config file
         importColorsSelect.removeChild(importColorsSelect.firstChild);
     }
 
+    let blankSelect = '--Select Option--';
+
+    // let dayTypeOptionBlankSelect = document.createElement('option')
+    // dayTypeOptionBlankSelect.appendChild(document.createTextNode(blankSelect))
+    // dayTypesList.appendChild(dayTypeOptionBlankSelect);
+
+    let importTypeOptionBlankSelect = document.createElement('option')
+    importTypeOptionBlankSelect.appendChild(document.createTextNode(blankSelect))
+    importTypeSelect.appendChild(importTypeOptionBlankSelect);
+
+    let importColorsOptionBlankSelect = document.createElement('option')
+    importColorsOptionBlankSelect.appendChild(document.createTextNode(blankSelect))
+    importColorsSelect.appendChild(importColorsOptionBlankSelect);
+
+
 
     config.day_types.forEach((item, i) => {
       let dayTypeOption = document.createElement('option')
