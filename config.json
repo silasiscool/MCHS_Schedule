@@ -1957,6 +1957,6 @@
   "bell_offset": "7",
   "events":{
     "on":true,
-    "link":null
+    "i":null
   }
 }
