@@ -1954,5 +1954,9 @@
     "min_version": "none",
     "non_dismissable": false
   },
-  "bell_offset": "7"
+  "bell_offset": "7",
+  "events":{
+    "on":true,
+    "link":null
+  }
 }
