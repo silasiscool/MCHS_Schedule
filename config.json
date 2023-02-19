@@ -1948,10 +1948,10 @@
     "10/18/20222"
   ],
   "banner": {
-    "id": "7",
+    "id": "8",
     "text": "This is a test, and nobody should see it",
     "min_version": "0.2.1.1",
-    "non_dismissable": false
+    "non_dismissable": true
   },
   "bell_offset": "7",
   "events": {
