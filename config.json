@@ -1950,7 +1950,7 @@
   "banner": {
     "id": "8",
     "text": "This is a test, please ignore",
-    "min_version": "0.1.2.2",
+    "min_version": "0.2.1.1",
     "non_dismissable": true
   },
   "bell_offset": "7",
