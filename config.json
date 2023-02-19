@@ -1949,8 +1949,8 @@
   ],
   "banner": {
     "id": "8",
-    "text": "This is a test, and nobody should see it",
-    "min_version": "0.2.1.1",
+    "text": "This is a test, please ignore",
+    "min_version": "0.21.2.2",
     "non_dismissable": true
   },
   "bell_offset": "7",
