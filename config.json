@@ -148,6 +148,11 @@
       "alt_name": "Presidents' Day"
     },
     {
+      "date": "2/28/2023",
+      "schedule": "no_school_other",
+      "alt_name": "Snow Day"
+    },
+    {
       "date": "3/10/2023",
       "schedule": "winter_carnival"
     },
