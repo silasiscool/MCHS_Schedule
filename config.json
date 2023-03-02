@@ -153,12 +153,28 @@
       "alt_name": "Snow Day"
     },
     {
+      "date": "3/6/2023",
+      "schedule": "gold_extended_wc"
+    },
+    {
+      "date": "3/7/2023",
+      "schedule": "black_extended_wc"
+    },
+    {
+      "date": "3/8/2023",
+      "schedule": "gold_extended_wc"
+    },
+    {
+      "date": "3/9/2023",
+      "schedule": "black_extended_wc"
+    },
+    {
       "date": "3/10/2023",
-      "schedule": "winter_carnival"
+      "schedule": "winter_carnival_2023"
     },
     {
       "date": "3/17/2023",
-      "schedule": "no_school_other"
+      "schedule": "gold_normal"
     },
     {
       "date": "3/22/2023",
@@ -208,16 +224,16 @@
           "time": "08:16"
         },
         {
-          "name": "B1",
-          "time": "08:20"
+          "time": "08:20",
+          "name": "G5"
         },
         {
           "name": "Transition",
           "time": "09:32"
         },
         {
-          "name": "B2",
-          "time": "09:36"
+          "time": "09:36",
+          "name": "G6"
         },
         {
           "name": "Transition",
@@ -248,24 +264,24 @@
           "time": "11:53"
         },
         {
-          "name": "B3",
-          "time": "11:57"
+          "time": "11:57",
+          "name": "G7"
         },
         {
           "name": "Transition",
           "time": "13:09"
         },
         {
-          "name": "B4",
-          "time": "13:13"
+          "time": "13:13",
+          "name": "G8"
         },
         {
-          "name": "Bus Dismissal",
-          "time": "14:24"
+          "time": "14:30",
+          "name": "Winter Carnival Activities"
         },
         {
-          "name": "Free",
-          "time": "14:30"
+          "time": "15:30",
+          "name": "Free"
         }
       ]
     },
@@ -659,15 +675,15 @@
       "schedule": [
         {
           "name": "Transition",
-          "time": "7:55"
+          "time": "07:55"
         },
         {
           "name": "Winter Carnival",
-          "time": "8:00"
+          "time": "08:00"
         },
         {
-          "name": "Free",
-          "time": "14:30"
+          "time": "15:30",
+          "name": "Free"
         }
       ]
     },
@@ -1607,6 +1623,189 @@
         },
         {
           "time": "14:30",
+          "name": "Free"
+        }
+      ]
+    },
+    {
+      "name": "black_extended_wc",
+      "display_name": "Black Day - Extended",
+      "color": "#000000",
+      "text_color": "#ffffff",
+      "tag": "",
+      "schedule": [
+        {
+          "name": "Transition",
+          "time": "07:55"
+        },
+        {
+          "name": "Advisee",
+          "time": "08:00"
+        },
+        {
+          "name": "Transition",
+          "time": "08:16"
+        },
+        {
+          "time": "08:20",
+          "name": "G5"
+        },
+        {
+          "name": "Transition",
+          "time": "09:32"
+        },
+        {
+          "time": "09:36",
+          "name": "G6"
+        },
+        {
+          "name": "Transition",
+          "time": "10:48"
+        },
+        {
+          "name": "Lunch A / Advisee A",
+          "time": "10:52"
+        },
+        {
+          "name": "Transition / Advisee A",
+          "time": "11:18"
+        },
+        {
+          "name": "Advisee",
+          "time": "11:21"
+        },
+        {
+          "name": "Advisee B / Transition",
+          "time": "11:24"
+        },
+        {
+          "name": "Advisee B / Lunch B",
+          "time": "11:27"
+        },
+        {
+          "name": "Transition",
+          "time": "11:53"
+        },
+        {
+          "time": "11:57",
+          "name": "G7"
+        },
+        {
+          "name": "Transition",
+          "time": "13:09"
+        },
+        {
+          "time": "13:13",
+          "name": "G8"
+        },
+        {
+          "time": "14:30",
+          "name": "Winter Carnival Activities"
+        },
+        {
+          "time": "15:30",
+          "name": "Free"
+        }
+      ]
+    },
+    {
+      "name": "gold_extended_wc",
+      "display_name": "Gold Day - Extended",
+      "color": "#f5c242",
+      "text_color": "#000000",
+      "tag": "",
+      "schedule": [
+        {
+          "name": "Transition",
+          "time": "07:55"
+        },
+        {
+          "name": "Advisee",
+          "time": "08:00"
+        },
+        {
+          "name": "Transition",
+          "time": "08:16"
+        },
+        {
+          "time": "08:20",
+          "name": "G5"
+        },
+        {
+          "name": "Transition",
+          "time": "09:32"
+        },
+        {
+          "time": "09:36",
+          "name": "G6"
+        },
+        {
+          "name": "Transition",
+          "time": "10:48"
+        },
+        {
+          "name": "Lunch A / Advisee A",
+          "time": "10:52"
+        },
+        {
+          "name": "Transition / Advisee A",
+          "time": "11:18"
+        },
+        {
+          "name": "Advisee",
+          "time": "11:21"
+        },
+        {
+          "name": "Advisee B / Transition",
+          "time": "11:24"
+        },
+        {
+          "name": "Advisee B / Lunch B",
+          "time": "11:27"
+        },
+        {
+          "name": "Transition",
+          "time": "11:53"
+        },
+        {
+          "time": "11:57",
+          "name": "G7"
+        },
+        {
+          "name": "Transition",
+          "time": "13:09"
+        },
+        {
+          "time": "13:13",
+          "name": "G8"
+        },
+        {
+          "time": "14:30",
+          "name": "Winter Carnival Activities"
+        },
+        {
+          "time": "15:30",
+          "name": "Free"
+        }
+      ]
+    },
+    {
+      "name": "winter_carnival_2023",
+      "display_name": "Winter Carnival",
+      "color": "#bb271a",
+      "text_color": "#ffffff",
+      "tag": "C",
+      "schedule": [
+        {
+          "name": "Transition",
+          "time": "07:55"
+        },
+        {
+          "name": "Winter Carnival",
+          "time": "08:00"
+        },
+        {
+          "time": "15:30",
           "name": "Free"
         }
       ]
