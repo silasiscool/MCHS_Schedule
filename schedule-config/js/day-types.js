@@ -300,7 +300,7 @@ config_file.then((savedConfig) => { // open saved config file
       dayBackgroundColorDisplay.style.backgroundColor = dayBackgroundColor.value
       dayTextColorDisplay.style.backgroundColor = dayTextColor.value
       dayTag.value = currentDayType.tag
-      newSchedule = currentDayType.schedule
+      newSchedule = Array.from(currentDayType.schedule)
       updateDaySchedule()
     }
   });
@@ -319,6 +319,7 @@ config_file.then((savedConfig) => { // open saved config file
 
   // adding schedule items
   let newSchedule = []
+
   updateDaySchedule()
 
   function updateDaySchedule() {
