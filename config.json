@@ -201,6 +201,18 @@
     {
       "date": "6/7/2023",
       "schedule": "ado"
+    },
+    {
+      "date": "6/14/2023",
+      "schedule": "vacation"
+    },
+    {
+      "date": "6/15/2023",
+      "schedule": "vacation"
+    },
+    {
+      "date": "6/16/2023",
+      "schedule": "vacation"
     }
   ],
   "day_types": [
