@@ -1,0 +1,13 @@
+#schedule-popup.web-adapt {
+  position: static;
+}
+
+#schedule-button.web-adapt:not(.events-open) {
+  display: none;
+}
+
+body.web-adapt {
+  transition: none;
+  transform-origin: 0 0;
+  overflow: hidden;
+}

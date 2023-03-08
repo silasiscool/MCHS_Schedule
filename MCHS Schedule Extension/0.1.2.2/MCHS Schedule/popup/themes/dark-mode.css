@@ -1,0 +1,77 @@
+:root {
+  --bg-color: #222427;
+  --color: #ffffff;
+}
+
+.main-box.dark-mode {
+  background-color: var(--bg-color);
+  border: none;
+  color: var(--color);
+}
+
+.chevron-left.dark-mode {
+  border-color: #ffffff;
+}
+
+#info.main-box {
+  border-bottom: 1px solid var(--color);
+  border-top: 1px solid var(--color);
+}
+
+#schedule-popup.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--color);
+  border: none;
+  border-left: 1px solid var(--color);
+}
+
+#schedule-popup.dark-mode .schedule-item {
+  border-bottom-color: var(--color);
+}
+
+.calendar-box.dark-mode {
+  background: transparent;
+}
+
+body.dark-mode {
+  background-color: var(--bg-color);
+}
+
+/* width */
+#schedule-popup.dark-mode::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+#schedule-popup.dark-mode::-webkit-scrollbar-track {
+  background: #333538;
+}
+
+/* Handle */
+#schedule-popup.dark-mode::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+#schedule-popup.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaa;
+}
+
+.hamburger-bar.dark-mode {
+  background: #ffffff;
+}
+
+#settings-link svg.dark-mode {
+  fill: #ffffff;
+}
+
+body.web-adapt.dark-mode.wide {
+  border-right: 1px solid #ffffff;
+  box-sizing: content-box;
+}
+
+body.web-adapt.dark-mode.tall {
+  border-bottom: 1px solid #ffffff;
+  box-sizing: content-box;
+}
