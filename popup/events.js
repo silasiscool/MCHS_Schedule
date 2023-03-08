@@ -5,6 +5,10 @@ let mainSection = document.getElementById('main-section')
 
 config_file.then(config=>{
   if (config.events.on)
+    var savedEvents = localStorage.getItem('savedEvents');
+    if (savedEvents) {
+      updateEvents(JSON.parse(JSON.parse(savedEvents)))
+    }
     fetchData(config.events.id, Date.now())
 })
 
@@ -18,13 +22,15 @@ function fetchData(id, time) {
 
   xhr.onreadystatechange = function () {
      if (xhr.readyState === 4) {
-        dataReceive(JSON.parse(xhr.responseText));
+        updateEvents(JSON.parse(xhr.responseText));
+        localStorage.setItem('savedEvents',JSON.stringify(xhr.responseText))
      }};
 
   xhr.send();
 }
 
-function dataReceive(events) {
+function updateEvents(events) {
+  eventsBox.innerHTML = '';
   console.log(events)
   if (events.length<=0) {
     return
