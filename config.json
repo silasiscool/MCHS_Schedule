@@ -1813,8 +1813,60 @@
           "time": "07:55"
         },
         {
-          "name": "Winter Carnival",
-          "time": "08:00"
+          "time": "08:00",
+          "name": "Advisee"
+        },
+        {
+          "time": "08:16",
+          "name": "Transition"
+        },
+        {
+          "time": "08:20",
+          "name": "Session 1"
+        },
+        {
+          "time": "09:32",
+          "name": "Transition"
+        },
+        {
+          "time": "09:36",
+          "name": "Session 2"
+        },
+        {
+          "time": "10:48",
+          "name": "Transition"
+        },
+        {
+          "time": "10:52",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "11:18",
+          "name": "Transition / Advisee A"
+        },
+        {
+          "time": "11:21",
+          "name": "Advisee"
+        },
+        {
+          "time": "11:24",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "11:27",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "11:50",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "11:53",
+          "name": "Transition"
+        },
+        {
+          "time": "12:00",
+          "name": "Assembly"
         },
         {
           "time": "15:30",
