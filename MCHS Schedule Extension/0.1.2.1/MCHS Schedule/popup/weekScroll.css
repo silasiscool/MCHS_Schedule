@@ -1,0 +1,30 @@
+.week-scroll-button {
+  position: absolute;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.week-scroll {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.week-scroll:hover {
+  opacity: 75% !important; 
+  cursor: pointer;
+}
+
+body:hover .week-scroll {
+  opacity: 25%;
+}
+
+
+
+#prev-week-scroll-button {
+  left: 5px;
+}
+
+#next-week-scroll-button {
+  right: 5px;
+}
