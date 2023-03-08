@@ -9,7 +9,7 @@ let currentVersion
 try {
   currentVersion = chrome.runtime.getManifest().version
 } catch (e) {
-  currentVersion = '0.1.2.1'
+  currentVersion = '0.2.2.1'
 }
 
 // set banner based on banner.json

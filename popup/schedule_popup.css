@@ -3,7 +3,6 @@
   position: absolute;
   right: 0px;
   top: 0px;
-  float: right;
   width: 280px;
   border: 1px solid black;
   height: 500px;
@@ -74,10 +73,6 @@
 
 #flip-div {
   transition: rotate 1s;
-}
-
-#flip-div.reduceMotion {
-  transition: none;
 }
 
 .flip-button {

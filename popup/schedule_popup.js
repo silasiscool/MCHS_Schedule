@@ -9,10 +9,10 @@ try {
 }
 
 function mainSchedulePopup(res) {
-  config_file.then((presetBellOffset) => {
+  config_file.then((config) => {
     // set timeOffset
     if (res.bellOffsetSetting === 'preset') {
-      timeOffset = presetBellOffset.bell_offset
+      timeOffset = config.bell_offset
     } else {
       timeOffset = res.bellOffsetSetting
     }
@@ -28,8 +28,13 @@ function mainSchedulePopup(res) {
     const flipDiv = document.getElementById('flip-div')
 
     scheduleButton.addEventListener('click', () => {
-      body.classList.toggle('full-width-body')
       flipDiv.classList.toggle('flip-button')
+      if (showEvents) {
+        document.getElementById('main-section').classList.toggle('float-right')
+      } else {
+        body.classList.toggle('full-width-body')
+      }
+
     })
 
     // create function to convert date object to mm/dd/yy form

@@ -342,11 +342,11 @@ function mainPopup(res) {
           }
 
           function classNamesPopup(res) {
-            classBox.textContent = res.classNames.find((object) => object.class === className).name
+            classBox.innerHTML = res.classNames.find((object) => object.class === className).name
           }
 
         } else {
-          classBox.textContent = className;
+          classBox.innerHTML = className;
         }
 
         // Relod and Web Notif triggers
@@ -389,10 +389,9 @@ function mainPopup(res) {
 
 
         // Set end time box
-
         if (periodHours > 12) {
           endTimeBox.textContent = 'Ends '+(parseFloat(periodHours)-12)+':'+periodMinutes+' PM';
-        } else if (periodHours === 12) {
+        } else if (periodHours == 12) {
           endTimeBox.textContent = 'Ends '+periodHours+':'+periodMinutes+' PM';
         } else {
           endTimeBox.textContent = 'Ends '+periodHours+':'+periodMinutes+' AM';

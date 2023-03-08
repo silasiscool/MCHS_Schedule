@@ -14,10 +14,6 @@
   display: none;
 }
 
-#banner.reduceMotion {
-  transition: none;
-}
-
 #banner.active-banner {
   top: 0px;
 }
@@ -34,18 +30,23 @@
   font-size: 20px;
   width: 20px;
   height: 20px;
+  scale: 77%;
+  padding: 0;
 }
 #banner-close-button.non-dismissable {
   display: none;
 }
 
-#banner-close-button:hover {
-  transform: scale(1.25);
+#banner-close-button:hover .close-button {
+  width: 4px;
 }
 
 #banner-close-button:focus {
-  transform: scale(1.5);
   outline: none;
+}
+
+#banner-close-button:focus .close-button {
+  width: 5px;
 }
 
 .close-button {

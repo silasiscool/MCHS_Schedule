@@ -2,7 +2,7 @@
   position: static;
 }
 
-#schedule-button.web-adapt {
+#schedule-button.web-adapt:not(.events-open) {
   display: none;
 }
 
