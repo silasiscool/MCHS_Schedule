@@ -390,6 +390,7 @@ config_file.then((savedConfig) => { // open saved config file
   }
 
   dayScheduleAddButton.addEventListener('click', () => {
+    dayScheduleAddTime.focus({focusVisible:true})
     if (dayScheduleAddTime.value !== '') {
       newSchedule.push({time:dayScheduleAddTime.value, name: dayScheduleAddName.value})
       dayScheduleAddTime.value = ''
