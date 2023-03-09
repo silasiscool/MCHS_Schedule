@@ -71,7 +71,7 @@ function updateEvents(events, skipTransition) {
     setInterval(function () {
       document.body.classList.remove('no-transition')
       mainSection.classList.remove('no-transition')
-    }, 1e3);
+    }, 1e2);
 
   }
 }
