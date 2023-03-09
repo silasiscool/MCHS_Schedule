@@ -14,6 +14,10 @@ body {
   width: 700px;
 }
 
+body.no-transition {
+  transition: none;
+}
+
 .main-box {
   border: 1px solid black;
   background: white;
@@ -95,6 +99,10 @@ body {
   left: 0;
   width: 420px;
   transition: left 1s;
+}
+
+#main-section.no-transition {
+  transition: none;
 }
 
 #main-section.float-right {
