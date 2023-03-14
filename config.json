@@ -173,6 +173,10 @@
       "schedule": "winter_carnival_2023"
     },
     {
+      "date": "3/14/2023",
+      "schedule": "3/14/2023"
+    },
+    {
       "date": "3/17/2023",
       "schedule": "gold_normal"
     },
@@ -1870,6 +1874,75 @@
         },
         {
           "time": "15:30",
+          "name": "Free"
+        }
+      ]
+    },
+    {
+      "name": "3/14/2023",
+      "display_name": "Gold Day - Early Release",
+      "color": "#f5c242",
+      "text_color": "#000000",
+      "tag": "ER",
+      "schedule": [
+        {
+          "time": "07:55",
+          "name": "Transition"
+        },
+        {
+          "time": "08:00",
+          "name": "Advisee"
+        },
+        {
+          "time": "08:16",
+          "name": "Transition"
+        },
+        {
+          "time": "08:20",
+          "name": "G5"
+        },
+        {
+          "time": "09:01",
+          "name": "Transition"
+        },
+        {
+          "time": "09:05",
+          "name": "G6"
+        },
+        {
+          "time": "09:29",
+          "name": "Transition"
+        },
+        {
+          "time": "09:33",
+          "name": "G7"
+        },
+        {
+          "time": "09:57",
+          "name": "Transition"
+        },
+        {
+          "time": "10:01",
+          "name": "G8"
+        },
+        {
+          "time": "10:25",
+          "name": "Transition"
+        },
+        {
+          "time": "10:31",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "10:57",
+          "name": "Transition"
+        },
+        {
+          "time": "11:04",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "11:30",
           "name": "Free"
         }
       ]
