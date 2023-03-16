@@ -382,6 +382,7 @@ config_file.then((savedConfig) => { // open saved config file
           dayScheduleAddName.value = item.name
           newSchedule.splice(i,1)
           updateDaySchedule()
+          dayScheduleAddTime.focus({focusVisible:true})
         })
 
 
