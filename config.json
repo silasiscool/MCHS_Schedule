@@ -1950,6 +1950,14 @@
           "name": "Free"
         }
       ]
+    },
+    {
+      "name": "snow_day",
+      "display_name": "Snow Day",
+      "color": "#a6a6a6",
+      "text_color": "#000000",
+      "tag": "",
+      "schedule": []
     }
   ],
   "week_schedule": [
@@ -2294,10 +2302,10 @@
     "10/18/20222"
   ],
   "banner": {
-    "id": "8",
-    "text": "This is a test, please ignore",
-    "min_version": "none",
-    "non_dismissable": true
+    "id": "9",
+    "text": "Please click <a href=\"https://docs.google.com/document/d/1SLu1RQRR4xXN9HAoGvmx7xYDk5YJaRuVT9il4x92-Z4/edit?usp=sharing\" target=\"_blank\">this link</a> for more info if you  are able to help add events to the event calendar on the left! (No code needed)",
+    "min_version": "all",
+    "non_dismissable": false
   },
   "bell_offset": "7",
   "events": {
