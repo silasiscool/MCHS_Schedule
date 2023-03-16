@@ -2303,7 +2303,7 @@
   ],
   "banner": {
     "id": "9",
-    "text": "Please click <a href=\"https://silasbartol.com/logger?key=MCHS_Schedule1&url=https://docs.google.com/document/d/1SLu1RQRR4xXN9HAoGvmx7xYDk5YJaRuVT9il4x92-Z4/edit?usp=sharing" target=\"_blank\">this link</a> for more info if you  are able to help add events to the event calendar on the left! (No code needed)",
+    "text": "Please click <a href=\"https://silasbartol.com/logger?key=MCHS_Schedule1&url=https://docs.google.com/document/d/1SLu1RQRR4xXN9HAoGvmx7xYDk5YJaRuVT9il4x92-Z4/edit?usp=sharing\" target=\"_blank\">this link</a> for more info if you  are able to help add events to the event calendar on the left! (No code needed)",
     "min_version": "all",
     "non_dismissable": false
   },
