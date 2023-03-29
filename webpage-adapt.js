@@ -55,3 +55,18 @@ if (window.chrome && chrome.runtime && chrome.runtime.id) {
     location.reload()
   }
 }
+
+let parameters = location.search.split('&');
+parameters[0] = parameters[0].slice(1);
+parameters.forEach((item, i) => {
+  let parts = item.split('=');
+  parameters[i] = ("\""+parts[0]+"\":\""+parts[1]+"\"");
+});
+parameters = JSON.parse("{"+parameters.join(', ')+"}")
+if (parameters.theme == 'dark') {
+  localStorage.setItem('theme', 'dark')
+} else if (parameters.theme == 'light') {
+  localStorage.setItem('theme', 'light')
+} else {
+  localStorage.setItem('theme', 'use-system')
+}
