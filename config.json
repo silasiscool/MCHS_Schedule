@@ -2304,7 +2304,7 @@
   "banner": {
     "id": "10",
     "text": "Please fill out <a href=\"https://silasbartol.com/logger?key=MCHS_Schedule2&url=https://docs.google.com/forms/d/e/1FAIpQLSe55_sLuo3YSXMHnfSuzUUNNkGVeU6ChSJG0Ii4AItg992Saw/viewform?usp=sf_link\" target=\"_blank\">This Form</a> if you have any ideas for improvement of this Chrome Extension",
-    "min_version": "all",
+    "min_version": "none",
     "non_dismissable": false
   },
   "bell_offset": "7",
