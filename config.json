@@ -1962,6 +1962,23 @@
       "text_color": "#000000",
       "tag": "",
       "schedule": []
+    },
+    {
+      "name": "4/5/2023",
+      "display_name": "Post Secondary Education Day",
+      "color": "#ff0000",
+      "text_color": "#ffffff",
+      "tag": "",
+      "schedule": [
+        {
+          "time": "08:00",
+          "name": "Post Secondary Education Day"
+        },
+        {
+          "time": "14:30",
+          "name": "Free"
+        }
+      ]
     }
   ],
   "week_schedule": [
@@ -2292,7 +2309,7 @@
     "3/29/2023",
     "3/31/2023",
     "4/4/2023",
-    "4/6/2023",
+    "4/5/2023",
     "4/10/2023",
     "4/12/2023",
     "4/24/2023",
