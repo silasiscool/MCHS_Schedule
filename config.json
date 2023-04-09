@@ -194,7 +194,7 @@
     },
     {
       "date": "4/14/2023",
-      "schedule": "help_colorless"
+      "schedule": "4/14/2023"
     },
     {
       "date": "4/17/2023",
@@ -1976,6 +1976,87 @@
         },
         {
           "time": "14:30",
+          "name": "Free"
+        }
+      ]
+    },
+    {
+      "name": "4/14/2023",
+      "display_name": "Black Day - Shortened",
+      "color": "#000000",
+      "text_color": "#ffffff",
+      "tag": "",
+      "schedule": [
+        {
+          "name": "Transition",
+          "time": "07:55"
+        },
+        {
+          "name": "Advisee",
+          "time": "08:00"
+        },
+        {
+          "time": "08:05",
+          "name": "Transition"
+        },
+        {
+          "time": "08:11",
+          "name": "B1"
+        },
+        {
+          "time": "09:00",
+          "name": "Transition"
+        },
+        {
+          "time": "09:04",
+          "name": "B2"
+        },
+        {
+          "time": "09:55",
+          "name": "Transition"
+        },
+        {
+          "time": "09:59",
+          "name": "B3"
+        },
+        {
+          "time": "10:50",
+          "name": "Transition"
+        },
+        {
+          "time": "10:56",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "11:20",
+          "name": "Transition / Advisee A"
+        },
+        {
+          "time": "11:23",
+          "name": "Advisee"
+        },
+        {
+          "time": "11:26",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "11:29",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "11:55",
+          "name": "Transition"
+        },
+        {
+          "time": "11:59",
+          "name": "B4"
+        },
+        {
+          "time": "12:50",
+          "name": "Bus Dismissal"
+        },
+        {
+          "time": "12:55",
           "name": "Free"
         }
       ]
