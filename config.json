@@ -194,7 +194,7 @@
     },
     {
       "date": "4/10/2023",
-      "schedule": "help_colorless"
+      "schedule": "4/10/2023"
     },
     {
       "date": "4/14/2023",
@@ -2064,6 +2064,91 @@
           "name": "Free"
         }
       ]
+    },
+    {
+      "name": "4/10/2023",
+      "display_name": "Gold - Morning Assembly",
+      "color": "#f5c242",
+      "text_color": "#000000",
+      "tag": "",
+      "schedule": [
+        {
+          "time": "07:55",
+          "name": "Transition"
+        },
+        {
+          "time": "08:00",
+          "name": "Advisee"
+        },
+        {
+          "time": "08:05",
+          "name": "Assembly"
+        },
+        {
+          "time": "09:05",
+          "name": "Transition"
+        },
+        {
+          "time": "09:09",
+          "name": "G5"
+        },
+        {
+          "time": "10:09",
+          "name": "Transition"
+        },
+        {
+          "time": "10:13",
+          "name": "G6"
+        },
+        {
+          "time": "11:13",
+          "name": "Transition"
+        },
+        {
+          "time": "11:17",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "11:43",
+          "name": "Transition / Advisee A"
+        },
+        {
+          "time": "11:46",
+          "name": "Advisee"
+        },
+        {
+          "time": "11:48",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "11:51",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "12:17",
+          "name": "Transition"
+        },
+        {
+          "time": "12:21",
+          "name": "G7"
+        },
+        {
+          "time": "13:20",
+          "name": "Transition"
+        },
+        {
+          "time": "13:24",
+          "name": "G8"
+        },
+        {
+          "time": "14:24",
+          "name": "Bus Dismissal"
+        },
+        {
+          "time": "14:30",
+          "name": "Free"
+        }
+      ]
     }
   ],
   "week_schedule": [
@@ -2409,7 +2494,7 @@
   ],
   "banner": {
     "id": "10",
-    "text": "Please fill out <a href=\"https://silasbartol.com/logger?key=MCHS_Schedule2&url=https://docs.google.com/forms/d/e/1FAIpQLSe55_sLuo3YSXMHnfSuzUUNNkGVeU6ChSJG0Ii4AItg992Saw/viewform?usp=sf_link\" target=\"_blank\">This Form</a> if you have any ideas for improvement of this Chrome Extension",
+    "text": "If you would like ",
     "min_version": "none",
     "non_dismissable": false
   },
