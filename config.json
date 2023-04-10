@@ -2493,9 +2493,9 @@
     "10/18/20222"
   ],
   "banner": {
-    "id": "10",
-    "text": "If you would like ",
-    "min_version": "none",
+    "id": "12",
+    "text": "If you would like to get previews of new versions of this extension, get the <a href=\"https://chrome.google.com/webstore/detail/pre-release-mchs-schedule/onibengnamppmibhjfdaabblcgpdjohp\" target=\"_blank\">pre-release version here</a>",
+    "min_version": "all",
     "non_dismissable": false
   },
   "bell_offset": "7",
