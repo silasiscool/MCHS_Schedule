@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tab info -->
+    <title>Options | MCHS Schedule</title>
+    <link rel="shortcut icon" href="icons/icon16.png">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/options/master.css">
+
+    <!-- scripts -->
+    <script src="js/master.js" charset="utf-8" defer></script>
+    <script src="js/options/options.js" charset="utf-8" defer></script>
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 500,
+        'GRAD' 200,
+        'opsz' 48
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="opacity: 10%; position: absolute; top: 150px; left: 180px; z-index: 999; transform: rotate(45deg); font-size: 100px;">DRAFT</h1>
+    <a href="index.html" target="_self" id="home-link" class="nav-link" title="Home">
+      <span class="material-symbols-outlined">
+        home
+      </span>
+    </a>
+    <main>
+      <article>
+        <h2>Class Names</h2>
+        <section id="class-names-section">
+          <h3>Custom Class Names</h3>
+          <div class="input-group" id="class-names-group"></div>
+        </section>
+      </article>
+      <article>
+        <h2>Timing Options</h2>
+        <section id="bell-offset-section">
+          <h3>Bell Offset</h3>
+          <p>Leave on preset offset unless you know what you are doing</p>
+          <div id="bell-offset-group" class="input-group">
+            <input type="radio" id="no-offset" name="bell-offset-setting">
+            <label for="no-offset">No Offset</label><br>
+            <input type="radio" id="custom-offset" name="bell-offset-setting">
+            <label for="custom-offset">
+              <input type="number" id="custom-offset-seconds"> Seconds
+            </label><br>
+            <input type="radio" id="preset-offset" name="bell-offset-setting">
+            <label for="preset-offset">Preset Offset (Reccomended)</label>
+          </div>
+        </section>
+      </article>
+      <article>
+        <h2>Miscellaneous</h2>
+        <section id="theme-section">
+          <h3>Theme</h3>
+          <div class="input-group" id="theme-group">
+            <input type="radio" id="light-theme" name="theme-setting">
+            <label for="light-theme">Light</label><br>
+            <input type="radio" id="dark-theme" name="theme-setting">
+            <label for="dark-theme">Dark</label><br>
+            <input type="radio" id="system-theme" name="theme-setting">
+            <label for="system-theme">Use System Setting</label><br>
+            <input type="radio" id="custom-theme" name="theme-setting">
+            <label for="custom-theme">
+              Use custom theme<br>
+              <div class="input-group" id="custom-theme-input">
+                <label for="primary-custom-theme">Foreground Color: </label>
+                <input type="color" id="primary-custom-theme" value="#000000"><br>
+                <label for="background-custom-theme">Background Color: </label>
+                <input type="color" id="background-custom-theme" value="#ffffff"><br>
+                <input type="checkbox" id="use-dark-styles">
+                <label for="use-dark-styles">Use Dark Styles</label>
+              </div>
+            </label>
+          </div>
+        </section>
+        <section id="jazz-chamber-section">
+          <h3>Jazz Band & Chamber Choir</h3>
+          <div class="input-group">
+            <input type="checkbox" id="show-jazz">
+            <label for="show-jazz">Show Jazz Band Days</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" id="show-chamber">
+            <label for="show-chamber">Show Chamber Band Days</label>
+          </div>
+        </section>
+        <section id="other-section">
+          <h3>Other</h3>
+          <div class="input-group">
+            <input type="checkbox" id="show-milliseconds">
+            <label for="show-milliseconds">Show milliseconds in countdown</label>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

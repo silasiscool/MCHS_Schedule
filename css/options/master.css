@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;1,400&display=swap'); /* Fira Sans: 200, 400, 400 italic */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap'); /* Fira Mono: 400 */
+
+:root {
+  /* colors */
+  --primary: white;
+  --background: #1F1F1F;
+  --background-light: #3c3c3b;
+  --accent-color: #CA9D67;
+
+  /* widths */
+  --min-width: 700px;
+  --full-width: max(var(--min-width) , 100%);
+
+  /* heights */
+  --min-height: 500px;
+  --full-height: max(var(--min-height), 100svh);
+
+  /* font styles */
+  --main-font-family: 'Fira Sans', sans-serif;
+  --main-font-weight: 200;
+  --monospace-font-family: 'Fira Mono', monospace;
+  --monospace-font-weight: 400;
+
+  color-scheme: dark;
+}
+
+html {
+  min-width: var(--min-width);
+  min-height: var(--min-height);
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  background: var(--background);
+  width: var(--full-width);
+  height: var(--full-height);
+  margin: 0;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+#home-link {
+  background: var(--background-light);
+  color: inherit;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom-left-radius: 20px;
+  border-color: var(--background);
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  z-index: 100;
+}
+
+#home-link span {
+  display: block;
+}
+
+article:first-of-type > h2 {
+  margin-top: 0;
+}
+
+article:last-of-type {
+  padding-bottom: 2rem;
+}
+
+article > h2 {
+  padding: 1rem 1.3rem;
+  background-color: var(--background-light);
+  position: relative;
+}
+
+article > h2::before {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  border-bottom-right-radius: 99px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--accent-color);
+}
+
+article > section {
+  margin: 0 1rem;
+}
+
+article > section > *:not(h3) {
+  margin: 0 1rem;
+}
+
+.input-group {
+  margin: 1rem;
+}
+
+section:not(.show) {
+  display: none;
+  /* opacity: 5%; */
+}
+
+#custom-offset-seconds {
+  width: 3rem;
+}
+
+#class-names-group > label::after {
+  content: ":";
+  /* margin-right: 0.5rem; */
+}
+
+#class-names-group {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: fit-content;
+  grid-gap: 0.5rem;
+  align-items: center;
+  justify-items: end;
+}
+
+input {
+  accent-color: var(--primary);
+}
+
+#custom-theme:not(:checked) + label[for="custom-theme"] #custom-theme-input{
+  opacity: 50%;
+  pointer-events: none;
+}

@@ -1,0 +1,71 @@
+/* Banner Styles */
+#banner {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  max-height: var(--banner-max-height);
+  overflow: auto;
+  z-index: 5;
+
+  background: var(--accent-color);
+  box-sizing: border-box;
+}
+
+#banner:not(.show) {
+  visibility: hidden;
+  transition: visibility 1s;
+}
+
+#banner-dismiss-button {
+  color: black;
+  float: right;
+  margin: 5px;
+  border-radius: 999px;
+  position: sticky;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner:not(.dismissable) #banner-dismiss-button {
+  display: none;
+}
+
+#banner-dismiss-button:is(:hover, :focus-visible)::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 10%;
+}
+
+#banner-dismiss-button:focus {
+  outline: transparent;
+}
+
+#banner-dismiss-button:focus-visible {
+  outline: 1px solid black;
+}
+
+/* Banner Content Styles */
+
+#banner-content {
+  padding: 15px;
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  line-height: 1.45;
+}
+
+#banner-content a {
+  color: #00f;
+}

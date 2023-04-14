@@ -1,0 +1,271 @@
+#main-panel {
+  position: absolute;
+  left: calc((var(--full-width) - var(--width-2))/2);
+  transition: left 0.5s ease-out;
+
+  width: var(--width-2);
+  height: var(--full-height);
+
+  background-color: var(--background);
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 15;
+}
+
+.main-panel-section {
+  border: 1px solid var(--primary);
+}
+
+/* calendar */
+#calendar-panel-section {
+  /* display: flex; */
+  border-top: none;
+  border-bottom: none;
+  position: relative;
+}
+
+#calendar-wrapper {
+  display: flex;
+}
+
+.week-scroll-button {
+  position: absolute;
+  z-index: 20;
+  top: 5%;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  height: 90%;
+  /* margin: 0 5%; */
+  /* margin-top: 5%; */
+  box-sizing: border-box;
+}
+
+.week-scroll-button:focus-visible::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--primary);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 20%;
+}
+
+.week-scroll-button:focus {
+  outline: transparent
+}
+
+.week-scroll-button:focus-visible {
+  border: 1px solid var(--primary)
+}
+
+:where(.week-scroll) {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.week-scroll-button:hover .week-scroll {
+  opacity: 75% !important;
+}
+
+:is(#main-panel:hover, .week-scroll-button:focus-visible) .week-scroll {
+  opacity: 25%;
+}
+
+#prev-week-scroll-button {
+  left: 5px;
+}
+
+#next-week-scroll-button {
+  right: 5px;
+}
+
+.calendar-box {
+  --calendar-box-text-color: black;
+  color: var(--calendar-box-text-color);
+  aspect-ratio: 1/1;
+  flex: 1;
+  position: relative;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.calendar-box.current-day::before {
+  content: "";
+  border: 5px double var(--calendar-box-text-color);
+  /* background: blue; */
+  width: 96%;
+  height: 95%;
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.calendar-box:not(:first-of-type) {
+  border-left: 1px solid black;
+}
+
+.calendar-box.is-jazz-day::after {
+  content: "Jazz";
+  position: absolute;
+  font-size: 12px;
+  bottom: 10px;
+}
+
+.calendar-box.is-chamber-day::after {
+  content: "Chamber";
+  position: absolute;
+  font-size: 12px;
+  bottom: 10px;
+}
+
+#info-panel-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-bottom: none;
+  font-size: 25px;
+  align-items: center;
+}
+
+.info-panel-section-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+}
+
+#countdown-wrapper {
+  font-family: var(--monospace-font-family);
+  font-weight: var(--monospace-font-weight);
+  font-size: 4rem;
+  max-width: 8ch;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex: 2;
+}
+
+#countdown {
+  display: flex;
+}
+
+.countdown-part {
+  overflow: hidden;
+  width: 3ch;
+  text-align: right;
+}
+
+body:not(.initializing) .countdown-part{
+  transition: width 1s linear;
+}
+
+#weeks-number[data-time="0"],
+#weeks-number[data-time="0"] ~
+#days-number[data-time="0"],
+#countdown.show-milliseconds >
+#weeks-number[data-time="0"] ~
+#days-number[data-time="0"] ~
+#hours-number[data-time="0"] {
+  width: 0;
+}
+
+#weeks-number::after {
+  content: "w";
+}
+
+#days-number::after {
+  content: "d";
+}
+
+/* #weeks-number[data-time="0"] ~ */
+#hours-number::after {
+  content: ":";
+}
+
+/* #weeks-number[data-time="0"] ~
+#days-number[data-time="0"] ~ */
+#minutes-number::after {
+  content: ":";
+}
+
+#seconds-number {
+  width: 2ch;
+}
+
+#milliseconds-number::before {
+  content: ".";
+}
+
+
+/* panel movement */
+:is(#events-panel:is(:hover, .show), #events-panel:not([data-length="0"]) ~ #schedule-panel[data-length="0"]) ~ #main-panel {
+  left: var(--width-1);
+}
+
+:is(#schedule-panel:is(:hover, .show), #events-panel[data-length="0"]) ~ #main-panel {
+  left: calc(var(--full-width) - var(--width-1) - var(--width-2));
+}
+
+:is(
+  #events-panel:not([data-length="0"]) ~ #schedule-panel[data-length="0"],
+  #events-panel[data-length="0"]
+) ~ #main-panel {
+
+}
+
+body.initializing #main-panel {
+  transition: none;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: inherit;
+  display: block;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+
+#button-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /* border-bottom: 1px solid var(--primary); */
+}
+
+.nav-link:is(:hover, :focus-visible)::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--primary);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 10%;
+}
+
+.nav-link:focus {
+  outline: transparent;
+}
+
+.nav-link:focus-visible {
+  outline: 1px solid var(--primary);
+}

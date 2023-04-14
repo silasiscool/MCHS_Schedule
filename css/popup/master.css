@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&display=swap'); /* Fira Sans: 400, 400 italic */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap'); /* Fira Mono: 400 */
+
+:root {
+  /* colors */
+  --primary: black;
+  --background: white;
+  --accent-color: #F5C242;
+
+  /* widths */
+  --width-1: 280px;
+  --width-2: 420px;
+  --min-width: calc(var(--width-1) + var(--width-2));
+  --max-width: calc((2 * var(--width-1)) + var(--width-2));;
+  --full-width: clamp(var(--min-width) , 100%, var(--max-width));
+
+  /* heights */
+  --full-height: 500px;
+  --banner-max-height: 100px;
+  --banner-height: 0;
+
+  /* font styles */
+  --main-font-family: 'Fira Sans', sans-serif;
+  --main-font-weight: 400;
+  --monospace-font-family: 'Fira Mono', monospace;
+  --monospace-font-weight: 400;
+}
+
+* {
+  /* box-sizing: border-box; RUINS FRAMES AND STUFF DON'T USE (on everything)*/
+}
+
+html {
+  background: var(--background);
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  width: var(--full-width);
+  min-width: var(--min-width);
+  height: var(--full-height);
+  margin: 0;
+  color: var(--primary);
+  position: relative;
+  transition: height 1s;
+  transform-origin: top left;
+}
+
+body.full-page {
+  border: 1px solid var(--primary);
+}
+
+body:has(#banner.show) {
+  height: calc(var(--full-height) + var(--banner-height));
+}
+
+body.no-offline-data #countdown-wrapper::before {
+  content: "No Offline Data Available";
+  font-size: 2rem;
+}
+
+body.no-offline-data :is(#button-menu, #countdown, #day-type, #period-name, #end-time, #calendar-panel-section, #events-panel, #schedule-panel) {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel {
+  background: var(--background);
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+:where(button.no-style) {
+  background: none;
+  border: none;
+}

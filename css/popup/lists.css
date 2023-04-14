@@ -1,0 +1,36 @@
+.list-container {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-auto-rows: min-content;
+  overflow: auto;
+}
+
+.list-item:not(.list-border) {
+  min-height: 40px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 17.5px;
+}
+
+.list-time {
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.list-border {
+  border-bottom: 1px solid var(--primary);
+  height: 0;
+  grid-column: span 2;
+}
+
+.list-empty-message {
+  padding: 50px;
+  text-align: center;
+}
+
+.list-container:has(.list-empty-message) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
