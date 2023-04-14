@@ -1,3 +1,9 @@
+if (localStorage.optionsVersion != 1) {
+  localStorage.clear()
+  localStorage.optionsVersion = 1;
+}
+
+
 
 // initilize variables
 let configFileUrl = 'https://raw.githubusercontent.com/silasiscool/MCHS_Schedule/main/config.json';
