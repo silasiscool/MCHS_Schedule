@@ -2497,8 +2497,8 @@
     "10/18/20222"
   ],
   "banner": {
-    "id": "12",
-    "text": "If you would like to get previews of new versions of this extension, get the <a href=\"https://chrome.google.com/webstore/detail/pre-release-mchs-schedule/onibengnamppmibhjfdaabblcgpdjohp\" target=\"_blank\">pre-release version here</a>",
+    "id": "13",
+    "text": "I realize the schedule for the end of the day today is slightly wrong, If anyone has the schedule, please send it my way :)",
     "min_version": "all",
     "non_dismissable": false
   },
