@@ -2503,7 +2503,7 @@
   "banner": {
     "id": "13",
     "text": "I realize the schedule for the end of the day today is slightly wrong, If anyone has the schedule, please send it my way :)",
-    "min_version": "all",
+    "min_version": "none",
     "non_dismissable": false
   },
   "bell_offset": "7",
