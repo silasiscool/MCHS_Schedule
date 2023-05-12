@@ -892,7 +892,7 @@
     {
       "name": "gold_afternoon_assembly",
       "display_name": "Gold Day - Assembly",
-      "color": "#F5C242",
+      "color": "#f5c242",
       "text_color": "#000000",
       "tag": "",
       "schedule": [
@@ -961,11 +961,15 @@
           "time": "12:05"
         },
         {
-          "time": "13:35",
+          "time": "12:56",
           "name": "Transition"
         },
         {
-          "time": "13:39",
+          "time": "13:05",
+          "name": "Assembly"
+        },
+        {
+          "time": "14:15",
           "name": "Advisee"
         },
         {
