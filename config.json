@@ -210,6 +210,10 @@
       "schedule": "gold_ER"
     },
     {
+      "date": "5/12/2023",
+      "schedule": "gold_afternoon_assembly"
+    },
+    {
       "date": "5/29/2023",
       "schedule": "holiday",
       "alt_name": "Memorial Day"
