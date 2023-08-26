@@ -1,238 +1,80 @@
 {
   "day_schedule": [
     {
-      "date": "9/14/2022",
-      "schedule": "black_ER"
-    },
-    {
-      "date": "9/30/2022",
-      "schedule": "black_pep_rally_2022"
-    },
-    {
-      "date": "10/6/2022",
-      "schedule": "ado"
-    },
-    {
-      "date": "10/7/2022",
-      "schedule": "no_school_other"
-    },
-    {
-      "date": "10/10/2022",
-      "schedule": "holiday",
-      "alt_name": "Indigenous Peoples Day"
-    },
-    {
-      "date": "10/14/2022",
-      "schedule": "10/14/2022"
-    },
-    {
-      "date": "10/28/2022",
-      "schedule": "gold_afternoon_assembly"
-    },
-    {
-      "date": "10/31/2022",
-      "schedule": "no_school_other",
-      "alt_name": "School Canceled"
-    },
-    {
-      "date": "11/10/2022",
-      "schedule": "black_ER"
-    },
-    {
-      "date": "11/11/2022",
-      "schedule": "holiday",
-      "alt_name": "Veterans Day"
-    },
-    {
-      "date": "11/23/2022",
-      "schedule": "no_school_other"
-    },
-    {
-      "date": "11/24/2022",
-      "schedule": "holiday",
-      "alt_name": "Thanksgiving"
-    },
-    {
-      "date": "11/25/2022",
-      "schedule": "vacation"
-    },
-    {
-      "date": "12/1/2022",
+      "date": "8/30/2023",
       "schedule": "gold_normal"
     },
     {
-      "date": "12/2/2022",
+      "date": "8/31/2023",
       "schedule": "black_normal"
     },
     {
-      "date": "12/9/2022",
-      "schedule": "12/9/2022",
-      "alt_name": "Gold Day - Pep Rally"
-    },
-    {
-      "date": "12/15/2022",
-      "schedule": "teen_issues_fall_2022"
-    },
-    {
-      "date": "12/16/2022",
-      "schedule": "black_ER"
-    },
-    {
-      "date": "12/22/2022",
-      "schedule": "black_ER"
-    },
-    {
-      "date": "12/23/2022",
-      "schedule": "vacation"
-    },
-    {
-      "date": "1/1/2023",
-      "schedule": "holiday",
-      "alt_name": "New Year's Day"
-    },
-    {
-      "date": "1/2/2023",
-      "schedule": "holiday"
-    },
-    {
-      "date": "1/5/2023",
-      "schedule": "2_hr_delay_gold"
-    },
-    {
-      "date": "1/13/2023",
-      "schedule": "gold_ER"
-    },
-    {
-      "date": "1/16/2023",
-      "schedule": "holiday",
-      "alt_name": "MLK Jr. Day"
-    },
-    {
-      "date": "1/17/2023",
-      "schedule": "2_hr_delay_black"
-    },
-    {
-      "date": "1/20/2023",
-      "schedule": "no_school_other",
-      "alt_name": "Snow Day"
-    },
-    {
-      "date": "1/23/2023",
-      "schedule": "no_school_other",
-      "alt_name": "Snow Day"
-    },
-    {
-      "date": "1/26/2023",
-      "schedule": "no_school_other",
-      "alt_name": "Snow Day"
-    },
-    {
-      "date": "1/31/2023",
-      "schedule": "2_hr_delay_black"
-    },
-    {
-      "date": "2/6/2023",
-      "schedule": "2/6/2023"
-    },
-    {
-      "date": "2/13/2023",
-      "schedule": "gold_extended_advisee"
-    },
-    {
-      "date": "2/17/2023",
-      "schedule": "gold_ER"
-    },
-    {
-      "date": "2/20/2023",
-      "schedule": "holiday",
-      "alt_name": "Presidents' Day"
-    },
-    {
-      "date": "2/28/2023",
-      "schedule": "no_school_other",
-      "alt_name": "Snow Day"
-    },
-    {
-      "date": "3/6/2023",
-      "schedule": "gold_extended_wc"
-    },
-    {
-      "date": "3/7/2023",
-      "schedule": "black_extended_wc"
-    },
-    {
-      "date": "3/8/2023",
-      "schedule": "gold_extended_wc"
-    },
-    {
-      "date": "3/9/2023",
-      "schedule": "black_extended_wc"
-    },
-    {
-      "date": "3/10/2023",
-      "schedule": "winter_carnival_2023"
-    },
-    {
-      "date": "3/14/2023",
-      "schedule": "3/14/2023"
-    },
-    {
-      "date": "3/15/2023",
-      "schedule": "2_hr_delay_black"
-    },
-    {
-      "date": "3/17/2023",
+      "date": "9/1/2023",
       "schedule": "gold_normal"
     },
     {
-      "date": "3/22/2023",
-      "schedule": "teen_issues"
+      "date": "9/2/2023",
+      "schedule": "weekend"
     },
     {
-      "date": "4/5/2023",
-      "schedule": "4/5/2023"
+      "date": "9/3/2023",
+      "schedule": "weekend"
     },
     {
-      "date": "4/10/2023",
-      "schedule": "4/10/2023"
+      "date": "9/4/2023",
+      "schedule": "holiday"
     },
     {
-      "date": "4/14/2023",
-      "schedule": "4/14/2023"
+      "date": "9/5/2023",
+      "schedule": "black_normal"
     },
     {
-      "date": "4/17/2023",
-      "schedule": "holiday",
-      "alt_name": "Patriots' Day"
+      "date": "9/6/2023",
+      "schedule": "gold_normal"
     },
     {
-      "date": "5/10/2023",
-      "schedule": "gold_ER"
+      "date": "9/7/2023",
+      "schedule": "black_normal"
     },
     {
-      "date": "5/12/2023",
-      "schedule": "gold_afternoon_assembly"
+      "date": "9/8/2023",
+      "schedule": "gold_normal"
     },
     {
-      "date": "5/29/2023",
-      "schedule": "holiday",
-      "alt_name": "Memorial Day"
+      "date": "9/9/2023",
+      "schedule": "weekend"
     },
     {
-      "date": "6/7/2023",
-      "schedule": "ado"
+      "date": "9/10/2023",
+      "schedule": "weekend"
     },
     {
-      "date": "6/14/2023",
-      "schedule": "vacation"
+      "date": "9/11/2023",
+      "schedule": "black_normal"
     },
     {
-      "date": "6/15/2023",
-      "schedule": "vacation"
+      "date": "9/12/2023",
+      "schedule": "gold_normal"
     },
     {
-      "date": "6/16/2023",
-      "schedule": "vacation"
+      "date": "9/13/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "9/14/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "9/15/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "9/16/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "9/17/2023",
+      "schedule": "weekend"
     }
   ],
   "day_types": [
@@ -2369,144 +2211,15 @@
     "G7",
     "G8"
   ],
-  "chamber_days": [
-    "9/1/2022",
-    "9/6/2022",
-    "9/8/2022",
-    "9/12/2022",
-    "9/16/2022",
-    "9/20/2022",
-    "9/22/2022",
-    "9/26/2022",
-    "9/30/2022",
-    "10/4/2022",
-    "10/6/2022",
-    "10/11/2022",
-    "10/13/2022",
-    "10/17/2022",
-    "10/21/2022",
-    "10/25/2022",
-    "10/27/2022",
-    "11/4/2022",
-    "11/8/2022",
-    "11/10/2022",
-    "11/14/2022",
-    "11/29/2022",
-    "12/2/2022",
-    "12/6/2022",
-    "12/8/2022",
-    "12/12/2022",
-    "12/20/2022",
-    "1/4/2023",
-    "1/6/2023",
-    "1/10/2023",
-    "1/12/2023",
-    "1/19/2023",
-    "1/27/2023",
-    "2/1/2023",
-    "2/2/2023",
-    "2/6/2023",
-    "2/10/2023",
-    "2/14/2023",
-    "2/16/2023",
-    "2/27/2023",
-    "3/3/2023",
-    "3/7/2023",
-    "3/9/2023",
-    "3/13/2023",
-    "3/17/2023",
-    "3/20/2023",
-    "3/24/2023",
-    "3/28/2023",
-    "3/30/2023",
-    "4/3/2023",
-    "4/7/2023",
-    "4/11/2023",
-    "4/13/2023",
-    "4/25/2023",
-    "4/27/2023",
-    "5/1/2023",
-    "5/5/2023",
-    "5/9/2023",
-    "5/11/2023",
-    "5/15/2023",
-    "5/17/2023",
-    "5/23/2023",
-    "5/25/2023",
-    "5/30/2023",
-    "6/1/2023",
-    "6/5/2023"
-  ],
-  "jazz_days": [
-    "9/2/2022",
-    "9/9/2022",
-    "9/13/2022",
-    "9/15/2022",
-    "9/19/2022",
-    "9/21/2022",
-    "9/23/2022",
-    "9/27/2022",
-    "9/29/2022",
-    "10/3/2022",
-    "10/12/2022",
-    "10/14/2022",
-    "10/20/2022",
-    "10/24/2022",
-    "10/28/2022",
-    "11/1/2022",
-    "11/3/2022",
-    "11/9/2022",
-    "11/15/2022",
-    "11/21/2022",
-    "11/28/2022",
-    "12/1/2022",
-    "12/5/2022",
-    "12/9/2022",
-    "12/13/2022",
-    "12/15/2022",
-    "12/19/2022",
-    "1/3/2023",
-    "1/9/2023",
-    "1/11/2023",
-    "1/18/2023",
-    "1/24/2023",
-    "1/30/2023",
-    "2/3/2023",
-    "2/7/2023",
-    "2/9/2023",
-    "2/13/2023",
-    "3/2/2023",
-    "3/6/2023",
-    "3/8/2023",
-    "3/10/2023",
-    "3/14/2023",
-    "3/16/2023",
-    "3/21/2023",
-    "3/23/2023",
-    "3/27/2023",
-    "3/29/2023",
-    "3/31/2023",
-    "4/4/2023",
-    "4/5/2023",
-    "4/10/2023",
-    "4/12/2023",
-    "4/24/2023",
-    "4/28/2023",
-    "5/2/2023",
-    "5/4/2023",
-    "5/8/2023",
-    "5/12/2023",
-    "5/16/2023",
-    "5/22/2023",
-    "10/18/20222"
-  ],
+  "chamber_days": [],
+  "jazz_days": [],
   "banner": {
     "id": "13",
     "text": "I realize the schedule for the end of the day today is slightly wrong, If anyone has the schedule, please send it my way :)",
     "min_version": "none",
     "non_dismissable": false
   },
-  "bell_offset": "7",
+  "bell_offset": "0",
   "events": {
     "on": true,
     "id": "b8c6c7301068e3b63d6e4a45858624e307596dcfe3b92746d9bf5a14410942bc@group.calendar.google.com"
