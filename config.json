@@ -22,7 +22,8 @@
     },
     {
       "date": "9/4/2023",
-      "schedule": "holiday"
+      "schedule": "holiday",
+      "alt_name": "Labor Day"
     },
     {
       "date": "9/5/2023",
@@ -75,6 +76,183 @@
     {
       "date": "9/17/2023",
       "schedule": "weekend"
+    },
+    {
+      "date": "9/18/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "9/19/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "9/20/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "9/21/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "9/22/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "9/23/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "9/24/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "9/25/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "9/26/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "9/27/2023",
+      "schedule": "black_ER"
+    },
+    {
+      "date": "9/28/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "9/29/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "9/30/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/1/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/2/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/3/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "10/4/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/5/2023",
+      "schedule": "ado"
+    },
+    {
+      "date": "10/6/2023",
+      "schedule": "no_school_other"
+    },
+    {
+      "date": "10/7/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/8/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/9/2023",
+      "schedule": "holiday",
+      "alt_name": "Indigenous Peoples' Day"
+    },
+    {
+      "date": "10/10/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/11/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "10/12/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/13/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "10/14/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/15/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/16/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/17/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "10/18/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/19/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "10/20/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/21/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/22/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/23/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "10/24/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/25/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/26/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/27/2023",
+      "schedule": "black_normal"
+    },
+    {
+      "date": "10/28/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/29/2023",
+      "schedule": "weekend"
+    },
+    {
+      "date": "10/30/2023",
+      "schedule": "gold_normal"
+    },
+    {
+      "date": "10/31/2023",
+      "schedule": "black_normal"
     }
   ],
   "day_types": [
