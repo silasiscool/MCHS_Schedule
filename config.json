@@ -2392,9 +2392,9 @@
   "chamber_days": [],
   "jazz_days": [],
   "banner": {
-    "id": "13",
-    "text": "I realize the schedule for the end of the day today is slightly wrong, If anyone has the schedule, please send it my way :)",
-    "min_version": "none",
+    "id": "14",
+    "text": "This is a test banner for pre-release version, please ignore",
+    "min_version": "1.0.0.2",
     "non_dismissable": false
   },
   "bell_offset": "9",
