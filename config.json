@@ -2394,7 +2394,7 @@
   "banner": {
     "id": "14",
     "text": "This is a test banner for pre-release version, please ignore",
-    "min_version": "1.0.0.2",
+    "min_version": "none",
     "non_dismissable": false
   },
   "bell_offset": "9",
