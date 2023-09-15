@@ -2199,24 +2199,24 @@
           "time": "08:11"
         },
         {
-          "name": "G5",
-          "time": "08:15"
+          "time": "08:15",
+          "name": "B1"
         },
         {
           "name": "Transition",
           "time": "09:06"
         },
         {
-          "name": "G6",
-          "time": "09:10"
+          "time": "09:10",
+          "name": "B2"
         },
         {
           "name": "Transition",
           "time": "10:01"
         },
         {
-          "name": "G7",
-          "time": "10:05"
+          "time": "10:05",
+          "name": "B3"
         },
         {
           "name": "Transition",
@@ -2247,8 +2247,8 @@
           "time": "12:01"
         },
         {
-          "name": "G8",
-          "time": "12:05"
+          "time": "12:05",
+          "name": "B4"
         },
         {
           "time": "12:56",
