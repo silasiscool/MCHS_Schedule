@@ -2491,7 +2491,7 @@
     "min_version": "none",
     "non_dismissable": false
   },
-  "bell_offset": "9",
+  "bell_offset": "54",
   "events": {
     "on": true,
     "id": "b8c6c7301068e3b63d6e4a45858624e307596dcfe3b92746d9bf5a14410942bc@group.calendar.google.com"
