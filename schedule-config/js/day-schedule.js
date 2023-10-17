@@ -44,7 +44,7 @@ config_file.then((savedConfig) => { // open saved config file
       if (bulkAddCheckbox.checked) {
         let newAddDate = new Date(addDateDate.value)
         newAddDate.setDate(newAddDate.getDate()+2);
-        addDateDate.value = newAddDate.getFullYear().padStart(4,'0')+'-'+(newAddDate.getMonth()+1).padStart(2,'0')+'-'+newAddDate.getDate().padStart(2,'0');
+        addDateDate.value = newAddDate.getFullYear().toString().padStart(4,'0')+'-'+(newAddDate.getMonth()+1).toString().padStart(2,'0')+'-'+newAddDate.getDate().toString().padStart(2,'0');
         console.log();
         if (config.day_types.find((object)=>object.name === 'weekend') && [6,0].includes(newAddDate.getDay())) {
           typeSelect.value = 'weekend'
