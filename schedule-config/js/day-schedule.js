@@ -11,6 +11,7 @@ config_file.then((savedConfig) => { // open saved config file
   let addDateButton = document.getElementById('add-date-button')
   let itemList = document.getElementById('item-list')
   let altName = document.getElementById('alt-name')
+  let bulkAddCheckbox = document.getElementById('bulk-add-checkbox');
 
   // Set type select dropdown options
   config.day_types.forEach((item, i) => {
@@ -24,7 +25,11 @@ config_file.then((savedConfig) => { // open saved config file
   addDateButton.addEventListener('click', () => {
     let newDate = new Date(addDateDate.valueAsNumber)
     newDate = monthDayYear(new Date(newDate.setDate(newDate.getDate() + 1)))
-    if (addDateDate.value !== '' && typeSelect.value !== '' && config.day_schedule.findIndex((object) => object.date === newDate)===-1) {
+    if (addDateDate.value !== '' && typeSelect.value !== '' && (config.day_schedule.findIndex((object) => object.date === newDate)===-1 || window.confirm('Day type already assigned as ' + config.day_schedule.find((object) => object.date === newDate).schedule +'. \nReassign day?'))) {
+      if (config.day_schedule.findIndex((object) => object.date === newDate)!==-1) {
+        config.day_schedule.splice(config.day_schedule.findIndex((object) => object.date === newDate),1);
+        sessionStorage.setItem('configFile', JSON.stringify(config));
+      }
       let newItem = {date: newDate, schedule: typeSelect.value}
       if (altName.value !== config.day_types.find((object) => object.name === typeSelect.value).display_name) {
         newItem.alt_name = altName.value
@@ -36,13 +41,36 @@ config_file.then((savedConfig) => { // open saved config file
       sessionStorage.setItem('configFile', JSON.stringify(config))
       displayDays()
 
-      addDateDate.value = ''
-      typeSelect.value = ''
-      altName.value = ''
+      if (bulkAddCheckbox.checked) {
+        let newAddDate = new Date(addDateDate.value)
+        newAddDate.setDate(newAddDate.getDate()+2);
+        addDateDate.value = newAddDate.getFullYear()+'-'+(newAddDate.getMonth()+1)+'-'+newAddDate.getDate();
+        console.log();
+        if (config.day_types.find((object)=>object.name === 'weekend') && [6,0].includes(newAddDate.getDay())) {
+          typeSelect.value = 'weekend'
+          altName.value = config.day_types.find((object) => object.name === typeSelect.value).display_name
+        } else {
+          typeSelect.value = ''
+          altName.value = ''
+        }
+      } else {
+        addDateDate.value = ''
+        typeSelect.value = ''
+        altName.value = ''
+      }
+
+
+
+
     } else if (addDateDate.value !== '' && typeSelect.value !== '') {
-      window.alert('Date already assigned custom type')
+      // Do Nothing
     } else {
       window.alert('All fields not filled')
+    }
+    if (bulkAddCheckbox.checked) {
+      typeSelect.focus({focusvisible:true})
+    } else {
+      addDateDate.focus({focusvisible:true})
     }
   })
 

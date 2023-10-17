@@ -57,9 +57,3 @@ function ordinal_suffix_of(i) {
 function monthDayYear(date) {
   return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
 };
-
-Array.from(document.getElementsByTagName('a')).forEach((item) => {
-  if (['Week Schedule','Week Types'].includes(item.innerHTML)) {
-    item.style.display = 'none'
-  }
-});
