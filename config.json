@@ -249,7 +249,7 @@
     },
     {
       "date": "10/30/2023",
-      "schedule": "2_hr_delay_gold"
+      "schedule": "10/30/2023"
     },
     {
       "date": "10/31/2023",
@@ -3161,6 +3161,87 @@
         {
           "time": "14:15",
           "name": "Advisee"
+        },
+        {
+          "name": "Bus Dismissal",
+          "time": "14:24"
+        },
+        {
+          "name": "Free",
+          "time": "14:30"
+        }
+      ]
+    },
+    {
+      "name": "10/30/2023",
+      "display_name": "Gold Day - 2 Hour Delay",
+      "color": "#f5c242",
+      "text_color": "#000000",
+      "tag": "2h",
+      "schedule": [
+        {
+          "time": "09:30",
+          "name": "School Opens"
+        },
+        {
+          "time": "09:55",
+          "name": "Transition"
+        },
+        {
+          "time": "10:00",
+          "name": "Advisee"
+        },
+        {
+          "time": "10:16",
+          "name": "Transition"
+        },
+        {
+          "time": "10:20",
+          "name": "G5"
+        },
+        {
+          "time": "11:02",
+          "name": "Transition"
+        },
+        {
+          "time": "11:06",
+          "name": "G6"
+        },
+        {
+          "time": "11:48",
+          "name": "Transition"
+        },
+        {
+          "time": "11:52",
+          "name": "Lunch A / Advisee A"
+        },
+        {
+          "time": "12:18",
+          "name": "Transition / Advisee A"
+        },
+        {
+          "time": "12:22",
+          "name": "Advisee B / Transition"
+        },
+        {
+          "time": "12:25",
+          "name": "Advisee B / Lunch B"
+        },
+        {
+          "time": "12:51",
+          "name": "Transition"
+        },
+        {
+          "time": "12:55",
+          "name": "G7"
+        },
+        {
+          "time": "13:37",
+          "name": "Transition"
+        },
+        {
+          "time": "13:41",
+          "name": "G8"
         },
         {
           "name": "Bus Dismissal",
