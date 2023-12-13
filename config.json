@@ -1529,93 +1529,17 @@
     {
       "name": "teen_issues",
       "display_name": "Teen Issues",
-      "color": "#8C1AF5",
+      "color": "#8c1af5",
       "text_color": "#ffffff",
       "tag": "",
       "schedule": [
         {
-          "name": "Transition",
-          "time": "07:55"
+          "time": "07:55",
+          "name": "Teen Issues Day"
         },
         {
-          "time": "08:00",
-          "name": "Advisee"
-        },
-        {
-          "time": "08:10",
-          "name": "Transition"
-        },
-        {
-          "time": "08:15",
-          "name": "Opening Ceremony"
-        },
-        {
-          "time": "09:20",
-          "name": "Transition"
-        },
-        {
-          "time": "09:25",
-          "name": "Session 1"
-        },
-        {
-          "time": "10:15",
-          "name": "Transition"
-        },
-        {
-          "time": "10:20",
-          "name": "Session 2"
-        },
-        {
-          "time": "11:10",
-          "name": "Lunch A / Advisee A"
-        },
-        {
-          "time": "11:35",
-          "name": "Transition / Advisee A"
-        },
-        {
-          "time": "11:38",
-          "name": "Advisee"
-        },
-        {
-          "time": "11:42",
-          "name": "Advisee B / Transition"
-        },
-        {
-          "time": "11:45",
-          "name": "Advisee B / Lunch B"
-        },
-        {
-          "time": "12:10",
-          "name": "Transition"
-        },
-        {
-          "time": "12:15",
-          "name": "Session 3"
-        },
-        {
-          "time": "13:05",
-          "name": "Transition"
-        },
-        {
-          "time": "13:10",
-          "name": "Session 4"
-        },
-        {
-          "time": "14:10",
-          "name": "Transition"
-        },
-        {
-          "time": "14:15",
-          "name": "Advisee"
-        },
-        {
-          "time": "14:25",
-          "name": "Bus Dismissal"
-        },
-        {
-          "name": "Free",
-          "time": "14:30"
+          "time": "14:24",
+          "name": "Free"
         }
       ]
     },
