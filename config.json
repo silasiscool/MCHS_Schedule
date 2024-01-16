@@ -566,7 +566,7 @@
     },
     {
       "date": "1/16/2024",
-      "schedule": "gold_normal"
+      "schedule": "gold_ER"
     },
     {
       "date": "1/17/2024",
@@ -1328,43 +1328,43 @@
       "schedule": [
         {
           "name": "Transition",
-          "time": "7:55"
+          "time": "07:55"
         },
         {
           "name": "Advisee",
-          "time": "8:00"
+          "time": "08:00"
         },
         {
           "name": "Transition",
-          "time": "8:05"
+          "time": "08:05"
         },
         {
           "name": "B1",
-          "time": "8:09"
+          "time": "08:09"
         },
         {
           "name": "Transition",
-          "time": "8:41"
+          "time": "08:41"
         },
         {
           "name": "B2",
-          "time": "8:45"
+          "time": "08:45"
         },
         {
           "name": "Transition",
-          "time": "9:17"
+          "time": "09:17"
         },
         {
           "name": "B3",
-          "time": "9:21"
+          "time": "09:21"
         },
         {
           "name": "Transition",
-          "time": "9:53"
+          "time": "09:53"
         },
         {
           "name": "B4",
-          "time": "9:57"
+          "time": "09:57"
         },
         {
           "name": "Transition",
@@ -1391,57 +1391,57 @@
           "time": "11:06"
         },
         {
-          "name": "Free",
-          "time": "11:31"
+          "time": "11:31",
+          "name": "Free"
         }
       ]
     },
     {
       "name": "gold_ER",
       "display_name": "Gold Day - Early Release",
-      "color": "#F5C242",
+      "color": "#f5c242",
       "text_color": "#000000",
       "tag": "ER",
       "schedule": [
         {
           "name": "Transition",
-          "time": "7:55"
+          "time": "07:55"
         },
         {
           "name": "Advisee",
-          "time": "8:00"
+          "time": "08:00"
         },
         {
           "name": "Transition",
-          "time": "8:05"
+          "time": "08:05"
         },
         {
           "name": "G5",
-          "time": "8:09"
+          "time": "08:09"
         },
         {
           "name": "Transition",
-          "time": "8:41"
+          "time": "08:41"
         },
         {
           "name": "G6",
-          "time": "8:45"
+          "time": "08:45"
         },
         {
           "name": "Transition",
-          "time": "9:17"
+          "time": "09:17"
         },
         {
           "name": "G7",
-          "time": "9:21"
+          "time": "09:21"
         },
         {
           "name": "Transition",
-          "time": "9:53"
+          "time": "09:53"
         },
         {
           "name": "G8",
-          "time": "9:57"
+          "time": "09:57"
         },
         {
           "name": "Transition",
@@ -1468,8 +1468,8 @@
           "time": "11:06"
         },
         {
-          "name": "Free",
-          "time": "11:31"
+          "time": "11:31",
+          "name": "Free"
         }
       ]
     },
