@@ -598,7 +598,7 @@
     },
     {
       "date": "1/24/2024",
-      "schedule": "gold_ER"
+      "schedule": "help_gold"
     },
     {
       "date": "1/25/2024",
@@ -1659,14 +1659,14 @@
     },
     {
       "name": "help_colorless",
-      "display_name": "Who Knows??",
+      "display_name": "Who Knows",
       "color": "#ff7b00",
       "text_color": "#000000",
       "tag": "??",
       "schedule": [
         {
           "time": "00:00",
-          "name": "Send me the schedule"
+          "name": "Who Knows"
         }
       ]
     },
@@ -2242,6 +2242,32 @@
         {
           "time": "13:30",
           "name": "Free"
+        }
+      ]
+    },
+    {
+      "name": "help_gold",
+      "display_name": "Who Knows",
+      "color": "#f5c242",
+      "text_color": "#000000",
+      "tag": "??",
+      "schedule": [
+        {
+          "time": "00:00",
+          "name": "Who Knows"
+        }
+      ]
+    },
+    {
+      "name": "help_black",
+      "display_name": "Who Knows",
+      "color": "#000000",
+      "text_color": "#ffffff",
+      "tag": "??",
+      "schedule": [
+        {
+          "time": "00:00",
+          "name": "Who Knows"
         }
       ]
     }
