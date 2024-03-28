@@ -1,4 +1,4 @@
-const config_file = fetch('https://script.google.com/macros/s/AKfycbzmPlGpgvvgZRqerq2xx-M_PikKISc6cLKy6Apkk1Rhefo7H12gJ9oVH8QlU0v09FiCDA/exec');
+const config_file = fetch('https://script.google.com/macros/s/AKfycbzmPlGpgvvgZRqerq2xx-M_PikKISc6cLKy6Apkk1Rhefo7H12gJ9oVH8QlU0v09FiCDA/exec').then(res => res.json());
 
 const sideNavButton = document.getElementById('side-nav-button');
 const sideNav = document.getElementsByClassName('side-nav')[0];
